@@ -1,42 +1,71 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import { Link } from "gatsby";
+import PropTypes from "prop-types";
+import React from "react";
+import styled from "styled-components";
+
+const StyledHeader = styled.header`
+  margin: 2em;
+  clear: both;
+  overflow: hidden;
+`;
+
+const Menu = styled.ul`
+  list-style: none;
+  float: right;
+  padding: 0;
+  margin: 0;
+`;
+
+const LeftTitle = styled.h1`
+  margin: 0;
+  padding: 0;
+  font-size: 1.125em;
+  float: left;
+`;
+
+const MenuLink = props => (
+  <li className={props.className}>
+    <Link {...props} className="" activeClassName="active">
+      {props.children}
+    </Link>
+  </li>
+);
+
+const StyledMenuLink = styled(MenuLink)`
+  display: inline-block;
+  padding: 0 0.5em;
+  margin: 0;
+
+  & > a.active {
+    font-weight: bold;
+  }
+`;
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
+  <StyledHeader>
+    <LeftTitle>
+      <Link to="/">II Concurso de Coros - Coimbra</Link>
+    </LeftTitle>
     <div
       style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+        textAlign: "right",
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+      <Menu>
+        <StyledMenuLink to="/coros">Coros</StyledMenuLink>
+        <StyledMenuLink to="/regulamento">Regulamento</StyledMenuLink>
+        <StyledMenuLink to="/2017">Edicao Anterior</StyledMenuLink>
+      </Menu>
     </div>
-  </header>
-)
+  </StyledHeader>
+);
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
-}
+};
 
 Header.defaultProps = {
   siteTitle: ``,
-}
+};
 
-export default Header
+export default Header;
