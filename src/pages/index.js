@@ -7,11 +7,13 @@ import styled from "styled-components";
 const MainTitle = styled.h1``;
 
 const IndexPage = () => (
-  <div>
+  <Layout>
     <SEO title="Home" />
     <MainTitle>II Concurso de Coros - Coimbra</MainTitle>
-    <p>Em breve.</p>
-  </div>
+    <p>
+      Em breve.
+    </p>
+  </Layout>
 );
 
 export default IndexPage;
