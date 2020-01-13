@@ -30,7 +30,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Container>
+      <Container style={{ padding: "4em" }}>
         <main>{children}</main>
       </Container>
     </>
