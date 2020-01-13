@@ -11,7 +11,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <MainTitle>II Concurso de Coros - Coimbra</MainTitle>
     <p>
-      A segunda ediçao do Concurso de Coros - Coimbra ir-se-a realizar em 2020.
+      A segunda ediçao do Concurso de Coros - Coimbra ir-se-a realizar em 2020!
     </p>
   </Layout>
 );
