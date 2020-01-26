@@ -6,12 +6,12 @@ import styled from "styled-components";
 import tw from "tailwind.macro";
 import Img from "gatsby-image";
 
-import { Section} from "../components/styled.js";
+import { Section } from "../components/styled.js";
 
 const Content = tw.div`lg:flex`;
 const Left = styled.div`
   width: 50%;
-  ${tw`lg:p-4`}
+  ${tw`lg:p-2`}
 
   @media (max-width: 1023px) {
     width: 100%;
@@ -19,7 +19,7 @@ const Left = styled.div`
 `;
 const Right = styled.div`
   width: 50%;
-  ${tw`pt-8 lg:p-4`}
+  ${tw`pt-8 lg:p-2`}
 
   @media (max-width: 1023px) {
     width: 100%;
@@ -36,18 +36,16 @@ const Local = ({ data }) => (
     <Section>
       <Content>
         <Left>
-          <h3>Convento São Francisco</h3>
+          <h3>Igreja do Convento São Francisco</h3>
           <p>
             Av. da Guarda Inglesa 1a
             <br />
             3040-193 Coimbra
           </p>
-          <p>
-            <a href="http://www.coimbraconvento.pt/">
-              http://www.coimbraconvento.pt/
-            </a>
-          </p>
-          <Img fluid={data.convent.childImageSharp.fluid} />
+          <Img
+            fluid={data.convent.childImageSharp.fluid}
+            style={{ marginTop: "3em" }}
+          />
           <small>Foto João Duarte</small>
         </Left>
         <Right>

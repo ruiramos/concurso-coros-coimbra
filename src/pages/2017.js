@@ -69,6 +69,10 @@ const PrevPage = ({ data }) => (
         allowfullscreen
         style={{ maxWidth: "100%" }}
       ></iframe>
+      <small>
+        Playlist de videos do evento, carregue em 1/18 no canto superior direito
+        para ver mais.
+      </small>
     </Section>
 
     <Section>

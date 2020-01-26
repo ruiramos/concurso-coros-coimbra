@@ -10,8 +10,8 @@ const Juri = ({ data }) => (
 
     <Section>
       <p>
-        O juri da edição deste ano será composto por Jorge Matta, Aoife Hiney,
-        Eugénio Amorim, Vasco Negreiros e João Santos.
+        O juri da edição deste ano será composto por Aoife Hiney, Eugénio
+        Amorim, João Santos, Jorge Matta e Vasco Negreiros.
       </p>
     </Section>
   </Layout>

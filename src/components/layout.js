@@ -26,6 +26,7 @@ const ImgContainer = tw.div`
   mb-10
 `;
 
+const Footer = tw.footer`text-sm text-gray-500`;
 const MainHeading = tw.h2` text-center`;
 const SubHeading = tw.h3` text-center `;
 
@@ -64,9 +65,16 @@ const Layout = ({ children }) => {
         <SubHeading>Igreja do Convento São Francisco, Coimbra</SubHeading>
 
         <Sep primary />
+
         <Menu />
+
         <main>{children}</main>
+
         <Sep />
+
+        <Footer>
+          Site: <a href="mailto:ruiramos@gmail.com">Rui Ramos</a>
+        </Footer>
       </Content>
     </Container>
   );
