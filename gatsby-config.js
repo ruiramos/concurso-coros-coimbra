@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Concurso de Coros Coimbra 2020`,
+    title: `II Concurso de Coros Coimbra`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
   },
@@ -9,6 +9,12 @@ module.exports = {
       resolve: `gatsby-plugin-styled-components`,
       options: {
         // Add any options here
+      },
+    },
+    {
+      resolve: `gatsby-plugin-postcss`,
+      options: {
+        // Accepts all options defined by `gatsby-plugin-postcss` plugin.
       },
     },
     `gatsby-plugin-react-helmet`,

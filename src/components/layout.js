@@ -8,13 +8,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
-import styled from "styled-components";
-
-import Header from "./header";
+import tw from "tailwind.macro";
+//import Header from "./header";
 import "./layout.css";
 
-const Container = styled.div`
-  margin: 0 2em;
+const Container = tw.div`
+  mx-auto my-4 px-8 bg-white mt-0 min-h-screen
 `;
 
 const Layout = ({ children }) => {
@@ -29,12 +28,9 @@ const Layout = ({ children }) => {
   `);
 
   return (
-    <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <Container>
-        <main>{children}</main>
-      </Container>
-    </>
+    <Container className="container">
+      <main>{children}</main>
+    </Container>
   );
 };
 

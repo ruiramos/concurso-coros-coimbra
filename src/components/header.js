@@ -1,10 +1,11 @@
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
+import tw from "tailwind.macro";
 import styled from "styled-components";
 
 const StyledHeader = styled.header`
-  margin: 2em;
+  ${tw`py-6`}
   clear: both;
   overflow: hidden;
 `;
