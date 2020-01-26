@@ -5,23 +5,13 @@ import tw from "tailwind.macro";
 import styled from "styled-components";
 
 const StyledHeader = styled.header`
-  ${tw`py-6`}
+  ${tw`pb-2`}
   clear: both;
   overflow: hidden;
 `;
 
-const Menu = styled.ul`
-  list-style: none;
-  float: right;
-  padding: 0;
-  margin: 0;
-`;
-
-const LeftTitle = styled.h1`
-  margin: 0;
-  padding: 0;
-  font-size: 1.125em;
-  float: left;
+const Menu = tw.ul`
+  text-center
 `;
 
 const MenuLink = props => (
@@ -44,20 +34,14 @@ const StyledMenuLink = styled(MenuLink)`
 
 const Header = ({ siteTitle }) => (
   <StyledHeader>
-    <LeftTitle>
-      <Link to="/">II Concurso de Coros - Coimbra</Link>
-    </LeftTitle>
-    <div
-      style={{
-        textAlign: "right",
-      }}
-    >
-      <Menu>
-        <StyledMenuLink to="/coros">Coros</StyledMenuLink>
-        <StyledMenuLink to="/regulamento">Regulamento</StyledMenuLink>
-        <StyledMenuLink to="/2017">Edicao Anterior</StyledMenuLink>
-      </Menu>
-    </div>
+    <Menu>
+      <StyledMenuLink to="/">Apresentação</StyledMenuLink>
+      {/* <StyledMenuLink to="/coros">Coros</StyledMenuLink> */}
+      <StyledMenuLink to="/localizacao">Localização</StyledMenuLink>
+      <StyledMenuLink to="/regulamento">Regulamento</StyledMenuLink>
+      <StyledMenuLink to="/juri">Juri</StyledMenuLink>
+      <StyledMenuLink to="/2017">Edição Anterior</StyledMenuLink>
+    </Menu>
   </StyledHeader>
 );
 

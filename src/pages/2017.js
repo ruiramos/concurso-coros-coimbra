@@ -1,6 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 import styled from "styled-components";
+import tw from "tailwind.macro";
 import Img from "gatsby-image";
 
 import Layout from "../components/layout";
@@ -8,6 +9,8 @@ import SEO from "../components/seo";
 import Coro from "../components/coro";
 
 import { Section, SectionTitle } from "../components/styled";
+
+const LinkWithShadow = tw.a`shadow inline-block`;
 
 const ImageContainer = styled.div`
   width: 50%;
@@ -54,20 +57,6 @@ const coros = [
 const PrevPage = ({ data }) => (
   <Layout>
     <SEO title="I Concurso de Coros - Coimbra" />
-    <ImageContainer>
-      <Img
-        fluid={data.logoImage.childImageSharp.fluid}
-        imgStyle={{ objectFit: "contain" }}
-      />
-    </ImageContainer>
-    <div style={{ float: "right", width: "50%", padding: "5em 0" }}>
-      <h2>
-        28 de Outubro de 2018
-        <br />
-        Igreja do Convento de S. Francisco, Coimbra
-      </h2>
-    </div>
-
     <Section>
       <SectionTitle>Resultados</SectionTitle>
       <p>1º Lugar - Coro LeGatto</p>
@@ -85,11 +74,12 @@ const PrevPage = ({ data }) => (
         frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
+        style={{ maxWidth: "100%" }}
       ></iframe>
     </Section>
 
     <Section>
-      <SectionTitle>Coros</SectionTitle>
+      <SectionTitle>Coros participantes</SectionTitle>
       {coros.map(c => (
         <Coro {...c} />
       ))}
@@ -97,12 +87,12 @@ const PrevPage = ({ data }) => (
 
     <Section>
       <SectionTitle>Cartaz</SectionTitle>
-      <a href="/images/i-concurso-cartaz.png" target="_blank">
+      <LinkWithShadow href="/images/i-concurso-cartaz.png" target="_blank">
         <Img
           fixed={data.cartazImage.childImageSharp.fixed}
           imgStyle={{ width: "200px" }}
         />
-      </a>
+      </LinkWithShadow>
     </Section>
   </Layout>
 );
