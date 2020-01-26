@@ -27,7 +27,7 @@ const IndexPage = ({ data }) => (
       <p>
         O "II Concurso de Coros - Coimbra" integrará duas fases: a primeira será
         uma fase de pré-seleção, com todos os coros amadores inscritos; a
-        segunda, a realizar no dia 06 de junho de 2019, terá a participação de
+        segunda, a realizar no dia 06 de junho de 2020, terá a participação de
         oito coros selecionados, na primeira fase, pelo Júri, que será
         constituído por prestigiados maestros de renome nacional e
         internacional.
