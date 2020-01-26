@@ -2,15 +2,12 @@ import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import styled from "styled-components";
-import tw from "tailwind.macro";
-import Img from "gatsby-image";
 
-import { Section, SectionTitle, Sep } from "../components/styled.js";
+import { Section } from "../components/styled.js";
 
 const IndexPage = ({ data }) => (
   <Layout>
-    <SEO title="lol" />
+    <SEO title="Home" />
 
     <Section>
       <p>
@@ -41,7 +38,6 @@ const IndexPage = ({ data }) => (
         Seixas.
       </p>
     </Section>
-
   </Layout>
 );
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
-import styled from "styled-components";
+//import styled from "styled-components";
 import tw from "tailwind.macro";
 import Img from "gatsby-image";
 
@@ -11,13 +11,6 @@ import Coro from "../components/coro";
 import { Section, SectionTitle } from "../components/styled";
 
 const LinkWithShadow = tw.a`shadow inline-block`;
-
-const ImageContainer = styled.div`
-  width: 50%;
-  max-width: 600px;
-  overflow: hidden;
-  float: left;
-`;
 
 const coros = [
   {
@@ -56,7 +49,7 @@ const coros = [
 
 const PrevPage = ({ data }) => (
   <Layout>
-    <SEO title="I Concurso de Coros - Coimbra" />
+    <SEO title="I Concurso de Coros" />
     <Section>
       <SectionTitle>Resultados</SectionTitle>
       <p>1º Lugar - Coro LeGatto</p>

@@ -6,7 +6,7 @@ import styled from "styled-components";
 import tw from "tailwind.macro";
 import Img from "gatsby-image";
 
-import { Section, SectionTitle } from "../components/styled.js";
+import { Section} from "../components/styled.js";
 
 const DocContainer = tw.div`
   flex

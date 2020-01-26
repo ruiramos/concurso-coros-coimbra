@@ -6,7 +6,7 @@ import styled from "styled-components";
 import tw from "tailwind.macro";
 import Img from "gatsby-image";
 
-import { Section, SectionTitle } from "../components/styled.js";
+import { Section} from "../components/styled.js";
 
 const Content = tw.div`lg:flex`;
 const Left = styled.div`
@@ -57,6 +57,7 @@ const Local = ({ data }) => (
             height="300"
             frameborder="0"
             style={{ border: 0 }}
+            title="Mapa"
             allowfullscreen=""
           ></iframe>
         </Right>

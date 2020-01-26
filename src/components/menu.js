@@ -37,10 +37,10 @@ const Header = ({ siteTitle }) => (
     <Menu>
       <StyledMenuLink to="/">Apresentação</StyledMenuLink>
       {/* <StyledMenuLink to="/coros">Coros</StyledMenuLink> */}
-      <StyledMenuLink to="/localizacao">Localização</StyledMenuLink>
-      <StyledMenuLink to="/regulamento">Regulamento</StyledMenuLink>
-      <StyledMenuLink to="/juri">Juri</StyledMenuLink>
-      <StyledMenuLink to="/2017">Edição Anterior</StyledMenuLink>
+      <StyledMenuLink to="/localizacao/">Localização</StyledMenuLink>
+      <StyledMenuLink to="/regulamento/">Regulamento</StyledMenuLink>
+      <StyledMenuLink to="/juri/">Juri</StyledMenuLink>
+      <StyledMenuLink to="/2017/">Edição Anterior</StyledMenuLink>
     </Menu>
   </StyledHeader>
 );
