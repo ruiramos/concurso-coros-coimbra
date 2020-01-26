@@ -19,7 +19,7 @@ const Container = tw.div`
 `;
 
 const Content = tw.div`
-  px-2 lg:px-40
+  px-0 lg:px-40
 `;
 
 const ImgContainer = tw.div`
