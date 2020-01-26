@@ -54,7 +54,7 @@ const IndexPage = ({ data }) => (
 
     <Container>
       <MainHeading>06 de junho de 2019</MainHeading>
-      <SubHeading>Convento de Sao Francisco, Coimbra</SubHeading>
+      <SubHeading>Igreja do Convento São Francisco, Coimbra</SubHeading>
 
       <Sep primary />
 
