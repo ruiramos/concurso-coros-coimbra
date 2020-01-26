@@ -9,7 +9,7 @@ import Img from "gatsby-image";
 import { Section, SectionTitle, Sep } from "../components/styled.js";
 
 const Container = tw.div`
-  px-8 lg:px-40
+  px-2 lg:px-40
 `;
 
 const ImgContainer = tw.div`
@@ -21,7 +21,7 @@ const DocContainer = tw.div`
 `;
 
 const Doc = styled.a`
-  min-width: 200px;
+  min-width: 150px;
   min-height: 300px;
   ${tw`block m-2 text-sm`}
 
@@ -47,8 +47,8 @@ const IndexPage = ({ data }) => (
     <ImgContainer>
       <Img
         fixed={data.logo.childImageSharp.fixed}
-        imgStyle={{ objectFit: "contain" }}
-        style={{ margin: "auto", display: "block" }}
+        imgStyle={{ objectFit: "contain", maxWidth: "100%" }}
+        style={{ margin: "auto", display: "block", maxWidth: "100%" }}
       />
     </ImgContainer>
 
