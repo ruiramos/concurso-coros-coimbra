@@ -6,11 +6,11 @@ import { Section } from "../components/styled.js";
 
 const Juri = ({ data }) => (
   <Layout>
-    <SEO title="Juri" />
+    <SEO title="Júri" />
 
     <Section>
       <p>
-        O juri da edição deste ano será composto pelos maestros Jorge Matta, que
+        O júri da edição deste ano será composto pelos maestros Jorge Matta, que
         presidirá, Eugénio Amorim, João Santos, Aoife Hiney e Vasco Negreiros.
       </p>
     </Section>
