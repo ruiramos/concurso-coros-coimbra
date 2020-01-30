@@ -7,7 +7,7 @@ import { Section } from "../components/styled.js";
 
 const IndexPage = ({ data }) => (
   <Layout>
-    <SEO title="Home" />
+    <SEO />
 
     <Section>
       <p>

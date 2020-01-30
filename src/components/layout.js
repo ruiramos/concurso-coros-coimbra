@@ -64,6 +64,13 @@ const Layout = ({ children }) => {
         <MainHeading>06 de junho de 2020</MainHeading>
         <SubHeading>Igreja do Convento São Francisco, Coimbra</SubHeading>
 
+        {/*
+        <SubHeading>
+          Candidaturas abertas até 28 de março, consulte o regulamento para mais
+          informações.
+        </SubHeading>
+        */}
+
         <Sep primary />
 
         <Menu />
