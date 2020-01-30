@@ -10,6 +10,7 @@ import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 import tw from "tailwind.macro";
+import styled from "styled-components";
 import Menu from "./menu";
 import "./layout.css";
 import { Sep } from "../components/styled.js";
@@ -29,6 +30,10 @@ const ImgContainer = tw.div`
 const Footer = tw.footer`text-sm text-gray-500`;
 const MainHeading = tw.h2` text-center`;
 const SubHeading = tw.h3` text-center `;
+const PrimaryNotice = styled.div`
+  background: rgb(150, 216, 228);
+  ${tw`text-center text-white p-2 mt-4`}
+`;
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -50,6 +55,14 @@ const Layout = ({ children }) => {
 
   return (
     <Container className="container">
+      <PrimaryNotice>
+        <h5>
+          Candidaturas abertas até 28 de março, consulte o{" "}
+          <a href="/regulamento-concurso-coros-30-01.pdf">regulamento</a>{" "}
+          para mais informações.
+        </h5>
+      </PrimaryNotice>
+
       <a href="/" title="Voltar à página inicial">
         <ImgContainer>
           <Img
@@ -63,13 +76,6 @@ const Layout = ({ children }) => {
       <Content>
         <MainHeading>06 de junho de 2020</MainHeading>
         <SubHeading>Igreja do Convento São Francisco, Coimbra</SubHeading>
-
-        {/*
-        <SubHeading>
-          Candidaturas abertas até 28 de março, consulte o regulamento para mais
-          informações.
-        </SubHeading>
-        */}
 
         <Sep primary />
 

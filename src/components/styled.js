@@ -12,7 +12,7 @@ export const SectionTitle = tw.h2`
 export const Sep = styled.hr`
   border: 0;
   border-top: 2px solid
-    ${props => (props.primary ? "rgba(166, 222, 229, 1)" : "#eee")};
+    ${props => (props.primary ? "rgb(150,216,228)" : "#eee")};
   width: 125px;
   ${tw`my-8 mx-auto`}
 `;
