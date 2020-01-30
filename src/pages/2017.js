@@ -8,7 +8,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Coro from "../components/coro";
 
-import { Section, SectionTitle } from "../components/styled";
+import { Section, SectionTitle, Note } from "../components/styled";
 
 const LinkWithShadow = tw.a`shadow inline-block`;
 
@@ -69,10 +69,10 @@ const PrevPage = ({ data }) => (
         allowfullscreen
         style={{ maxWidth: "100%" }}
       ></iframe>
-      <small>
+      <Note>
         Playlist de videos do evento, carregue em 1/18 no canto superior direito
         para ver mais.
-      </small>
+      </Note>
     </Section>
 
     <Section>
