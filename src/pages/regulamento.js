@@ -40,7 +40,7 @@ const Regulamento = ({ data }) => (
 
     <Section>
       <p>
-        O regulamento bem como a partitura da obra obrigatória,{" "}
+        O regulamento do concurso bem como a partitura da obra obrigatória,{" "}
         <em>Espera-me</em>, de Paulo Bernardino, estão também disponiveis para
         download:
       </p>
