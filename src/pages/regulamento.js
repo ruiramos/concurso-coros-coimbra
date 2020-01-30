@@ -6,7 +6,7 @@ import styled from "styled-components";
 import tw from "tailwind.macro";
 import Img from "gatsby-image";
 
-import { Section} from "../components/styled.js";
+import { Section } from "../components/styled.js";
 
 const DocContainer = tw.div`
   flex
@@ -15,7 +15,7 @@ const DocContainer = tw.div`
 const Doc = styled.a`
   min-width: 150px;
   min-height: 300px;
-  ${tw`block m-2 text-sm`}
+  ${tw`block m-2 text-sm no-underline`}
 
   & img {
     border: 1px solid #eee;
@@ -27,6 +27,11 @@ const DocImg = styled.div`
   &:hover {
     ${tw`shadow-md`}
   }
+`;
+
+const SmallDate = tw.small`block text-gray-500 leading-relaxed`;
+const Underline = styled.span`
+  text-decoration: underline;
 `;
 
 const Regulamento = ({ data }) => (
@@ -41,17 +46,20 @@ const Regulamento = ({ data }) => (
       </p>
 
       <DocContainer>
-        <Doc href="/regulamento-concurso-coros-2.pdf" target="_blank">
+        <Doc href="/regulamento-concurso-coros-30-01.pdf" target="_blank">
           <DocImg>
             <Img fluid={data.regThumb.childImageSharp.fluid} />
           </DocImg>
-          Regulamento (pdf)
+          <Underline>Regulamento (pdf)</Underline>
+          <SmallDate className="no-underline">
+            Actualizado: 30/01/2020
+          </SmallDate>
         </Doc>
         <Doc href="/espera-me.pdf" target="_blank">
           <DocImg>
             <Img fluid={data.obraThumb.childImageSharp.fluid} />
           </DocImg>
-          Espera-me (pdf)
+          <Underline>Espera-me (pdf)</Underline>
         </Doc>
       </DocContainer>
     </Section>

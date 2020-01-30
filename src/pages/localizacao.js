@@ -6,7 +6,7 @@ import styled from "styled-components";
 import tw from "tailwind.macro";
 import Img from "gatsby-image";
 
-import { Section } from "../components/styled.js";
+import { Section, Note } from "../components/styled.js";
 
 const Content = tw.div`lg:flex`;
 const Left = styled.div`
@@ -46,7 +46,7 @@ const Local = ({ data }) => (
             fluid={data.convent.childImageSharp.fluid}
             style={{ marginTop: "3em" }}
           />
-          <small>Foto João Duarte</small>
+          <Note>Foto: João Duarte</Note>
         </Left>
         <Right>
           <iframe
