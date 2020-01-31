@@ -224,7 +224,7 @@ export default Juri;
 
 export const query = graphql`
   query JuriQuery {
-    jmatta: file(relativePath: { eq: "maestros/j-matta.jpg" }) {
+    jmatta: file(relativePath: { eq: "maestros/j-matta-2.jpg" }) {
       childImageSharp {
         fixed(width: 200) {
           ...GatsbyImageSharpFixed
