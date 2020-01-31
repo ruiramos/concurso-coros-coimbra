@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `II Concurso de Coros Coimbra`,
-    description: `II Concurso de Coros, Coimbra. 06 de junho de 2020 na Igreja do Convento São Francisco.`,
+    description: `06 de junho de 2020 na Igreja do Convento São Francisco em Coimbra.`,
     author: `@gatsbyjs`,
   },
   plugins: [
