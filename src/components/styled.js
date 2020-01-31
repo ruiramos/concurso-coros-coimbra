@@ -11,8 +11,8 @@ export const SectionTitle = tw.h2`
 
 export const Sep = styled.hr`
   border: 0;
-  border-top: 2px solid
-    ${props => (props.primary ? "rgb(150,216,228)" : "#eee")};
+  border-top: 2px solid;
+  ${props => (props.primary ? tw`border-primary` : tw`border-gray-300`)};
   width: 125px;
   ${tw`my-8 mx-auto`}
 `;

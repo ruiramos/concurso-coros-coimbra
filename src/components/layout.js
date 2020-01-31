@@ -31,8 +31,7 @@ const Footer = tw.footer`text-sm text-gray-500`;
 const MainHeading = tw.h2` text-center`;
 const SubHeading = tw.h3` text-center `;
 const PrimaryNotice = styled.div`
-  background: rgb(150, 216, 228);
-  ${tw`text-center text-white p-2 mt-4`}
+  ${tw`text-center text-white p-2 mt-4 bg-primary`}
 `;
 
 const Layout = ({ children }) => {
@@ -58,8 +57,7 @@ const Layout = ({ children }) => {
       <PrimaryNotice>
         <h5>
           Candidaturas abertas até 28 de março, consulte o{" "}
-          <a href="/regulamento-concurso-coros-30-01.pdf">regulamento</a>{" "}
-          para mais informações.
+          <a href="/regulamento/">regulamento</a> para mais informações.
         </h5>
       </PrimaryNotice>
 
