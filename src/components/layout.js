@@ -28,8 +28,6 @@ const ImgContainer = tw.div`
 `;
 
 const Footer = tw.footer`text-sm text-gray-500`;
-const MainHeading = tw.h2` text-center`;
-const SubHeading = tw.h3` text-center `;
 const PrimaryNotice = styled.div`
   ${tw`text-center text-white p-2 mt-4 bg-primary`}
 `;
@@ -72,12 +70,9 @@ const Layout = ({ children }) => {
       </a>
 
       <Content>
-        <MainHeading>06 de junho de 2020</MainHeading>
-        <SubHeading>Igreja do Convento São Francisco, Coimbra</SubHeading>
+        <Menu />
 
         <Sep primary />
-
-        <Menu />
 
         <main>{children}</main>
 

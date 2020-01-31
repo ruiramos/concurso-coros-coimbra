@@ -88,6 +88,68 @@ const Juri = ({ data }) => (
           </Resumo>
         </div>
       </JuriElement>
+
+      <JuriElement>
+        <JuriImgContainer>
+          <Img
+            fixed={data.jsantos.childImageSharp.fixed}
+            imgStyle={{ borderRadius: "0.25rem" }}
+          />
+        </JuriImgContainer>
+        <div>
+          <h3>João Santos</h3>
+          <Resumo>
+            <p>
+              João Santos é licenciado em Música Sacra pela Escola das Artes da
+              Universidade Católica Portuguesa - Porto, onde estudou com Luca
+              Antoniotti (Órgão), Eugénio Amorim (Composição e Direcção de
+              Coros), Cesário Costa (Direcção de Orquestra), Anselm Hartmann
+              (Piano), entre outros.  João Santos tem-se destacado nas áreas de
+              Órgão e Composição, tanto a nível nacional, com o 2º prémio no
+              Concurso Nacional de Órgão do Instituto Gregoriano de Lisboa
+              (2007), como internacionalmente, contactando com célebres
+              organistas como T. Jellema, W. Zerer, M. Bouvard, J. Janssen, F.
+              Espinasse, O. Latry, D. Roth, L. Scandali, entre outros.
+            </p>
+            <p>
+              Participou nos prestigiados concursos internacionais de órgão
+              em Alkmaar, (Holanda), Freiberg, (Alemanha) e Innsbruck (Áustria).
+              Efectua regularmente concertos por todo o país e estrangeiro, de
+              onde se destacam a Catedral de Westminster (Londres),
+              o Orgelfestival Rhür (Alemanha), a Catedral de Notre Dame de
+              Paris, o St. Christoph Summer Festival (Vilnius), entre outros.
+              Foi solista com a Orquestra Clássica da Madeira durante o Festival
+              Internacional de Órgão da Madeira, 2014. É convidado com
+              frequência para se apresentar como continuista em orquestras,
+              nomeadamente com a Orquestra Filarmonia das Beiras. Como
+              compositor, além de larga produção no domínio da música litúrgica,
+              obras suas têm sido reconhecidas internacionalmente, sendo
+              finalista no Simon Carrington Chamber Singers Choral Composition
+              Competition (EUA) e no Musicaficta International Choral
+              Composition Competition (Itália). No seguimento deste último, as
+              suas obras Jesu Dulcis Memoria e Tryptich foram selecionadas para
+              publicação pela editora Edition Ferrimontana, sediada na Alemanha.
+              A sua transcrição para seis órgãos do Allegretto da 7ª Sinfonia
+              de L. Van Beethoven arrecadou o primeiro prémio no concurso
+              internacional de composição <em>&quot;Órgãos de Mafra&quot;</em>,
+              2017. Na edição de 2019 do mesmo concurso, foi distinguido também
+              com o primeiro prémio, desta vez com uma obra original intitulada
+              “Magnificat”.
+            </p>
+            <p>
+              João Santos é pianista acompanhador do dueto de contratenores
+              ENCANTO, com quem apresenta uma regularidade de concertos por todo
+              o País, bem como em inúmeras digressões no estrangeiro,
+              nomeadamente França, Suíça, Brasil, Estados Unidos, Bélgica,
+              Inglaterra, Alemanha e Eslováquia.  João Santos Dirige o Coro
+              Carlos Seixas (Coimbra) desde a sua fundação em 2007. De 2010 a
+              2018, foi organista titular do Santuário de Fátima. É organista
+              titular da Catedral de Leiria desde 2007.
+            </p>
+          </Resumo>
+        </div>
+      </JuriElement>
+
       <JuriElement>
         <JuriImgContainer>
           <Img
@@ -163,6 +225,13 @@ export default Juri;
 export const query = graphql`
   query JuriQuery {
     jmatta: file(relativePath: { eq: "maestros/j-matta.jpg" }) {
+      childImageSharp {
+        fixed(width: 200) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    jsantos: file(relativePath: { eq: "maestros/j-santos.jpg" }) {
       childImageSharp {
         fixed(width: 200) {
           ...GatsbyImageSharpFixed

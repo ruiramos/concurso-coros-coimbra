@@ -2,12 +2,19 @@ import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import tw from "tailwind.macro";
 
 import { Section } from "../components/styled.js";
+
+const MainHeading = tw.h2` text-center`;
+const SubHeading = tw.h3` text-center `;
 
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO />
+
+    <MainHeading>06 de junho de 2020</MainHeading>
+    <SubHeading>Igreja do Convento São Francisco, Coimbra</SubHeading>
 
     <Section>
       <p>
