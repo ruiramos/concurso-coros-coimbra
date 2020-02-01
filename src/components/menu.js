@@ -1,5 +1,5 @@
-import { Link } from "gatsby";
-import PropTypes from "prop-types";
+import { Link, graphql, useStaticQuery } from "gatsby";
+import Img from "gatsby-image";
 import React from "react";
 import tw from "tailwind.macro";
 import styled from "styled-components";
@@ -10,7 +10,7 @@ const StyledHeader = styled.header`
   overflow: hidden;
 `;
 
-const Menu = tw.ul`
+const MenuContainer = tw.ul`
   text-center
 `;
 
@@ -32,25 +32,37 @@ const StyledMenuLink = styled(MenuLink)`
   }
 `;
 
-const Header = ({ siteTitle }) => (
-  <StyledHeader>
-    <Menu>
-      <StyledMenuLink to="/">Apresentação</StyledMenuLink>
-      {/* <StyledMenuLink to="/coros">Coros</StyledMenuLink> */}
-      <StyledMenuLink to="/localizacao/">Localização</StyledMenuLink>
-      <StyledMenuLink to="/regulamento/">Regulamento</StyledMenuLink>
-      <StyledMenuLink to="/juri/">Júri</StyledMenuLink>
-      <StyledMenuLink to="/2017/">Edição Anterior</StyledMenuLink>
-    </Menu>
-  </StyledHeader>
-);
+const Menu = () => {
+  const data = useStaticQuery(graphql`
+    query MenuQuery {
+      ukFlag: file(relativePath: { eq: "uk-flag-64-3.png" }) {
+        childImageSharp {
+          fixed(width: 24) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+    }
+  `);
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
+  return (
+    <StyledHeader>
+      <MenuContainer>
+        <StyledMenuLink to="/">Apresentação</StyledMenuLink>
+        {/* <StyledMenuLink to="/coros">Coros</StyledMenuLink> */}
+        <StyledMenuLink to="/localizacao/">Localização</StyledMenuLink>
+        <StyledMenuLink to="/regulamento/">Regulamento</StyledMenuLink>
+        <StyledMenuLink to="/juri/">Júri</StyledMenuLink>
+        <StyledMenuLink to="/2017/">Edição Anterior</StyledMenuLink>
+        <StyledMenuLink to="/en/">
+          <Img
+            fixed={data.ukFlag.childImageSharp.fixed}
+            style={{ verticalAlign: "bottom" }}
+          />
+        </StyledMenuLink>
+      </MenuContainer>
+    </StyledHeader>
+  );
 };
 
-Header.defaultProps = {
-  siteTitle: ``,
-};
-
-export default Header;
+export default Menu;

@@ -30,7 +30,7 @@ const DocImg = styled.div`
 `;
 
 const NormalList = tw.ul`list-disc mb-4`;
-const RegTitle = tw.h2`mt-5`;
+const RegTitle = tw.h2`mt-6`;
 
 const SmallDate = tw.small`block text-gray-500 leading-relaxed`;
 const Underline = styled.span`

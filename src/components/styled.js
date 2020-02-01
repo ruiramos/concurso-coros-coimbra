@@ -6,7 +6,6 @@ export const Section = tw.div`
 `;
 
 export const SectionTitle = tw.h2`
-  mb-4
 `;
 
 export const Sep = styled.hr`

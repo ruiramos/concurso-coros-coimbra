@@ -52,9 +52,13 @@ const PrevPage = ({ data }) => (
     <SEO title="I Concurso de Coros" />
     <Section>
       <SectionTitle>Resultados</SectionTitle>
-      <p>1º Lugar - Coro LeGatto</p>
-      <p>2º Lugar - Coro dos Pequenos Cantores de Coimbra</p>
-      <p>3º Lugar - Grupo Vocal Ad Libitum</p>
+      <p>
+        1º Lugar - Coro LeGatto
+        <br />
+        2º Lugar - Coro dos Pequenos Cantores de Coimbra
+        <br />
+        3º Lugar - Grupo Vocal Ad Libitum
+      </p>
     </Section>
 
     <Section>

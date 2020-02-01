@@ -27,7 +27,7 @@ const ImgContainer = tw.div`
   mb-10
 `;
 
-const Footer = tw.footer`text-sm text-gray-500`;
+const Footer = tw.footer`text-sm text-gray-500 mb-8`;
 const PrimaryNotice = styled.div`
   ${tw`text-center text-white p-2 mt-4 bg-primary`}
 `;
