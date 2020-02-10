@@ -153,6 +153,54 @@ const Juri = ({ data }) => (
       <JuriElement>
         <JuriImgContainer>
           <Img
+            fixed={data.ahiney.childImageSharp.fixed}
+            imgStyle={{ borderRadius: "0.25rem" }}
+          />
+        </JuriImgContainer>
+        <div>
+          <h3>Aoife Hiney</h3>
+          <Resumo>
+            <p>
+              Aoife Hiney concluiu o Doutoramento em Música em 2017 e o Mestrado
+              em Música (Performance – Direção Coral) na Universidade de Aveiro
+              (UA). Tem um Honours Degree em Educação Musical do Trinity
+              College, Dublin.
+            </p>
+
+            <p>
+              Estudou direção coral com António Vassalo Lourenço (PT), Bernie
+              Sherlock (IE), David Brophy (IE), Ite O’Donovan (IE), Lilla Gabor
+              (HU) Marco António da Silva Ramos (BR), Neil Ferris (UK) e Vasco
+              Negreiros (PT).
+            </p>
+
+            <p>
+              Foi maestrina assistente do coro de câmara New Dublin Voices,
+              várias vezes premiado ao nível internacional. Fundou em 2012 o
+              coro de câmara Voz Nua em Aveiro, e em 2015 a Associação Voz Nua.
+              Maestrina dos três coros integrados na Associação Voz Nua, também
+              dirigiu o Coro Slava (Universidade Nova de Lisboa), o Coro de
+              Academia de Saberes (Aveiro), e também colaborou com o coro
+              masculino Graduale (Aveiro) como maestrina convidada.
+            </p>
+
+            <p>
+              É directora artística do FICA (Festival Internacional de Coros,
+              Aveiro), e assistente de direção do festival ZêzereArts. Tem
+              apresentado o seu trabalho académico em congressos nacionais e
+              internacionais. A sua pesquisa tem como enfoque práticas não
+              profissionais de canto coral, formação musical para professores,
+              práticas de investigação partilhadas e o desenvolvimento da
+              literacia musical e educação musical para adultos. Atualmente é
+              investigadora integrada no INET-md, UA e professora adjunta
+              convidada na Escola Superior de Educação do Instituto Politécnico.
+            </p>
+          </Resumo>
+        </div>
+      </JuriElement>
+      <JuriElement>
+        <JuriImgContainer>
+          <Img
             fixed={data.vnegreiros.childImageSharp.fixed}
             imgStyle={{ borderRadius: "0.25rem" }}
           />
@@ -239,6 +287,13 @@ export const query = graphql`
       }
     }
     vnegreiros: file(relativePath: { eq: "maestros/vasco-negreiros2.jpg" }) {
+      childImageSharp {
+        fixed(width: 200) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    ahiney: file(relativePath: { eq: "maestros/aoife-hiney.jpg" }) {
       childImageSharp {
         fixed(width: 200) {
           ...GatsbyImageSharpFixed
