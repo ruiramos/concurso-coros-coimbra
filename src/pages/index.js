@@ -1,5 +1,6 @@
 import React from "react";
 
+import { Link } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import tw from "tailwind.macro";
@@ -35,9 +36,9 @@ const IndexPage = ({ data }) => (
         O "II Concurso de Coros - Coimbra" integrará duas fases: a primeira será
         uma fase de pré-seleção, com todos os coros amadores inscritos; a
         segunda, a realizar no dia 06 de junho de 2020, terá a participação de
-        oito coros selecionados, na primeira fase, pelo Júri, que será
-        constituído por prestigiados maestros de renome nacional e
-        internacional.
+        oito coros selecionados, na primeira fase, pelo{" "}
+        <Link to="/juri/">Júri</Link>, que será constituído por prestigiados
+        maestros de renome nacional e internacional.
       </p>
       <p>
         O evento terminará com um Concerto de Gala, à noite, com a participação
