@@ -1,6 +1,7 @@
 import React from "react";
 import tw from "tailwind.macro";
 import Layout from "../components/layout.js";
+import Layout from "../components/seo.js";
 
 import { Section } from "../components/styled.js";
 
@@ -10,12 +11,17 @@ const SubHeading = tw.h3` text-center `;
 const English = () => {
   return (
     <Layout>
+      <SEO
+        title="II Choir Competition - Coimbra, Portugal"
+        description="The second edition of this choir competition and gala is happening on 6 june 2020. Applications open!"
+        lang="en"
+      />
       <MainHeading>6 June 2020</MainHeading>
       <SubHeading>Convento São Francisco church, Coimbra, Portugal</SubHeading>
       <Section>
         <p>
           Coimbra's Carlos Seixas Choir organizes once again, this year, the "II
-          Choir Contest - Coimbra".
+          Choir Competition - Coimbra".
         </p>
         <p>
           The choir competition aims not only to pay homage to José António
@@ -26,13 +32,13 @@ const English = () => {
           this musical field.
         </p>
         <p>
-          The "II Choir Contest - Coimbra" will include two phases: the first
-          will be a pre-selection phase, with all the amateur choirs enrolled;
-          the second, to be held on June 6, 2020, will have the participation of
-          eight selected choirs by the Jury, constituted by prestigious
-          conductors of national and international renown. The event will end
-          with an evening Gala Concert, with the participation of the first
-          three classified choirs and the host, the Choir Carlos Seixas.
+          The "II Choir Competition - Coimbra" will include two phases: the
+          first will be a pre-selection phase, with all the amateur choirs
+          enrolled; the second, to be held on June 6, 2020, will have the
+          participation of eight selected choirs by the Jury, constituted by
+          prestigious conductors of national and international renown. The event
+          will end with an evening Gala Concert, with the participation of the
+          first three classified choirs and the host, the Choir Carlos Seixas.
         </p>
         <p>
           Applications are open until 28 March 2020. For further information
