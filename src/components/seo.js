@@ -35,7 +35,11 @@ function SEO({ description, lang, meta, title }) {
       }}
       title={title || metaTitle}
       titleTemplate={
-        title ? `%s | ${site.siteMetadata.title}` : site.siteMetadata.title
+        lang === "en" && title
+          ? `%s`
+          : title
+          ? `%s | ${site.siteMetadata.title}`
+          : site.siteMetadata.title
       }
       meta={[
         {
@@ -44,9 +48,12 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:title`,
-          content: title
-            ? `${title} | ${site.siteMetadata.title}`
-            : site.siteMetadata.title,
+          content:
+            lang === "en" && title
+              ? title
+              : title
+              ? `${title} | ${site.siteMetadata.title}`
+              : site.siteMetadata.title,
         },
         {
           property: `og:description`,
