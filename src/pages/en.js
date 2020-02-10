@@ -1,7 +1,7 @@
 import React from "react";
 import tw from "tailwind.macro";
 import Layout from "../components/layout.js";
-import Layout from "../components/seo.js";
+import SEO from "../components/seo.js";
 
 import { Section } from "../components/styled.js";
 
