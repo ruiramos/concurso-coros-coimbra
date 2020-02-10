@@ -13,7 +13,7 @@ const English = () => {
     <Layout>
       <SEO
         title="II Choir Competition - Coimbra, Portugal"
-        description="The second edition of this choir competition and gala is happening on 6 june 2020. Applications open!"
+        description="II edition of this choir competition happening on 6 june 2020. Applications open!"
         lang="en"
       />
       <MainHeading>6 June 2020</MainHeading>
