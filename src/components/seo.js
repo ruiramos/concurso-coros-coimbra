@@ -74,7 +74,7 @@ function SEO({ description, lang, meta, title }) {
         {
           name: `twitter:title`,
           content: title
-            ? `%s | ${site.siteMetadata.title}`
+            ? `${title} | ${site.siteMetadata.title}`
             : site.siteMetadata.title,
         },
         {
