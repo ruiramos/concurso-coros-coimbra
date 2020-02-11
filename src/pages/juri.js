@@ -12,7 +12,7 @@ import { Section } from "../components/styled.js";
 const JuriImgContainer = styled.div``;
 
 const JuriElement = styled.div`
-  ${tw`flex flex-col md:flex-row mt-2`}
+  ${tw`flex flex-col md:flex-row mt-10`}
 
   & > * {
     ${tw`py-1 px-0 md:p-4`}
@@ -84,6 +84,56 @@ const Juri = ({ data }) => (
             <p>
               Foi Director do Teatro Nacional de S. Carlos e Presidente da
               Comissão de Acompanhamento das Orquestras Regionais.
+            </p>
+          </Resumo>
+        </div>
+      </JuriElement>
+
+      <JuriElement>
+        <JuriImgContainer>
+          <Img
+            fixed={data.eamorim.childImageSharp.fixed}
+            imgStyle={{ borderRadius: "0.25rem" }}
+          />
+        </JuriImgContainer>
+        <div>
+          <h3>Eugénio Amorim</h3>
+          <Resumo>
+            <p>
+              Eugénio Amorim concluiu os Cursos Superiores de Piano e Composição
+              no Conservatório de Música do Porto e posteriormente o Bacharelato
+              em Direção de Orquestra e a Licenciatura em Música Sacra na Escola
+              Superior de Música de Würzburg (Alemanha).
+            </p>
+            <p>
+              Maestro do Coro da Sé Catedral do Porto de 1994 a 2010. Para além
+              da atividade musical da Catedral, dirigiu cerca de 200 concertos
+              em Portugal, Inglaterra e Alemanha e promoveu a edição de dois
+              CD's com música portuguesa.
+            </p>
+            <p>
+              A sua atividade estende-se à composição musical de que destacam
+              obras mais recentes como 2 Magnificat (um para coro a cappella,
+              editado pela AVA e outro para Coro misto, 4 trompetes, soprano
+              solo e Órgão), "Salmo 84 - Paisagens Monásticas - Silêncio", assim
+              como diversos motetes; em breve será estreada o 2º acto de uma
+              ópera partilhada com outros 3 compositores.
+            </p>
+            <p>
+              É doutorado em Musicologia pela Universidade Católica Portuguesa
+              com uma tese intitulada "Prática composicional na música sacra em
+              Portugal na primeira metade do século XVIII - Estudo e edição da
+              obra de João Rodrigues Esteves", prosseguindo a sua atividade de
+              investigação no CECH - Centro de Estudos Clássicos e Humanísticos
+              da Universidade de Coimbra.
+            </p>
+            <p>
+              Foi membro da Comissão Instaladora da Escola das Artes da
+              Universidade Católica, onde lecionou desde a sua fundação até
+              2003, prosseguindo desde então a sua atividade docente no Curso de
+              Composição da Escola Superior de Música e das Artes do Espetáculo
+              do Instituto Politécnico do Porto, onde é atualmente coordenador
+              da respectiva área e membro do Conselho Técnico-Científico.
             </p>
           </Resumo>
         </div>
@@ -198,6 +248,7 @@ const Juri = ({ data }) => (
           </Resumo>
         </div>
       </JuriElement>
+
       <JuriElement>
         <JuriImgContainer>
           <Img
@@ -294,6 +345,13 @@ export const query = graphql`
       }
     }
     ahiney: file(relativePath: { eq: "maestros/aoife-hiney.jpg" }) {
+      childImageSharp {
+        fixed(width: 200) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    eamorim: file(relativePath: { eq: "maestros/eugenio-amorim.jpg" }) {
       childImageSharp {
         fixed(width: 200) {
           ...GatsbyImageSharpFixed

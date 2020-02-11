@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
-  max-height: 150px;
+  max-height: 275px;
   overflow: hidden;
   position: relative;
 
