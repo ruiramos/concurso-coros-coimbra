@@ -41,8 +41,8 @@ const English = () => {
           first three classified choirs and the host, the Choir Carlos Seixas.
         </p>
         <p>
-          Applications are open until 28 March 2020. For further information
-          about the application process please refer to the{" "}
+          Applications are now open. For further information about the
+          application process please refer to the{" "}
           <a href="/regulamento/">Regulamento page</a> (in Portuguese) or email{" "}
           <a href="mailto:coro.secretariado@cm-coimbra.pt">
             coro.secretariado@cm-coimbra.pt

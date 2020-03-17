@@ -54,8 +54,9 @@ const Layout = ({ children }) => {
     <Container className="container">
       <PrimaryNotice>
         <h5>
-          Candidaturas abertas até 28 de março, consulte o{" "}
-          <a href="/regulamento/">regulamento</a> para mais informações.
+          Prazo de candidatura alargado, consulte o{" "}
+          <a href="/regulamento/">regulamento</a> para mais informações sobre o
+          processo.
         </h5>
       </PrimaryNotice>
 
