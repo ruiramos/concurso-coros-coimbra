@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `II Concurso de Coros Coimbra`,
-    description: `4 de junho de 2022 na Igreja do Convento São Francisco em Coimbra.`,
-    author: `@gatsbyjs`,
+    description: `4 de junho de 2022 na Sala D. Afonso Henriques do Convento São Francisco em Coimbra.`,
+    author: `@ruimramos`,
   },
   plugins: [
     {
