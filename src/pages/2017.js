@@ -2,7 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 //import styled from "styled-components";
 import tw from "tailwind.macro";
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -89,32 +89,26 @@ const PrevPage = ({ data }) => (
     <Section>
       <SectionTitle>Cartaz</SectionTitle>
       <LinkWithShadow href="/images/i-concurso-cartaz.png" target="_blank">
-        <Img
-          fixed={data.cartazImage.childImageSharp.fixed}
-          imgStyle={{ width: "200px" }}
-        />
+        <GatsbyImage
+          image={data.cartazImage.childImageSharp.gatsbyImageData}
+          imgStyle={{ width: "200px" }} />
       </LinkWithShadow>
     </Section>
   </Layout>
 );
 
-export const query = graphql`
-  query PrevPageQuery {
-    logoImage: file(relativePath: { eq: "i-concurso-logo.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 800) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    cartazImage: file(relativePath: { eq: "i-concurso-cartaz.png" }) {
-      childImageSharp {
-        fixed(width: 200) {
-          ...GatsbyImageSharpFixed
-        }
-      }
+export const query = graphql`query PrevPageQuery {
+  logoImage: file(relativePath: {eq: "i-concurso-logo.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(width: 800, layout: CONSTRAINED)
     }
   }
+  cartazImage: file(relativePath: {eq: "i-concurso-cartaz.png"}) {
+    childImageSharp {
+      gatsbyImageData(width: 200, layout: FIXED)
+    }
+  }
+}
 `;
 
 export default PrevPage;

@@ -24,5 +24,10 @@ body {
 }
 */
 
+button {
+  @apply border border-solid border-gray-100 rounded px-4 py-2 hover:bg-gray-50
+}
+
 @tailwind components;
 @tailwind utilites;
+

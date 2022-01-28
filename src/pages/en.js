@@ -10,14 +10,14 @@ const SubHeading = tw.h3` text-center `;
 
 const English = () => {
   return (
-    <Layout>
+    <Layout lang="en">
       <SEO
         title="II Choir Competition - Coimbra, Portugal"
         description="II edition of this choir competition happening on 6 june 2020. Applications open!"
         lang="en"
       />
-      <MainHeading>6 June 2020</MainHeading>
-      <SubHeading>Convento São Francisco church, Coimbra, Portugal</SubHeading>
+      <MainHeading>4 June 2022</MainHeading>
+      <SubHeading>Convento São Francisco, Coimbra, Portugal</SubHeading>
       <Section>
         <p>
           Coimbra's Carlos Seixas Choir organizes once again, this year, the "II

@@ -8,7 +8,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
-import Img from "gatsby-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import tw from "tailwind.macro";
 import styled from "styled-components";
 import Menu from "./menu";
@@ -32,7 +32,7 @@ const PrimaryNotice = styled.div`
   ${tw`text-center text-white p-2 mt-4 bg-primary`}
 `;
 
-const Layout = ({ children }) => {
+const Layout = ({ lang = "pt", children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -42,13 +42,13 @@ const Layout = ({ children }) => {
       }
       logo: file(relativePath: { eq: "ii-concurso-logo-temp.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 800) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(width: 800, layout: CONSTRAINED)
         }
       }
     }
   `);
+
+  const image = getImage(data.logo);
 
   return (
     <Container className="container">
@@ -62,16 +62,17 @@ const Layout = ({ children }) => {
 
       <a href="/" title="Voltar à página inicial">
         <ImgContainer>
-          <Img
-            fluid={data.logo.childImageSharp.fluid}
+          <GatsbyImage
+            image={image}
             imgStyle={{ objectFit: "contain" }}
+            alt="Concurso Coros Coimbra"
             style={{ margin: "auto", display: "block", maxHeight: "400px" }}
           />
         </ImgContainer>
       </a>
 
       <Content>
-        <Menu />
+        <Menu lang={lang} />
 
         <Sep primary />
 

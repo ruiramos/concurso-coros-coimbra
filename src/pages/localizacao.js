@@ -1,10 +1,11 @@
 import React from "react";
+import { graphql } from "gatsby";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import styled from "styled-components";
 import tw from "tailwind.macro";
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 import { Section, Note } from "../components/styled.js";
 
@@ -19,7 +20,7 @@ const Left = styled.div`
 `;
 const Right = styled.div`
   width: 50%;
-  ${tw`pt-8 lg:p-2`}
+  ${tw`pt-8 lg:p-2 flex justify-end`}
 
   @media (max-width: 1023px) {
     width: 100%;
@@ -42,8 +43,8 @@ const Local = ({ data }) => (
             <br />
             3040-193 Coimbra
           </p>
-          <Img
-            fluid={data.convent.childImageSharp.fluid}
+          <GatsbyImage
+            image={data.convent.childImageSharp.gatsbyImageData}
             style={{ marginTop: "3em" }}
           />
           <Note>Foto: João Duarte</Note>
@@ -70,9 +71,7 @@ export const query = graphql`
   query LocalQuery {
     convent: file(relativePath: { eq: "convento_fachada.png" }) {
       childImageSharp {
-        fluid(maxWidth: 1200) {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     }
   }

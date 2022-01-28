@@ -1,4 +1,4 @@
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 import styled from "styled-components";
 import tw from "tailwind.macro";
 import React from "react";
@@ -45,10 +45,9 @@ const Juri = ({ data }) => (
     <Section>
       <JuriElement>
         <JuriImgContainer>
-          <Img
-            fixed={data.jmatta.childImageSharp.fixed}
-            imgStyle={{ borderRadius: "0.25rem" }}
-          />
+          <GatsbyImage
+            image={data.jmatta.childImageSharp.gatsbyImageData}
+            imgStyle={{ borderRadius: "0.25rem" }} />
         </JuriImgContainer>
         <div>
           <h3>Jorge Matta</h3>
@@ -91,10 +90,9 @@ const Juri = ({ data }) => (
 
       <JuriElement>
         <JuriImgContainer>
-          <Img
-            fixed={data.eamorim.childImageSharp.fixed}
-            imgStyle={{ borderRadius: "0.25rem" }}
-          />
+          <GatsbyImage
+            image={data.eamorim.childImageSharp.gatsbyImageData}
+            imgStyle={{ borderRadius: "0.25rem" }} />
         </JuriImgContainer>
         <div>
           <h3>Eugénio Amorim</h3>
@@ -141,10 +139,9 @@ const Juri = ({ data }) => (
 
       <JuriElement>
         <JuriImgContainer>
-          <Img
-            fixed={data.jsantos.childImageSharp.fixed}
-            imgStyle={{ borderRadius: "0.25rem" }}
-          />
+          <GatsbyImage
+            image={data.jsantos.childImageSharp.gatsbyImageData}
+            imgStyle={{ borderRadius: "0.25rem" }} />
         </JuriImgContainer>
         <div>
           <h3>João Santos</h3>
@@ -202,10 +199,9 @@ const Juri = ({ data }) => (
 
       <JuriElement>
         <JuriImgContainer>
-          <Img
-            fixed={data.ahiney.childImageSharp.fixed}
-            imgStyle={{ borderRadius: "0.25rem" }}
-          />
+          <GatsbyImage
+            image={data.ahiney.childImageSharp.gatsbyImageData}
+            imgStyle={{ borderRadius: "0.25rem" }} />
         </JuriImgContainer>
         <div>
           <h3>Aoife Hiney</h3>
@@ -251,10 +247,9 @@ const Juri = ({ data }) => (
 
       <JuriElement>
         <JuriImgContainer>
-          <Img
-            fixed={data.vnegreiros.childImageSharp.fixed}
-            imgStyle={{ borderRadius: "0.25rem" }}
-          />
+          <GatsbyImage
+            image={data.vnegreiros.childImageSharp.gatsbyImageData}
+            imgStyle={{ borderRadius: "0.25rem" }} />
         </JuriImgContainer>
         <div>
           <h3>Vasco Negreiros</h3>
@@ -321,42 +316,31 @@ const Juri = ({ data }) => (
 
 export default Juri;
 
-export const query = graphql`
-  query JuriQuery {
-    jmatta: file(relativePath: { eq: "maestros/j-matta-2.jpg" }) {
-      childImageSharp {
-        fixed(width: 200) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-    jsantos: file(relativePath: { eq: "maestros/j-santos.jpg" }) {
-      childImageSharp {
-        fixed(width: 200) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-    vnegreiros: file(relativePath: { eq: "maestros/vasco-negreiros2.jpg" }) {
-      childImageSharp {
-        fixed(width: 200) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-    ahiney: file(relativePath: { eq: "maestros/aoife-hiney.jpg" }) {
-      childImageSharp {
-        fixed(width: 200) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-    eamorim: file(relativePath: { eq: "maestros/eugenio-amorim.jpg" }) {
-      childImageSharp {
-        fixed(width: 200) {
-          ...GatsbyImageSharpFixed
-        }
-      }
+export const query = graphql`query JuriQuery {
+  jmatta: file(relativePath: {eq: "maestros/j-matta-2.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(width: 200, layout: FIXED)
     }
   }
+  jsantos: file(relativePath: {eq: "maestros/j-santos.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(width: 200, layout: FIXED)
+    }
+  }
+  vnegreiros: file(relativePath: {eq: "maestros/vasco-negreiros2.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(width: 200, layout: FIXED)
+    }
+  }
+  ahiney: file(relativePath: {eq: "maestros/aoife-hiney.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(width: 200, layout: FIXED)
+    }
+  }
+  eamorim: file(relativePath: {eq: "maestros/eugenio-amorim.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(width: 200, layout: FIXED)
+    }
+  }
+}
 `;

@@ -14,8 +14,8 @@ const IndexPage = ({ data }) => (
   <Layout>
     <SEO />
 
-    <MainHeading>06 de junho de 2020</MainHeading>
-    <SubHeading>Igreja do Convento São Francisco, Coimbra</SubHeading>
+    <MainHeading>4 de junho de 2022</MainHeading>
+    <SubHeading>Convento São Francisco, Coimbra</SubHeading>
 
     <Section>
       <p>

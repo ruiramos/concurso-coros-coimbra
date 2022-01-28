@@ -1,5 +1,5 @@
 import { Link, graphql, useStaticQuery } from "gatsby";
-import Img from "gatsby-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import React from "react";
 import tw from "tailwind.macro";
 import styled from "styled-components";
@@ -14,7 +14,7 @@ const MenuContainer = tw.ul`
   text-center
 `;
 
-const MenuLink = props => (
+const MenuLink = (props) => (
   <li className={props.className}>
     <Link {...props} className="" activeClassName="active">
       {props.children}
@@ -32,18 +32,22 @@ const StyledMenuLink = styled(MenuLink)`
   }
 `;
 
-const Menu = () => {
+const Menu = ({ lang = "pt" }) => {
   const data = useStaticQuery(graphql`
     query MenuQuery {
-      ukFlag: file(relativePath: { eq: "uk-flag-64-3.png" }) {
+      ukFlag: file(relativePath: { eq: "uk-flag-64.png" }) {
         childImageSharp {
-          fixed(width: 24) {
-            ...GatsbyImageSharpFixed
-          }
+          gatsbyImageData(width: 24, layout: FIXED)
+        }
+      }
+      ptFlag: file(relativePath: { eq: "pt-flag-64.png" }) {
+        childImageSharp {
+          gatsbyImageData(width: 24, layout: FIXED)
         }
       }
     }
   `);
+  const image = getImage(lang === "pt" ? data.ukFlag : data.ptFlag);
 
   return (
     <StyledHeader>
@@ -54,10 +58,11 @@ const Menu = () => {
         <StyledMenuLink to="/regulamento/">Regulamento</StyledMenuLink>
         <StyledMenuLink to="/juri/">Júri</StyledMenuLink>
         <StyledMenuLink to="/2017/">Edição Anterior</StyledMenuLink>
-        <StyledMenuLink to="/en/">
-          <Img
-            fixed={data.ukFlag.childImageSharp.fixed}
+        <StyledMenuLink to={lang === "pt" ? "/en/" : "/"}>
+          <GatsbyImage
+            image={image}
             style={{ verticalAlign: "bottom" }}
+            alt={lang === "pt" ? "In English" : "Em Português"}
           />
         </StyledMenuLink>
       </MenuContainer>
