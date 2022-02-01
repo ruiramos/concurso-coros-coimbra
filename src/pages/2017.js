@@ -30,7 +30,7 @@ const coros = [
     img: "",
   },
   {
-    name: "Grupo Corral de Urrô",
+    name: "Grupo Coral de Urrô",
     img: "",
   },
   {
@@ -81,7 +81,7 @@ const PrevPage = ({ data }) => (
 
     <Section>
       <SectionTitle>Coros participantes</SectionTitle>
-      {coros.map(c => (
+      {coros.map((c) => (
         <Coro {...c} />
       ))}
     </Section>
@@ -91,24 +91,26 @@ const PrevPage = ({ data }) => (
       <LinkWithShadow href="/images/i-concurso-cartaz.png" target="_blank">
         <GatsbyImage
           image={data.cartazImage.childImageSharp.gatsbyImageData}
-          imgStyle={{ width: "200px" }} />
+          imgStyle={{ width: "200px" }}
+        />
       </LinkWithShadow>
     </Section>
   </Layout>
 );
 
-export const query = graphql`query PrevPageQuery {
-  logoImage: file(relativePath: {eq: "i-concurso-logo.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(width: 800, layout: CONSTRAINED)
+export const query = graphql`
+  query PrevPageQuery {
+    logoImage: file(relativePath: { eq: "i-concurso-logo.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(width: 800, layout: CONSTRAINED)
+      }
+    }
+    cartazImage: file(relativePath: { eq: "i-concurso-cartaz.png" }) {
+      childImageSharp {
+        gatsbyImageData(width: 200, layout: FIXED)
+      }
     }
   }
-  cartazImage: file(relativePath: {eq: "i-concurso-cartaz.png"}) {
-    childImageSharp {
-      gatsbyImageData(width: 200, layout: FIXED)
-    }
-  }
-}
 `;
 
 export default PrevPage;

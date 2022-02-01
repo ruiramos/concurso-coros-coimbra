@@ -37,8 +37,10 @@ const Local = ({ data }) => (
     <Section>
       <Content>
         <Left>
-          <h3>Igreja do Convento São Francisco</h3>
+          <h3>Sala D. Afonso Henriques (antiga Igreja do Convento)</h3>
           <p>
+            Convento de São Francisco
+            <br />
             Av. da Guarda Inglesa 1a
             <br />
             3040-193 Coimbra

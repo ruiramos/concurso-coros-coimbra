@@ -30,6 +30,7 @@ const ImgContainer = tw.div`
 const Footer = tw.footer`text-sm text-gray-500 mb-8`;
 const PrimaryNotice = styled.div`
   ${tw`text-center text-white p-2 mt-4 bg-primary`}
+  background: #56c8e5;
 `;
 
 const Layout = ({ lang = "pt", children }) => {
@@ -54,9 +55,8 @@ const Layout = ({ lang = "pt", children }) => {
     <Container className="container">
       <PrimaryNotice>
         <h5>
-          Prazo de candidatura alargado, consulte o{" "}
-          <a href="/regulamento/">regulamento</a> para mais informações sobre o
-          processo.
+          Candidaturas abertas até 28 de março de 2022, consulte o{" "}
+          <a href="/regulamento/">regulamento</a> para mais informações.
         </h5>
       </PrimaryNotice>
 
