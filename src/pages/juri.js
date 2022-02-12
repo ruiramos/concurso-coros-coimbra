@@ -47,7 +47,8 @@ const Juri = ({ data }) => (
         <JuriImgContainer>
           <GatsbyImage
             image={data.jmatta.childImageSharp.gatsbyImageData}
-            imgStyle={{ borderRadius: "0.25rem" }} />
+            imgStyle={{ borderRadius: "0.25rem" }}
+          />
         </JuriImgContainer>
         <div>
           <h3>Jorge Matta</h3>
@@ -92,7 +93,8 @@ const Juri = ({ data }) => (
         <JuriImgContainer>
           <GatsbyImage
             image={data.eamorim.childImageSharp.gatsbyImageData}
-            imgStyle={{ borderRadius: "0.25rem" }} />
+            imgStyle={{ borderRadius: "0.25rem" }}
+          />
         </JuriImgContainer>
         <div>
           <h3>Eugénio Amorim</h3>
@@ -141,7 +143,8 @@ const Juri = ({ data }) => (
         <JuriImgContainer>
           <GatsbyImage
             image={data.jsantos.childImageSharp.gatsbyImageData}
-            imgStyle={{ borderRadius: "0.25rem" }} />
+            imgStyle={{ borderRadius: "0.25rem" }}
+          />
         </JuriImgContainer>
         <div>
           <h3>João Santos</h3>
@@ -201,7 +204,8 @@ const Juri = ({ data }) => (
         <JuriImgContainer>
           <GatsbyImage
             image={data.ahiney.childImageSharp.gatsbyImageData}
-            imgStyle={{ borderRadius: "0.25rem" }} />
+            imgStyle={{ borderRadius: "0.25rem" }}
+          />
         </JuriImgContainer>
         <div>
           <h3>Aoife Hiney</h3>
@@ -249,7 +253,8 @@ const Juri = ({ data }) => (
         <JuriImgContainer>
           <GatsbyImage
             image={data.vnegreiros.childImageSharp.gatsbyImageData}
-            imgStyle={{ borderRadius: "0.25rem" }} />
+            imgStyle={{ borderRadius: "0.25rem" }}
+          />
         </JuriImgContainer>
         <div>
           <h3>Vasco Negreiros</h3>
@@ -307,6 +312,50 @@ const Juri = ({ data }) => (
               Miguel Cintra e pela Orquestra Metropolitana de Lisboa, sob
               direcção do próprio compositor.
             </p>
+            <p>
+              Em 2021 foi conselheiro musical da produção cinematográfica
+              luso-francesa 'A criança', com estreia nos cinemas a 12 de
+              Fevereiro de 2022. A 10 de Abril de 2022 lança o CD 'Lasso -
+              Mus.Hs. 18.774', dirigindo o Vocal Ensemble, pela nova editora
+              discográfica portuguesa 9 musas.
+            </p>
+          </Resumo>
+        </div>
+      </JuriElement>
+      <JuriElement>
+        <JuriImgContainer>
+          <GatsbyImage
+            image={data.pteixeira.childImageSharp.gatsbyImageData}
+            imgStyle={{ borderRadius: "0.25rem" }}
+          />
+        </JuriImgContainer>
+        <div>
+          <h3>Pedro Teixeira</h3>
+          <Resumo>
+            <p>
+              Nascido em Lisboa, Pedro é Mestre em Direcção Coral pela Escola
+              Superior de Música de Lisboa, e é conhecido no mundo coral pelas
+              suas actuações perspicazes e sensíveis, tendo-se especializado em
+              construir e manter o som nuclear, a pureza de emissão vocal e
+              musicalidade dos coros com que trabalha.
+            </p>
+            <p>
+              Dirige desde 2000 o Officium Ensemble e desde 2001 o Coro
+              Ricercare. De 2011 a 2014 manteve uma colaboração com a Fundação
+              Gulbenkian como maestro preparador, tendo mais tarde dirigido
+              vários concertos do Coro Gulbenkian como maestro convidado, entre
+              2018 e 2021. É regulamente convidado como júri em concursos
+              internacionais de coros, tais como o Festival Coral de Verão de
+              Lisboa, Gran Premio de Canto Coral em Espanha, Winter Choral
+              Festival de Hong-Kong, e Singapore International Choral Festival.
+              Como maestro do Officium Ensemble, tem dirigido por várias vezes
+              nos festivais de música antiga de Utrecht Oude Muziek e Laus
+              Polyphoniæ, em Antuérpia.
+            </p>
+            <p>
+              De 2012 a 2018 foi maestro titular do Coro de la Comunidad de
+              Madrid, e é desde 2022 maestro adjunto do Coro Casa da Música.
+            </p>
           </Resumo>
         </div>
       </JuriElement>
@@ -316,31 +365,37 @@ const Juri = ({ data }) => (
 
 export default Juri;
 
-export const query = graphql`query JuriQuery {
-  jmatta: file(relativePath: {eq: "maestros/j-matta-2.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(width: 200, layout: FIXED)
+export const query = graphql`
+  query JuriQuery {
+    jmatta: file(relativePath: { eq: "maestros/j-matta-2.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(width: 200, layout: FIXED)
+      }
+    }
+    jsantos: file(relativePath: { eq: "maestros/j-santos.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(width: 200, layout: FIXED)
+      }
+    }
+    vnegreiros: file(relativePath: { eq: "maestros/vasco-negreiros2.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(width: 200, layout: FIXED)
+      }
+    }
+    ahiney: file(relativePath: { eq: "maestros/aoife-hiney.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(width: 200, layout: FIXED)
+      }
+    }
+    eamorim: file(relativePath: { eq: "maestros/eugenio-amorim.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(width: 200, layout: FIXED)
+      }
+    }
+    pteixeira: file(relativePath: { eq: "maestros/pedro-teixeira.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(width: 200, layout: FIXED)
+      }
     }
   }
-  jsantos: file(relativePath: {eq: "maestros/j-santos.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(width: 200, layout: FIXED)
-    }
-  }
-  vnegreiros: file(relativePath: {eq: "maestros/vasco-negreiros2.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(width: 200, layout: FIXED)
-    }
-  }
-  ahiney: file(relativePath: {eq: "maestros/aoife-hiney.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(width: 200, layout: FIXED)
-    }
-  }
-  eamorim: file(relativePath: {eq: "maestros/eugenio-amorim.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(width: 200, layout: FIXED)
-    }
-  }
-}
 `;
