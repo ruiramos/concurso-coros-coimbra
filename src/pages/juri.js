@@ -37,58 +37,13 @@ const Juri = ({ data }) => (
 
     <Section>
       <p>
-        O júri da edição deste ano será composto pelos maestros Jorge Matta, que
-        presidirá, Eugénio Amorim, João Santos, Aoife Hiney e Vasco Negreiros.
+        O júri da edição deste ano será composto pelos maestros Eugénio Amorim,
+        que presidirá, João Santos, Aoife Hiney, Vasco Negreiros e Pedro
+        Teixeira.
       </p>
     </Section>
 
     <Section>
-      <JuriElement>
-        <JuriImgContainer>
-          <GatsbyImage
-            image={data.jmatta.childImageSharp.gatsbyImageData}
-            imgStyle={{ borderRadius: "0.25rem" }}
-          />
-        </JuriImgContainer>
-        <div>
-          <h3>Jorge Matta</h3>
-          <Resumo>
-            <p>
-              Maestro-adjunto do Coro Gulbenkian, é doutorado em Musicologia
-              Histórica pela Universidade Nova de Lisboa, onde ensinou no
-              Departamento de Ciências Musicais. É investigador do CESEM (Centro
-              de Estudos de Estética e Sociologia Musical). Fez parte da equipa
-              que criou o Doutoramento em Artes Musicais, de que foi o
-              Coordenador. Editor e intérprete, tem-se destacado pela
-              descoberta, recuperação e divulgação do património musical
-              português, realizando a primeira audição moderna de mais de 300
-              obras vocais e instrumentais de compositores portugueses, e
-              estreias absolutas de obras de Constança Capdeville, Jorge
-              Peixinho, Fernando Lopes-Graça, Filipe Pires, Miguel Azguime e
-              Eurico Carrapatoso.
-            </p>
-            <p>
-              A sua já longa discografia, a maior parte com o Coro Gulbenkian, é
-              dedicada também à música portuguesa, desde a polifonia
-              seiscentista até aos compositores dos nossos dias. A uma das
-              gravações foi atribuído o Prémio Discobole da Academia Francesa do
-              Disco. Como autor e intérprete gravou para a televisão as séries
-              de programas “Música de Corte no Palácio da Ajuda” (1986), “Tempos
-              da Música” (1988) e “Percursos da Música Portuguesa” (2008).
-              Participou em destacados festivais de música portugueses e
-              estrangeiros (Espanha, França, Inglaterra, Alemanha, Israel, China
-              e Estados Unidos), e dirigiu as mais importantes orquestras em
-              Portugal, para além de outros agrupamentos na Bélgica, Alemanha e
-              Estados Unidos.
-            </p>
-            <p>
-              Foi Director do Teatro Nacional de S. Carlos e Presidente da
-              Comissão de Acompanhamento das Orquestras Regionais.
-            </p>
-          </Resumo>
-        </div>
-      </JuriElement>
-
       <JuriElement>
         <JuriImgContainer>
           <GatsbyImage
@@ -322,6 +277,7 @@ const Juri = ({ data }) => (
           </Resumo>
         </div>
       </JuriElement>
+
       <JuriElement>
         <JuriImgContainer>
           <GatsbyImage
