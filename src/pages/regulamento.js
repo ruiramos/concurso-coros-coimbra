@@ -199,9 +199,8 @@ const Regulamento = ({ data }) => (
       <RegTitle>IV - Júri e prémios</RegTitle>
       <ol>
         <li>
-          O júri será constituído por cinco elementos: Jorge Matta, que
-          presidirá, Eugénio Amorim, João Santos (titulares), Aoife Hiney e
-          Vasco Negreiros (convidados).
+          O júri será constituído por cinco elementos: Eugénio Amorim, que
+          presidirá, João Santos, Aoife Hiney, Vasco Negreiros e Pedro Teixeira.
         </li>
 
         <li>As decisões do júri são soberanas e não podem ser revistas.</li>
