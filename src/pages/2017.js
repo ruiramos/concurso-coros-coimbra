@@ -80,7 +80,7 @@ const PrevPage = ({ data }) => (
     </Section>
 
     <Section>
-      <SectionTitle>Coros participantes</SectionTitle>
+      <SectionTitle>Coros selecionados para a 2.ª fase</SectionTitle>
       {coros.map((c) => (
         <Coro {...c} />
       ))}
