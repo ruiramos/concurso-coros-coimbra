@@ -252,7 +252,7 @@ const Regulamento = ({ data }) => (
       </p>
 
       <DocContainer>
-        <Doc href="/regulamento-concurso-coros-28-01-22.pdf" target="_blank">
+        <Doc href="/regulamento-concurso-coros-18-02-22.pdf" target="_blank">
           <DocImg>
             <GatsbyImage
               image={data.regThumb.childImageSharp.gatsbyImageData}
