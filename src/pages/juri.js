@@ -1,6 +1,6 @@
 import { GatsbyImage } from "gatsby-plugin-image";
 import styled from "styled-components";
-import tw from "tailwind.macro";
+import tw from "twin.macro";
 import React from "react";
 import { graphql } from "gatsby";
 

@@ -1,7 +1,7 @@
 import { Link, graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import React from "react";
-import tw from "tailwind.macro";
+import tw from "twin.macro";
 import styled from "styled-components";
 
 const StyledHeader = styled.header`
@@ -53,7 +53,7 @@ const Menu = ({ lang = "pt" }) => {
     <StyledHeader>
       <MenuContainer>
         <StyledMenuLink to="/">Apresentação</StyledMenuLink>
-        {/* <StyledMenuLink to="/coros">Coros</StyledMenuLink> */}
+        <StyledMenuLink to="/coros/">Coros seleccionados</StyledMenuLink>
         <StyledMenuLink to="/localizacao/">Local</StyledMenuLink>
         <StyledMenuLink to="/regulamento/">Regulamento</StyledMenuLink>
         <StyledMenuLink to="/juri/">Júri</StyledMenuLink>

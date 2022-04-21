@@ -7,9 +7,9 @@
 
 import React from "react";
 import PropTypes from "prop-types";
-import { useStaticQuery, graphql } from "gatsby";
+import { Link, useStaticQuery, graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import tw from "tailwind.macro";
+import tw from "twin.macro";
 import styled from "styled-components";
 import Menu from "./menu";
 import "./layout.css";
@@ -20,14 +20,14 @@ const Container = tw.div`
 `;
 
 const Content = tw.div`
-  px-0 lg:px-40
+  px-0 lg:max-w-5xl lg:m-auto
 `;
 
 const ImgContainer = tw.div`
   mb-10
 `;
 
-const Footer = tw.footer`text-sm text-gray-500 mb-8`;
+const Footer = tw.footer`text-sm text-gray-400 mb-8`;
 const PrimaryNotice = styled.div`
   ${tw`text-center text-white p-2 mt-4 bg-primary`}
   background: #56c8e5;
@@ -46,17 +46,27 @@ const Layout = ({ lang = "pt", children }) => {
           gatsbyImageData(width: 800, layout: CONSTRAINED)
         }
       }
+      cmc: file(relativePath: { eq: "cmc.jpg" }) {
+        childImageSharp {
+          gatsbyImageData(width: 150, layout: CONSTRAINED)
+        }
+      }
     }
   `);
 
   const image = getImage(data.logo);
+  const cmcImage = getImage(data.cmc);
 
   return (
     <Container className="container">
       <PrimaryNotice>
         <h5>
-          Candidaturas abertas até 28 de março de 2022, consulte o{" "}
-          <a href="/regulamento/">regulamento</a> para mais informações.
+          Já disponível a{" "}
+          <Link to="/coros/">
+            lista dos coros selecionados para a segunda fase
+          </Link>
+          , que deverão até 10 de maio confirmar a sua inscrição conforme{" "}
+          <Link to="/regulamento/">ponto II.5 do regulamento</Link>
         </h5>
       </PrimaryNotice>
 
@@ -81,7 +91,17 @@ const Layout = ({ lang = "pt", children }) => {
         <Sep />
 
         <Footer>
-          Site: <a href="mailto:ruiramos@gmail.com">Rui Ramos</a>
+          <Link to="https://www.cm-coimbra.pt/" target="blank">
+            <GatsbyImage
+              image={cmcImage}
+              imgStyle={{ objectFit: "contain" }}
+              alt="Camara Municipal de Coimbra"
+              style={{ marginBottom: "1em" }}
+            />
+          </Link>
+          <p>
+            Site: <a href="mailto:ruiramos@gmail.com">Rui Ramos</a>
+          </p>
         </Footer>
       </Content>
     </Container>

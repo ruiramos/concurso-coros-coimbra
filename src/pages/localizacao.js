@@ -4,7 +4,7 @@ import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import styled from "styled-components";
-import tw from "tailwind.macro";
+import tw from "twin.macro";
 import { GatsbyImage } from "gatsby-plugin-image";
 
 import { Section, Note } from "../components/styled.js";

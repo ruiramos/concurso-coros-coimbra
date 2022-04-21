@@ -2,12 +2,18 @@
 
 h1 {
   @apply text-2xl;
+  @apply font-bold
+
 }
 h2 {
   @apply text-xl;
+  @apply font-semibold mt-8 mb-1;
+  @apply border-b-2 border-solid border-gray-100;
+  padding-bottom: 2px;
 }
 h3 {
   @apply text-lg;
+  @apply font-medium;
 }
 a {
   @apply underline;

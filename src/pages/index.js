@@ -3,11 +3,11 @@ import React from "react";
 import { Link } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import tw from "tailwind.macro";
+import tw from "twin.macro";
 
 import { Section } from "../components/styled.js";
 
-const MainHeading = tw.h2` text-center`;
+const MainHeading = tw.h2` text-center border-0 mb-0 pb-0`;
 const SubHeading = tw.h3` text-center `;
 
 const IndexPage = ({ data }) => (
@@ -41,9 +41,9 @@ const IndexPage = ({ data }) => (
         O "II Concurso de Coros - Coimbra" integrará duas fases: a primeira será
         uma fase de pré-seleção, com todos os coros amadores inscritos; a
         segunda, a realizar no dia 04 de junho de 2022, terá a participação de
-        oito coros selecionados, na primeira fase, pelo{" "}
-        <Link to="/juri/">Júri</Link>, que será constituído por prestigiados
-        maestros de renome nacional e internacional.
+        oito <Link to="/coros/">coros selecionados</Link>, na primeira fase,
+        pelo <Link to="/juri/">Júri</Link>, que será constituído por
+        prestigiados maestros de renome nacional e internacional.
       </p>
       <p>
         O evento terminará com um Concerto de Gala, à noite, com a participação

@@ -1,5 +1,5 @@
 import React from "react";
-import tw from "tailwind.macro";
+import tw from "twin.macro";
 import Layout from "../components/layout.js";
 import SEO from "../components/seo.js";
 

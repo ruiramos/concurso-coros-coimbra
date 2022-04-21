@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "concurso-coros-coimbra",
   "private": true,
   "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "version": "1.0.0",
+  "author": "Rui Ramos <ruiramos@gmail.com>",
   "dependencies": {
     "babel-plugin-styled-components": "^2.0.2",
     "gatsby": "^4.6.0",
@@ -24,13 +24,14 @@
     "react-helmet": "^6.1.0",
     "styled-components": "^5.3.3",
     "stylelint": "^14.3.0",
-    "tailwind.macro": "^1.0.0-alpha.10",
     "tailwindcss": "^3.0.18"
   },
   "devDependencies": {
+    "babel-plugin-macros": "^3.1.0",
     "babel-preset-gatsby": "^2.6.0",
     "path-browserify": "^1.0.1",
-    "prettier": "^2.5.1"
+    "prettier": "^2.5.1",
+    "twin.macro": "^2.8.2"
   },
   "keywords": [
     "gatsby"

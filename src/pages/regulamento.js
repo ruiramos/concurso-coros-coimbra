@@ -4,7 +4,7 @@ import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import styled from "styled-components";
-import tw from "tailwind.macro";
+import tw from "twin.macro";
 import { GatsbyImage } from "gatsby-plugin-image";
 
 import { Section as CommonSection, Sep } from "../components/styled.js";
@@ -36,7 +36,7 @@ const Section = styled(CommonSection)`
 
 const Doc = styled.a`
   min-width: 150px;
-  min-height: 300px;
+  min-height: 200px;
   ${tw`block m-2 text-sm no-underline`}
 
   & img {
@@ -45,13 +45,13 @@ const Doc = styled.a`
 `;
 
 const DocImg = styled.div`
-  ${tw`shadow m-2`}
+  ${tw`shadow m-2 transition-all`}
   &:hover {
-    ${tw`shadow-lg`}
+    ${tw`shadow-md`}
   }
 `;
 
-const RegTitle = tw.h2`mt-4 mb-2 font-bold`;
+const RegTitle = tw.h2``;
 
 const SmallDate = tw.small`block text-gray-500 leading-relaxed`;
 const Underline = styled.span`
@@ -281,12 +281,12 @@ export const query = graphql`
   query RegulamentoQuery {
     regThumb: file(relativePath: { eq: "reg-thumb.png" }) {
       childImageSharp {
-        gatsbyImageData(width: 400, layout: CONSTRAINED)
+        gatsbyImageData(width: 200, layout: CONSTRAINED)
       }
     }
     obraThumb: file(relativePath: { eq: "obra-thumb.png" }) {
       childImageSharp {
-        gatsbyImageData(width: 400, layout: CONSTRAINED)
+        gatsbyImageData(width: 200, layout: CONSTRAINED)
       }
     }
   }
