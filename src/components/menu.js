@@ -53,7 +53,8 @@ const Menu = ({ lang = "pt" }) => {
     <StyledHeader>
       <MenuContainer>
         <StyledMenuLink to="/">Apresentação</StyledMenuLink>
-        <StyledMenuLink to="/coros/">Coros selecionados</StyledMenuLink>
+        <StyledMenuLink to="/coros/">Os Coros</StyledMenuLink>
+        <StyledMenuLink to="/programa/">Programa</StyledMenuLink>
         <StyledMenuLink to="/localizacao/">Local</StyledMenuLink>
         <StyledMenuLink to="/regulamento/">Regulamento</StyledMenuLink>
         <StyledMenuLink to="/juri/">Júri</StyledMenuLink>

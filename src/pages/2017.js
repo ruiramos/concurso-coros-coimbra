@@ -51,7 +51,7 @@ const PrevPage = ({ data }) => (
   <Layout>
     <SEO title="I Concurso de Coros" />
     <Section>
-      <SectionTitle>Resultados</SectionTitle>
+      <SectionTitle>Resultados do I Concurso:</SectionTitle>
       <p>
         1º Lugar - Coro LeGatto
         <br />
@@ -81,9 +81,11 @@ const PrevPage = ({ data }) => (
 
     <Section>
       <SectionTitle>Coros selecionados para a 2.ª fase</SectionTitle>
-      {coros.map((c) => (
-        <Coro {...c} />
-      ))}
+      <ul>
+        {coros.map((c) => (
+          <li>{c.name}</li>
+        ))}
+      </ul>
     </Section>
 
     <Section>

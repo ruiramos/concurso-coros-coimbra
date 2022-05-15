@@ -16,4 +16,4 @@ export const Sep = styled.hr`
   ${tw`my-8 mx-auto`}
 `;
 
-export const Note = tw.small`text-gray-500`;
+export const Note = tw.small`text-gray-400`;

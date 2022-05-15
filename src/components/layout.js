@@ -13,7 +13,7 @@ import tw from "twin.macro";
 import styled from "styled-components";
 import Menu from "./menu";
 import "./layout.css";
-import { Sep } from "../components/styled.js";
+import { Note, Sep } from "../components/styled.js";
 
 const Container = tw.div`
   mx-auto my-4 px-8 bg-white mt-0 min-h-screen
@@ -27,7 +27,15 @@ const ImgContainer = tw.div`
   mb-10
 `;
 
-const Footer = tw.footer`text-sm text-gray-400 mb-8`;
+const Footer = styled.footer`
+  h4 {
+    ${tw`my-2 text-sm font-semibold`}
+  }
+  p {
+    ${tw`text-sm`}
+  }
+`;
+
 const PrimaryNotice = styled.div`
   ${tw`text-center text-white p-2 mt-4 bg-primary`}
   background: #56c8e5;
@@ -61,12 +69,9 @@ const Layout = ({ lang = "pt", children }) => {
     <Container className="container">
       <PrimaryNotice>
         <h5>
-          Já disponível a{" "}
-          <Link to="/coros/">
-            lista dos coros selecionados para a segunda fase
-          </Link>
-          , que deverão até 10 de maio confirmar a sua inscrição conforme{" "}
-          <Link to="/regulamento/">ponto II.5 do regulamento</Link>
+          Já se encontra disponível a{" "}
+          <Link to="/coros/">lista dos coros finalistas</Link> para o II
+          Concurso de Coros - Coimbra.
         </h5>
       </PrimaryNotice>
 
@@ -91,6 +96,7 @@ const Layout = ({ lang = "pt", children }) => {
         <Sep />
 
         <Footer>
+          <h4>Apoio:</h4>
           <Link to="https://www.cm-coimbra.pt/" target="blank">
             <GatsbyImage
               image={cmcImage}
@@ -99,9 +105,9 @@ const Layout = ({ lang = "pt", children }) => {
               style={{ marginBottom: "1em" }}
             />
           </Link>
-          <p>
+          <Note as="p">
             Site: <a href="mailto:ruiramos@gmail.com">Rui Ramos</a>
-          </p>
+          </Note>
         </Footer>
       </Content>
     </Container>
