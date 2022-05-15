@@ -59,7 +59,10 @@ const Menu = ({ lang = "pt" }) => {
         <StyledMenuLink to="/regulamento/">Regulamento</StyledMenuLink>
         <StyledMenuLink to="/juri/">Júri</StyledMenuLink>
         <StyledMenuLink to="/2017/">Edição Anterior</StyledMenuLink>
-        <StyledMenuLink to={lang === "pt" ? "/en/" : "/"}>
+        <StyledMenuLink
+          to={lang === "pt" ? "/en/" : "/"}
+          css={{ position: "relative", top: "6px" }}
+        >
           <GatsbyImage
             image={image}
             style={{ verticalAlign: "bottom" }}

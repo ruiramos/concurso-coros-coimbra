@@ -19,6 +19,10 @@ const CorosContainer = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 1.5em;
   row-gap: 1.5em;
+
+  @media only screen and (max-device-width: 480px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const coros = [
