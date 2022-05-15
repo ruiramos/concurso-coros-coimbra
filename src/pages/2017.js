@@ -51,7 +51,7 @@ const PrevPage = ({ data }) => (
   <Layout>
     <SEO title="I Concurso de Coros" />
     <Section>
-      <SectionTitle>Resultados do I Concurso:</SectionTitle>
+      <SectionTitle>Resultados do I Concurso</SectionTitle>
       <p>
         1º Lugar - Coro LeGatto
         <br />
@@ -74,7 +74,7 @@ const PrevPage = ({ data }) => (
         style={{ maxWidth: "100%" }}
       ></iframe>
       <Note>
-        Playlist de videos do evento, carregue em 1/18 no canto superior direito
+        Playlist de videos do evento, carregue em 1/19 no canto superior direito
         para ver mais.
       </Note>
     </Section>
