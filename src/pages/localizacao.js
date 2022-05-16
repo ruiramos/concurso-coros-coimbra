@@ -37,7 +37,11 @@ const Local = ({ data }) => (
     <Section>
       <Content>
         <Left>
-          <h3>Sala D. Afonso Henriques (antiga Igreja do Convento)</h3>
+          <GatsbyImage image={data.convent.childImageSharp.gatsbyImageData} />
+          <Note>Foto: João Duarte</Note>
+          <h3 css={[tw`mt-4`]}>
+            Sala D. Afonso Henriques (antiga Igreja do Convento)
+          </h3>
           <p>
             Convento de São Francisco
             <br />
@@ -45,11 +49,6 @@ const Local = ({ data }) => (
             <br />
             3040-193 Coimbra
           </p>
-          <GatsbyImage
-            image={data.convent.childImageSharp.gatsbyImageData}
-            style={{ marginTop: "3em" }}
-          />
-          <Note>Foto: João Duarte</Note>
         </Left>
         <Right>
           <iframe

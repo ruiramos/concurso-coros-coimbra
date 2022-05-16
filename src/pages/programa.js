@@ -68,7 +68,15 @@ const Programa = () => {
         <tr>
           <td>13:00 às 14:00</td>
           <td>Almoço (livre)</td>
-          <td>(Existem vários restaurantes na proximidade do CSF)</td>
+          <td>
+            Existem vários restaurantes na proximidade do CSF -{" "}
+            <a
+              href="https://www.tripadvisor.pt/RestaurantsNear-g189143-d2543384-Mosteiro_de_Santa_Clara_a_Velha-Coimbra_Coimbra_District_Central_Portugal.html"
+              target="_blank"
+            >
+              algumas ideias
+            </a>
+          </td>
         </tr>
         <tr>
           <td>14:15 às 19:00</td>

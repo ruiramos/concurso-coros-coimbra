@@ -37,7 +37,7 @@ const Footer = styled.footer`
 `;
 
 const PrimaryNotice = styled.div`
-  ${tw`text-center text-white p-2 mt-4 bg-primary`}
+  ${tw`text-center text-white p-2 bg-primary`}
   background: #56c8e5;
 `;
 
@@ -66,7 +66,7 @@ const Layout = ({ lang = "pt", children }) => {
   const cmcImage = getImage(data.cmc);
 
   return (
-    <Container className="container">
+    <>
       <PrimaryNotice>
         <h5>
           Já se encontra disponível a{" "}
@@ -74,43 +74,44 @@ const Layout = ({ lang = "pt", children }) => {
           Concurso de Coros - Coimbra.
         </h5>
       </PrimaryNotice>
-
-      <a href="/" title="Voltar à página inicial">
-        <ImgContainer>
-          <GatsbyImage
-            image={image}
-            imgStyle={{ objectFit: "contain" }}
-            alt="Concurso Coros Coimbra"
-            style={{ margin: "auto", display: "block", maxHeight: "400px" }}
-          />
-        </ImgContainer>
-      </a>
-
-      <Content>
-        <Menu lang={lang} />
-
-        <Sep primary />
-
-        <main>{children}</main>
-
-        <Sep />
-
-        <Footer>
-          <h4>Apoio:</h4>
-          <Link to="https://www.cm-coimbra.pt/" target="blank">
+      <Container className="container">
+        <a href="/" title="Voltar à página inicial">
+          <ImgContainer>
             <GatsbyImage
-              image={cmcImage}
+              image={image}
               imgStyle={{ objectFit: "contain" }}
-              alt="Camara Municipal de Coimbra"
-              style={{ marginBottom: "1em" }}
+              alt="Concurso Coros Coimbra"
+              style={{ margin: "auto", display: "block", maxHeight: "400px" }}
             />
-          </Link>
-          <Note as="p">
-            Site: <a href="mailto:ruiramos@gmail.com">Rui Ramos</a>
-          </Note>
-        </Footer>
-      </Content>
-    </Container>
+          </ImgContainer>
+        </a>
+
+        <Content>
+          <Menu lang={lang} />
+
+          <Sep primary />
+
+          <main>{children}</main>
+
+          <Sep />
+
+          <Footer>
+            <h4>Apoio:</h4>
+            <Link to="https://www.cm-coimbra.pt/" target="blank">
+              <GatsbyImage
+                image={cmcImage}
+                imgStyle={{ objectFit: "contain" }}
+                alt="Camara Municipal de Coimbra"
+                style={{ marginBottom: "1em" }}
+              />
+            </Link>
+            <Note as="p">
+              Site: <a href="mailto:ruiramos@gmail.com">Rui Ramos</a>
+            </Note>
+          </Footer>
+        </Content>
+      </Container>
+    </>
   );
 };
 

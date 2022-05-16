@@ -5,7 +5,6 @@ import tw from "twin.macro";
 import styled from "styled-components";
 
 const StyledHeader = styled.header`
-  ${tw`pb-2`}
   clear: both;
   overflow: hidden;
 `;
