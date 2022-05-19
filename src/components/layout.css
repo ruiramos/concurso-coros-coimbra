@@ -22,12 +22,14 @@ p {
   @apply mb-4;
 }
 
-/*
 body {
-  height: 100vh;
-  background: linear-gradient(100deg, rgba(166,222,229,1) 0%, rgba(82,175,186,1) 35%, rgba(68,152,161,1) 100%);
+  position: relative;
 }
-*/
+
+body.no-overflow {
+  overflow: hidden;
+  padding-right: 12px;
+}
 
 button {
   @apply border border-solid border-gray-200 rounded px-4 py-2 hover:bg-gray-50

@@ -16,7 +16,7 @@ import "./layout.css";
 import { Note, Sep } from "../components/styled.js";
 
 const Container = tw.div`
-  mx-auto my-4 px-8 bg-white mt-0 min-h-screen
+  mx-auto mt-4 px-8 bg-white mt-0 min-h-screen
 `;
 
 const Content = tw.div`
@@ -28,6 +28,7 @@ const ImgContainer = tw.div`
 `;
 
 const Footer = styled.footer`
+  padding-bottom: 40px;
   h4 {
     ${tw`my-2 text-sm font-semibold`}
   }
@@ -97,15 +98,19 @@ const Layout = ({ lang = "pt", children }) => {
 
           <Footer>
             <h4>Apoio:</h4>
-            <Link to="https://www.cm-coimbra.pt/" target="blank">
+            <a
+              href="https://www.cm-coimbra.pt/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <GatsbyImage
                 image={cmcImage}
                 imgStyle={{ objectFit: "contain" }}
                 alt="Camara Municipal de Coimbra"
                 style={{ marginBottom: "1em" }}
               />
-            </Link>
-            <Note as="p">
+            </a>
+            <Note as="div">
               Site: <a href="mailto:ruiramos@gmail.com">Rui Ramos</a>
             </Note>
           </Footer>

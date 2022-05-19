@@ -73,6 +73,7 @@ const Programa = () => {
             <a
               href="https://www.tripadvisor.pt/RestaurantsNear-g189143-d2543384-Mosteiro_de_Santa_Clara_a_Velha-Coimbra_Coimbra_District_Central_Portugal.html"
               target="_blank"
+              rel="noreferrer"
             >
               algumas ideias
             </a>
