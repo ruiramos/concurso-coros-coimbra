@@ -80,15 +80,13 @@ const CorosPage = ({ data }) => {
 
     if (!coroId) {
       setSelectedChoir(null);
-      //document.querySelector("body").classList.remove("no-overflow");
       return;
     }
 
     const oCoro = coros.find((coro) => coro.id === coroId);
     setSelectedChoir(oCoro);
-    //document.querySelector("body").classList.add("no-overflow");
     window.scrollTo(0, 0);
-  }, [window.location.hash]);
+  }, [typeof window !== "undefined" ? window.location.hash : undefined]);
 
   return (
     <Layout>
