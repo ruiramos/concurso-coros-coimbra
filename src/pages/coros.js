@@ -116,6 +116,11 @@ const ModalContainer = styled.div`
   ${tw`absolute z-20 top-8 border border-solid border-gray-200 bg-white p-10 rounded`}
   width: 70%;
   left: 15%;
+  @media only screen and (max-device-width: 480px) {
+    width: 90%;
+    left: 5%;
+    padding: 1em;
+  }
 
   h1 {
     ${tw`mb-6`}
