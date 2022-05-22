@@ -21,17 +21,12 @@ const CorosContainer = styled.div`
 
 const coros = [
   {
-    name: "Coro AlmaGraham",
-    image: "alma-graham.jpg",
-    id: "alma-graham",
+    name: "Associação Coral Stella Maris",
+    image: "stella-maris.jpg",
+    id: "stella-maris",
   },
   {
-    name: "Coro Misto da Universidade de Coimbra",
-    image: "cmuc.jpg",
-    id: "cmuc",
-  },
-  {
-    name: 'Coral "Ensaio"',
+    name: 'Coral "Ensaio" da Associação Pró-Música da Póvoa de Varzim',
     image: "coral-ensaio.jpg",
     id: "coral-ensaio",
   },
@@ -41,19 +36,24 @@ const coros = [
     id: "coral-mille-voci",
   },
   {
+    name: "Coro AlmaGraham",
+    image: "alma-graham.jpg",
+    id: "alma-graham",
+  },
+  {
     name: "Coro Feminino do Conservatório de Música de Paredes",
     image: "coro-feminino-cmparedes.jpg",
     id: "coro-feminino-cmparedes",
   },
   {
+    name: "Coro Misto da Universidade de Coimbra",
+    image: "cmuc.jpg",
+    id: "cmuc",
+  },
+  {
     name: "ProVocal Ensemble",
     image: "provocal-ensemble.jpg",
     id: "pro-vocal",
-  },
-  {
-    name: "Grupo Coral Stella Maris",
-    image: "stella-maris.jpg",
-    id: "stella-maris",
   },
   {
     name: "Vocal Art Ensemble",
