@@ -38,7 +38,7 @@ const Footer = styled.footer`
 
   a {
     display: inline-block;
-    margin-right: 1em;
+    margin-right: 0.75em;
   }
 
   ${Note} {
@@ -72,32 +72,32 @@ const Layout = ({ lang = "pt", children }) => {
       }
       cmc: file(relativePath: { eq: "cmc.jpg" }) {
         childImageSharp {
-          gatsbyImageData(height: 45)
+          gatsbyImageData(height: 40)
         }
       }
       edac: file(relativePath: { eq: "edac.jpg" }) {
         childImageSharp {
-          gatsbyImageData(height: 45)
+          gatsbyImageData(height: 40)
         }
       }
       mfe: file(relativePath: { eq: "mf-ensemble.jpg" }) {
         childImageSharp {
-          gatsbyImageData(height: 45)
+          gatsbyImageData(height: 40)
         }
       }
       atenas: file(relativePath: { eq: "atenas.jpg" }) {
         childImageSharp {
-          gatsbyImageData(height: 45)
+          gatsbyImageData(height: 40)
         }
       }
       aguas: file(relativePath: { eq: "aguas.png" }) {
         childImageSharp {
-          gatsbyImageData(height: 45)
+          gatsbyImageData(height: 40)
         }
       }
       siloal: file(relativePath: { eq: "siloal.jpg" }) {
         childImageSharp {
-          gatsbyImageData(height: 45)
+          gatsbyImageData(height: 35)
         }
       }
     }
