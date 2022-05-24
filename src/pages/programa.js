@@ -54,7 +54,10 @@ const ProgramaTableNew = styled.table`
   tr.time-place td {
     ${tw`flex justify-between bg-gray-200 p-2`}
     span {
-      ${tw`text-gray-600`}
+      ${tw`text-gray-500`}
+    }
+    span:first-child {
+      ${tw`text-gray-500`}
     }
   }
 
@@ -66,7 +69,7 @@ const ProgramaTableNew = styled.table`
     }
 
     &.dim {
-      ${tw`text-gray-400`}
+      ${tw`text-gray-500`}
     }
 
     &.disc {
