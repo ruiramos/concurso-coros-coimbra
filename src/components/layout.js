@@ -115,8 +115,8 @@ const Layout = ({ lang = "pt", children }) => {
     <>
       <PrimaryNotice>
         <h5>
-          Resultados 2022: 3ᵒ Coro Feminino CM Paredes ; 2ᵒ ProVocal Ensemble;
-          1ᵒ Vocal Art Ensemble. Parabéns!
+          Resultados 2022: 3ᵒ Coro Feminino CM Paredes; 2ᵒ ProVocal Ensemble; 1ᵒ
+          Vocal Art Ensemble. Parabéns!
         </h5>
       </PrimaryNotice>
       <Container className="container">
