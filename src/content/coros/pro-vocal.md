@@ -1,5 +1,6 @@
 ---
 id: "pro-vocal"
+video_id: "3adTnmc--1k"
 ---
  O projeto ProVocal Ensemble nasce em 2021, fruto da enorme vontade de um grupo de pessoas, amantes da música coral e vocal, em continuar a fazer música, face às diversas experiências vividas no Coro de Câmara da AMCP. No anterior projeto, os elementos deste coro tiveram a oportunidade de participar em diversos concursos nacionais e internacionais, dos quais destacam a obtenção de duas medalhas de prata nos World Choir Games 2016 em Sochi (Rússia) e duas medalhas de prata e uma de ouro nos European Choir Games 2019 em Gotemburgo (Suécia). Participou, recentemente, na VIII edição do Encontro de Música Coral da Póvoa de Varzim, bem como num concerto na Casa da Música, a convite da Banda de Fajões.
 

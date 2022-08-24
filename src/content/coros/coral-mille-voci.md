@@ -1,5 +1,6 @@
 ---
 id: "coral-mille-voci"
+video_id: "wTY0VPCe0nk"
 ---
 O Coral Mille Voci é uma Associação Cultural que iniciou a sua atividade em Junho de 1992, na cidade do Porto. O seu fundador foi o Maestro Professor António Diogo que até hoje acompanha o coro.
 

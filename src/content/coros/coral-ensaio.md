@@ -1,5 +1,6 @@
 ---
 id: "coral-ensaio"
+video_id: "E1hds16gdBs"
 ---
 O Coral "Ensaio" nasceu a partir da criação da Escola Municipal de Música da Póvoa de Varzim, em Maio de 1988, com o apoio do Município desta cidade. Iniciou a atividade em Janeiro de 1989, sob a direção do Prof. José Abel Carriço. Desde logo, entre os seus componentes, esta formação incluiu professores, alunos, encarregados de educação e outros melómanos dedicados.
 

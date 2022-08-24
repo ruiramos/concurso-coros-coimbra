@@ -1,5 +1,6 @@
 ---
 id: "alma-graham"
+video_id: ""
 ---
 
 O Coro AlmaGraham surgiu em Fevereiro de 2017, no Porto, com o propósito de realizar um concerto vocacional sugerido pelo então Vigário Paroquial da Paróquia Nossa Senhora da Boavista, Pe. Humberto Martins.

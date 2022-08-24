@@ -69,7 +69,7 @@ const CorosPage = ({ data }) => {
     () =>
       data?.allMarkdownRemark.edges.reduce((acc, edge) => {
         const id = edge.node.frontmatter.id;
-        acc[id] = edge.node.html;
+        acc[id] = edge.node;
         return acc;
       }, {}),
     [data]
@@ -99,9 +99,9 @@ const CorosPage = ({ data }) => {
       {selectedChoir ? (
         <BioModal
           onClose={() => (window.location.hash = "")}
-          coro={selectedChoir}
+          coro={{ ...selectedChoir, ...keyedBios[selectedChoir.id] }}
         >
-          {keyedBios[selectedChoir.id]}
+          {keyedBios[selectedChoir.id].html}
         </BioModal>
       ) : null}
     </Layout>
@@ -141,6 +141,24 @@ const BioModal = ({ onClose, coro, children }) => {
         <img src={`/images/coros/${coro.image}`} />
         <h1>{coro.name}</h1>
         <div dangerouslySetInnerHTML={{ __html: children }}></div>
+        {coro.frontmatter.video_id && (
+          <div css={[tw`p-4 flex justify-center`]}>
+            <div css={[tw`flex flex-col`, { maxWidth: 450 }]}>
+              <iframe
+                width="450"
+                height="300"
+                src={`https://www.youtube.com/embed/${coro.frontmatter.video_id}`}
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+              <a href="" css={[tw`inline-block mt-2 text-center`]}>
+                {coro.name} no Concurso (YouTube)
+              </a>
+            </div>
+          </div>
+        )}
         <button onClick={onClose}>Fechar</button>
       </ModalContainer>
     </div>,
@@ -156,6 +174,7 @@ export const query = graphql`
           html
           frontmatter {
             id
+            video_id
           }
         }
       }

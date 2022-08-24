@@ -1,5 +1,6 @@
 ---
 id: "vocal-art-ensemble"
+video_id: "S6MsJN4C9w0"
 ---
 O Vocal Art Ensemble é um projeto de música coral, nascido em 2018, apesar de muitos dos seus elementos trabalharem juntos desde 2005.
 

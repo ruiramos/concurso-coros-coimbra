@@ -1,5 +1,6 @@
 ---
 id: "stella-maris"
+video_id: "2fMrr5i5RcM"
 ---
 O Grupo Coral é composto por cerca de três dezenas de vozes femininas que, a partir de março de 2008, na cidade de Anadia, resolveram juntar-se para cantar e encantar, oferecendo o Coral a beleza das suas vozes e o encanto da sua personalidade. 
 

@@ -1,5 +1,6 @@
 ---
 id: "coro-feminino-cmparedes"
+video_id: "jA0B3HrN4k8"
 ---
 O Coro Feminino do Conservatório de Música de Paredes emerge da vontade de fazer e divulgar a música coral em diferentes espaços e contextos. A sua primeira apresentação pública foi no dia 25 de junho de 2016, no Concerto “Notas em nós”, promovido pelo Conservatório de Música de Paredes. 
 
