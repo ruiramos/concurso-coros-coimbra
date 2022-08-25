@@ -37,7 +37,7 @@ const IndexPage = ({ data }) => (
           </li>
         </ol>
       </div>
-      <div css={[tw`w-1/2 inline-block p-4`]}>
+      <div css={[tw`w-full lg:w-1/2 inline-block p-4`]}>
         <iframe
           width="100%"
           height="315"
@@ -55,7 +55,7 @@ const IndexPage = ({ data }) => (
           II Concurso de Coros Coimbra - Concurso (YouTube)
         </a>
       </div>
-      <div css={[tw`w-1/2 inline-block p-4`]}>
+      <div css={[tw`w-full lg:w-1/2 inline-block p-4`]}>
         <iframe
           width="100%"
           height="315"
