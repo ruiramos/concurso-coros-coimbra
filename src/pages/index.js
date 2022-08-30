@@ -19,64 +19,6 @@ const IndexPage = ({ data }) => (
     <SubHeading>Convento São Francisco, Coimbra</SubHeading>
 
     <Section>
-      <div css={[tw`border rounded p-8 my-4`]}>
-        <h2 css={[tw`m-0 mb-4`]}>
-          Classificação do II Concurso de Coros Coimbra:
-        </h2>
-        <ol css={[tw`list-decimal pl-8`]}>
-          <li>
-            <a href="/coros/#vocal-art-ensemble">Vocal Art Ensemble</a>
-          </li>
-          <li>
-            <a href="/coros/#pro-vocal">ProVocal Ensemble</a>
-          </li>
-          <li>
-            <a href="/coros/#coro-feminino-cmparedes">
-              Coro Feminino do Conservatório de Música de Paredes
-            </a>
-          </li>
-        </ol>
-      </div>
-      <div css={[tw`w-full lg:w-1/2 inline-block p-4`]}>
-        <iframe
-          width="100%"
-          height="315"
-          src="https://www.youtube.com/embed/videoseries?list=PLg3xgq5Rluu9rkhMjMKQrcs4-DuVnVPGh"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-        <a
-          href="https://www.youtube.com/watch?v=2fMrr5i5RcM&list=PLg3xgq5Rluu9rkhMjMKQrcs4-DuVnVPGh"
-          target="_blank"
-          css={[tw`text-center mt-2 block`]}
-        >
-          II Concurso de Coros Coimbra - Concurso (YouTube)
-        </a>
-      </div>
-      <div css={[tw`w-full lg:w-1/2 inline-block p-4`]}>
-        <iframe
-          width="100%"
-          height="315"
-          src="https://www.youtube.com/embed/videoseries?list=PLg3xgq5Rluu-c-pJ4kDIFZheRsgNRVZqL"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-        <a
-          href="https://www.youtube.com/watch?v=KZIpTQqh3CA&list=PLg3xgq5Rluu-c-pJ4kDIFZheRsgNRVZqL"
-          target="_blank"
-          css={[tw`text-center mt-2 block`]}
-        >
-          II Concurso de Coros Coimbra - Gala (YouTube)
-        </a>
-      </div>
-    </Section>
-    <Sep primary />
-
-    <Section>
       <p>
         O Coro Carlos Seixas da Casa do Pessoal do Município de Coimbra
         organiza, no corrente ano, o "II Concurso de Coros - Coimbra", no âmbito

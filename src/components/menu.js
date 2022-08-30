@@ -52,6 +52,7 @@ const Menu = ({ lang = "pt" }) => {
     <StyledHeader>
       <MenuContainer>
         <StyledMenuLink to="/">Apresentação</StyledMenuLink>
+        <StyledMenuLink to="/2022/">Videos e Resultados</StyledMenuLink>
         <StyledMenuLink to="/coros/">Os Coros</StyledMenuLink>
         <StyledMenuLink to="/programa/">Programa</StyledMenuLink>
         <StyledMenuLink to="/localizacao/">Local</StyledMenuLink>
