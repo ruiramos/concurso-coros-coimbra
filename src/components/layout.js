@@ -32,7 +32,16 @@ const PrimaryNotice = styled.div`
   ${tw`text-center text-white p-2 mt-4 bg-primary`}
 `;
 
+<<<<<<< Updated upstream
 const Layout = ({ children }) => {
+=======
+const FooterSection = styled.div`
+  float: left;
+  padding-right: 30px;
+`;
+
+const Layout = ({ lang = "pt", edition, children }) => {
+>>>>>>> Stashed changes
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -40,16 +49,25 @@ const Layout = ({ children }) => {
           title
         }
       }
-      logo: file(relativePath: { eq: "ii-concurso-logo-temp.jpg" }) {
+      logo: file(relativePath: { eq: "iii-concurso-logo.jpg" }) {
         childImageSharp {
+<<<<<<< Updated upstream
           fluid(maxWidth: 800) {
             ...GatsbyImageSharpFluid
           }
+=======
+          gatsbyImageData(width: 800, layout: CONSTRAINED)
+>>>>>>> Stashed changes
         }
       }
     }
   `);
 
+<<<<<<< Updated upstream
+=======
+  const image = getImage(data.logo);
+
+>>>>>>> Stashed changes
   return (
     <Container className="container">
       <PrimaryNotice>
@@ -59,6 +77,7 @@ const Layout = ({ children }) => {
         </h5>
       </PrimaryNotice>
 
+<<<<<<< Updated upstream
       <a href="/" title="Voltar à página inicial">
         <ImgContainer>
           <Img
@@ -68,12 +87,17 @@ const Layout = ({ children }) => {
           />
         </ImgContainer>
       </a>
+=======
+        <Content>
+          <Menu lang={lang} edition={edition} />
+>>>>>>> Stashed changes
 
       <Content>
         <Menu />
 
         <Sep primary />
 
+<<<<<<< Updated upstream
         <main>{children}</main>
 
         <Sep />
@@ -83,6 +107,17 @@ const Layout = ({ children }) => {
         </Footer>
       </Content>
     </Container>
+=======
+          <Sep />
+          <Footer>
+            <Note as="div">
+              Site: <a href="mailto:ruiramos@gmail.com">Rui Ramos</a>
+            </Note>
+          </Footer>
+        </Content>
+      </Container>
+    </>
+>>>>>>> Stashed changes
   );
 };
 

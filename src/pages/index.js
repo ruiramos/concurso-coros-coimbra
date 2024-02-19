@@ -1,9 +1,15 @@
 import React from "react";
 
 import { Link } from "gatsby";
+<<<<<<< Updated upstream
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import tw from "tailwind.macro";
+=======
+import Layout from "components/layout";
+import SEO from "components/seo";
+import tw from "twin.macro";
+>>>>>>> Stashed changes
 
 import { Section } from "../components/styled.js";
 
@@ -14,6 +20,7 @@ const IndexPage = ({ data }) => (
   <Layout>
     <SEO />
 
+<<<<<<< Updated upstream
     <MainHeading>06 de junho de 2020</MainHeading>
     <SubHeading>Igreja do Convento São Francisco, Coimbra</SubHeading>
 
@@ -45,6 +52,24 @@ const IndexPage = ({ data }) => (
         dos três primeiros coros classificados e do anfitrião, Coro Carlos
         Seixas.
       </p>
+=======
+    <MainHeading>9 de junho de 2024</MainHeading>
+    <SubHeading>
+      Sala D. Afonso Henriques, Antiga Igreja Convento São Francisco
+    </SubHeading>
+
+    <Section>
+      <div>
+        <a target="_blank" href="/2024/Regulamento_III_Concurso.pdf">
+          Regulamento
+        </a>
+      </div>
+      <div>
+        <a href="/2024/PartituraIIIConcursoCoros.pdf">
+          Obra obrigatória - Balada para Coimbra
+        </a>
+      </div>
+>>>>>>> Stashed changes
     </Section>
   </Layout>
 );

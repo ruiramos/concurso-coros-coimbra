@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+<<<<<<< Updated upstream
     "babel-plugin-styled-components": "^1.10.6",
     "gatsby": "^2.13.12",
     "gatsby-image": "^2.2.4",
@@ -30,6 +31,39 @@
   "devDependencies": {
     "babel-preset-gatsby": "^0.2.27",
     "prettier": "^1.18.2"
+=======
+    "@mdx-js/mdx": "^3.0.0",
+    "@mdx-js/react": "^3.0.0",
+    "babel-plugin-styled-components": "^2.1.4",
+    "gatsby": "^5.13.3",
+    "gatsby-plugin-image": "^3.13.1",
+    "gatsby-plugin-manifest": "^5.13.1",
+    "gatsby-plugin-offline": "^6.13.1",
+    "gatsby-plugin-postcss": "^6.13.1",
+    "gatsby-plugin-react-helmet": "^6.13.1",
+    "gatsby-plugin-sharp": "^5.13.1",
+    "gatsby-plugin-styled-components": "^6.13.1",
+    "gatsby-source-filesystem": "^5.13.1",
+    "gatsby-transformer-remark": "^6.13.1",
+    "gatsby-transformer-sharp": "^5.13.1",
+    "postcss-import": "^14.1.0",
+    "postcss-preset-env": "^7.8.3",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "styled-components": "^5.3.11",
+    "stylelint": "^14.16.1",
+    "tailwindcss": "^3.4.1"
+  },
+  "devDependencies": {
+    "babel-plugin-macros": "^3.1.0",
+    "babel-preset-gatsby": "^3.13.1",
+    "gatsby-plugin-root-import": "^2.0.9",
+    "path-browserify": "^1.0.1",
+    "prettier": "^2.8.8",
+    "twin.macro": "^2.8.2"
+>>>>>>> Stashed changes
   },
   "keywords": [
     "gatsby"
