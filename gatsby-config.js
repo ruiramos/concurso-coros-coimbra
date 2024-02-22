@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `II Concurso de Coros Coimbra`,
-    description: `06 de junho de 2020 na Igreja do Convento São Francisco em Coimbra.`,
-    author: `@gatsbyjs`,
+    description: `4 de junho de 2022 na Sala D. Afonso Henriques do Convento São Francisco em Coimbra.`,
+    author: `@ruimramos`,
   },
   plugins: [
     {
@@ -25,6 +25,14 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `coros`,
+        path: `${__dirname}/src/content/coros`,
+      },
+    },
+    `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-root-import`,
@@ -40,6 +48,7 @@ module.exports = {
         icon: `src/images/icon-ii.png`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-transformer-remark`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

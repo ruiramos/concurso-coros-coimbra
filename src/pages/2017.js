@@ -1,8 +1,8 @@
 import React from "react";
 import { graphql } from "gatsby";
 //import styled from "styled-components";
-import tw from "tailwind.macro";
-import Img from "gatsby-image";
+import tw from "twin.macro";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -30,7 +30,7 @@ const coros = [
     img: "",
   },
   {
-    name: "Grupo Corral de Urrô",
+    name: "Grupo Coral de Urrô",
     img: "",
   },
   {
@@ -51,7 +51,7 @@ const PrevPage = ({ data }) => (
   <Layout>
     <SEO title="I Concurso de Coros" />
     <Section>
-      <SectionTitle>Resultados</SectionTitle>
+      <SectionTitle>Resultados do I Concurso</SectionTitle>
       <p>
         1º Lugar - Coro LeGatto
         <br />
@@ -74,23 +74,25 @@ const PrevPage = ({ data }) => (
         style={{ maxWidth: "100%" }}
       ></iframe>
       <Note>
-        Playlist de videos do evento, carregue em 1/18 no canto superior direito
+        Playlist de videos do evento, carregue em 1/19 no canto superior direito
         para ver mais.
       </Note>
     </Section>
 
     <Section>
-      <SectionTitle>Coros participantes</SectionTitle>
-      {coros.map(c => (
-        <Coro {...c} />
-      ))}
+      <SectionTitle>Coros selecionados para a 2.ª fase</SectionTitle>
+      <ul>
+        {coros.map((c) => (
+          <li>{c.name}</li>
+        ))}
+      </ul>
     </Section>
 
     <Section>
       <SectionTitle>Cartaz</SectionTitle>
       <LinkWithShadow href="/images/i-concurso-cartaz.png" target="_blank">
-        <Img
-          fixed={data.cartazImage.childImageSharp.fixed}
+        <GatsbyImage
+          image={data.cartazImage.childImageSharp.gatsbyImageData}
           imgStyle={{ width: "200px" }}
         />
       </LinkWithShadow>
@@ -102,16 +104,12 @@ export const query = graphql`
   query PrevPageQuery {
     logoImage: file(relativePath: { eq: "i-concurso-logo.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 800) {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(width: 800, layout: CONSTRAINED)
       }
     }
     cartazImage: file(relativePath: { eq: "i-concurso-cartaz.png" }) {
       childImageSharp {
-        fixed(width: 200) {
-          ...GatsbyImageSharpFixed
-        }
+        gatsbyImageData(width: 200, layout: FIXED)
       }
     }
   }

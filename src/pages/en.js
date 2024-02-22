@@ -1,7 +1,8 @@
 import React from "react";
-import tw from "tailwind.macro";
+import tw from "twin.macro";
 import Layout from "../components/layout.js";
 import SEO from "../components/seo.js";
+import { Link } from "gatsby";
 
 import { Section } from "../components/styled.js";
 
@@ -10,14 +11,14 @@ const SubHeading = tw.h3` text-center `;
 
 const English = () => {
   return (
-    <Layout>
+    <Layout lang="en">
       <SEO
         title="II Choir Competition - Coimbra, Portugal"
         description="II edition of this choir competition happening on 6 june 2020. Applications open!"
         lang="en"
       />
-      <MainHeading>6 June 2020</MainHeading>
-      <SubHeading>Convento São Francisco church, Coimbra, Portugal</SubHeading>
+      <MainHeading>4 June 2022</MainHeading>
+      <SubHeading>Convento São Francisco, Coimbra, Portugal</SubHeading>
       <Section>
         <p>
           Coimbra's Carlos Seixas Choir organizes once again, this year, the "II
@@ -34,20 +35,12 @@ const English = () => {
         <p>
           The "II Choir Competition - Coimbra" will include two phases: the
           first will be a pre-selection phase, with all the amateur choirs
-          enrolled; the second, to be held on June 6, 2020, will have the
-          participation of eight selected choirs by the Jury, constituted by
-          prestigious conductors of national and international renown. The event
-          will end with an evening Gala Concert, with the participation of the
-          first three classified choirs and the host, the Choir Carlos Seixas.
-        </p>
-        <p>
-          Applications are open until 28 March 2020. For further information
-          about the application process please refer to the{" "}
-          <a href="/regulamento/">Regulamento page</a> (in Portuguese) or email{" "}
-          <a href="mailto:coro.secretariado@cm-coimbra.pt">
-            coro.secretariado@cm-coimbra.pt
-          </a>
-          .
+          enrolled; the second, to be held on June 4, 2022, will have the
+          participation of <Link to="/coros/">eight selected choirs</Link> by
+          the Jury, constituted by prestigious conductors of national and
+          international renown. The event will end with an evening Gala Concert,
+          with the participation of the first three classified choirs and the
+          host, the Choir Carlos Seixas.
         </p>
       </Section>
     </Layout>

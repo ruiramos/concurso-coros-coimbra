@@ -1,10 +1,11 @@
 import React from "react";
+import { graphql } from "gatsby";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import styled from "styled-components";
-import tw from "tailwind.macro";
-import Img from "gatsby-image";
+import tw from "twin.macro";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 import { Section, Note } from "../components/styled.js";
 
@@ -19,7 +20,7 @@ const Left = styled.div`
 `;
 const Right = styled.div`
   width: 50%;
-  ${tw`pt-8 lg:p-2`}
+  ${tw`pt-8 lg:p-2 flex justify-end`}
 
   @media (max-width: 1023px) {
     width: 100%;
@@ -36,17 +37,18 @@ const Local = ({ data }) => (
     <Section>
       <Content>
         <Left>
-          <h3>Igreja do Convento São Francisco</h3>
+          <GatsbyImage image={data.convent.childImageSharp.gatsbyImageData} />
+          <Note>Foto: João Duarte</Note>
+          <h3 css={[tw`mt-4`]}>
+            Sala D. Afonso Henriques (antiga Igreja do Convento)
+          </h3>
           <p>
+            Convento de São Francisco
+            <br />
             Av. da Guarda Inglesa 1a
             <br />
             3040-193 Coimbra
           </p>
-          <Img
-            fluid={data.convent.childImageSharp.fluid}
-            style={{ marginTop: "3em" }}
-          />
-          <Note>Foto: João Duarte</Note>
         </Left>
         <Right>
           <iframe
@@ -70,9 +72,7 @@ export const query = graphql`
   query LocalQuery {
     convent: file(relativePath: { eq: "convento_fachada.png" }) {
       childImageSharp {
-        fluid(maxWidth: 1200) {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     }
   }

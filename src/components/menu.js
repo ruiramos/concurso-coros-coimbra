@@ -1,13 +1,12 @@
 import { Link, graphql, useStaticQuery } from "gatsby";
-import Img from "gatsby-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import React from "react";
-import tw from "tailwind.macro";
+import tw from "twin.macro";
 import styled from "styled-components";
 
 import { LATEST_EDITION } from "components/constants";
 
 const StyledHeader = styled.header`
-  ${tw`pb-2`}
   clear: both;
   overflow: hidden;
 `;
@@ -16,16 +15,12 @@ const MenuContainer = tw.ul`
   text-center
 `;
 
-<<<<<<< Updated upstream
-const MenuLink = props => (
-=======
 const EditionsContainer = tw.div`
   text-gray-400
   text-right
 `;
 
 const MenuLink = (props) => (
->>>>>>> Stashed changes
   <li className={props.className}>
     <Link {...props} className="" activeClassName="active">
       {props.children}
@@ -43,9 +38,6 @@ const StyledMenuLink = styled(MenuLink)`
   }
 `;
 
-<<<<<<< Updated upstream
-const Menu = () => {
-=======
 const menuData = {
   2017: [
     {
@@ -85,36 +77,25 @@ const menuData = {
 };
 
 const Menu = ({ lang = "pt", edition = LATEST_EDITION }) => {
->>>>>>> Stashed changes
   const data = useStaticQuery(graphql`
     query MenuQuery {
-      ukFlag: file(relativePath: { eq: "uk-flag-64-3.png" }) {
+      ukFlag: file(relativePath: { eq: "uk-flag-64.png" }) {
         childImageSharp {
-          fixed(width: 24) {
-            ...GatsbyImageSharpFixed
-          }
+          gatsbyImageData(width: 24, layout: FIXED)
+        }
+      }
+      ptFlag: file(relativePath: { eq: "pt-flag-64.png" }) {
+        childImageSharp {
+          gatsbyImageData(width: 24, layout: FIXED)
         }
       }
     }
   `);
+  const image = getImage(lang === "pt" ? data.ukFlag : data.ptFlag);
 
   return (
     <StyledHeader>
       <MenuContainer>
-<<<<<<< Updated upstream
-        <StyledMenuLink to="/">Apresentação</StyledMenuLink>
-        {/* <StyledMenuLink to="/coros">Coros</StyledMenuLink> */}
-        <StyledMenuLink to="/localizacao/">Local</StyledMenuLink>
-        <StyledMenuLink to="/regulamento/">Regulamento</StyledMenuLink>
-        <StyledMenuLink to="/juri/">Júri</StyledMenuLink>
-        <StyledMenuLink to="/2017/">Edição Anterior</StyledMenuLink>
-        <StyledMenuLink to="/en/">
-          <Img
-            fixed={data.ukFlag.childImageSharp.fixed}
-            style={{ verticalAlign: "bottom" }}
-          />
-        </StyledMenuLink>
-=======
         {menuData[edition].map((item) => (
           <StyledMenuLink to={item.link}>{item.copy}</StyledMenuLink>
         ))}
@@ -131,7 +112,6 @@ const Menu = ({ lang = "pt", edition = LATEST_EDITION }) => {
             />
           </StyledMenuLink>
         )}
->>>>>>> Stashed changes
       </MenuContainer>
 
       <EditionsContainer>

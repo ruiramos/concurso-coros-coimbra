@@ -1,6 +1,6 @@
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 import styled from "styled-components";
-import tw from "tailwind.macro";
+import tw from "twin.macro";
 import React from "react";
 import { graphql } from "gatsby";
 
@@ -37,62 +37,17 @@ const Juri = ({ data }) => (
 
     <Section>
       <p>
-        O júri da edição deste ano será composto pelos maestros Jorge Matta, que
-        presidirá, Eugénio Amorim, João Santos, Aoife Hiney e Vasco Negreiros.
+        O júri da edição deste ano será composto pelos maestros Eugénio Amorim,
+        que presidirá, João Santos, Aoife Hiney, Vasco Negreiros e Pedro
+        Teixeira.
       </p>
     </Section>
 
     <Section>
       <JuriElement>
         <JuriImgContainer>
-          <Img
-            fixed={data.jmatta.childImageSharp.fixed}
-            imgStyle={{ borderRadius: "0.25rem" }}
-          />
-        </JuriImgContainer>
-        <div>
-          <h3>Jorge Matta</h3>
-          <Resumo>
-            <p>
-              Maestro-adjunto do Coro Gulbenkian, é doutorado em Musicologia
-              Histórica pela Universidade Nova de Lisboa, onde ensinou no
-              Departamento de Ciências Musicais. É investigador do CESEM (Centro
-              de Estudos de Estética e Sociologia Musical). Fez parte da equipa
-              que criou o Doutoramento em Artes Musicais, de que foi o
-              Coordenador. Editor e intérprete, tem-se destacado pela
-              descoberta, recuperação e divulgação do património musical
-              português, realizando a primeira audição moderna de mais de 300
-              obras vocais e instrumentais de compositores portugueses, e
-              estreias absolutas de obras de Constança Capdeville, Jorge
-              Peixinho, Fernando Lopes-Graça, Filipe Pires, Miguel Azguime e
-              Eurico Carrapatoso.
-            </p>
-            <p>
-              A sua já longa discografia, a maior parte com o Coro Gulbenkian, é
-              dedicada também à música portuguesa, desde a polifonia
-              seiscentista até aos compositores dos nossos dias. A uma das
-              gravações foi atribuído o Prémio Discobole da Academia Francesa do
-              Disco. Como autor e intérprete gravou para a televisão as séries
-              de programas “Música de Corte no Palácio da Ajuda” (1986), “Tempos
-              da Música” (1988) e “Percursos da Música Portuguesa” (2008).
-              Participou em destacados festivais de música portugueses e
-              estrangeiros (Espanha, França, Inglaterra, Alemanha, Israel, China
-              e Estados Unidos), e dirigiu as mais importantes orquestras em
-              Portugal, para além de outros agrupamentos na Bélgica, Alemanha e
-              Estados Unidos.
-            </p>
-            <p>
-              Foi Director do Teatro Nacional de S. Carlos e Presidente da
-              Comissão de Acompanhamento das Orquestras Regionais.
-            </p>
-          </Resumo>
-        </div>
-      </JuriElement>
-
-      <JuriElement>
-        <JuriImgContainer>
-          <Img
-            fixed={data.eamorim.childImageSharp.fixed}
+          <GatsbyImage
+            image={data.eamorim.childImageSharp.gatsbyImageData}
             imgStyle={{ borderRadius: "0.25rem" }}
           />
         </JuriImgContainer>
@@ -141,8 +96,8 @@ const Juri = ({ data }) => (
 
       <JuriElement>
         <JuriImgContainer>
-          <Img
-            fixed={data.jsantos.childImageSharp.fixed}
+          <GatsbyImage
+            image={data.jsantos.childImageSharp.gatsbyImageData}
             imgStyle={{ borderRadius: "0.25rem" }}
           />
         </JuriImgContainer>
@@ -202,8 +157,8 @@ const Juri = ({ data }) => (
 
       <JuriElement>
         <JuriImgContainer>
-          <Img
-            fixed={data.ahiney.childImageSharp.fixed}
+          <GatsbyImage
+            image={data.ahiney.childImageSharp.gatsbyImageData}
             imgStyle={{ borderRadius: "0.25rem" }}
           />
         </JuriImgContainer>
@@ -251,8 +206,8 @@ const Juri = ({ data }) => (
 
       <JuriElement>
         <JuriImgContainer>
-          <Img
-            fixed={data.vnegreiros.childImageSharp.fixed}
+          <GatsbyImage
+            image={data.vnegreiros.childImageSharp.gatsbyImageData}
             imgStyle={{ borderRadius: "0.25rem" }}
           />
         </JuriImgContainer>
@@ -312,6 +267,51 @@ const Juri = ({ data }) => (
               Miguel Cintra e pela Orquestra Metropolitana de Lisboa, sob
               direcção do próprio compositor.
             </p>
+            <p>
+              Em 2021 foi conselheiro musical da produção cinematográfica
+              luso-francesa 'A criança', com estreia nos cinemas a 12 de
+              Fevereiro de 2022. A 10 de Abril de 2022 lança o CD 'Lasso -
+              Mus.Hs. 18.774', dirigindo o Vocal Ensemble, pela nova editora
+              discográfica portuguesa 9 musas.
+            </p>
+          </Resumo>
+        </div>
+      </JuriElement>
+
+      <JuriElement>
+        <JuriImgContainer>
+          <GatsbyImage
+            image={data.pteixeira.childImageSharp.gatsbyImageData}
+            imgStyle={{ borderRadius: "0.25rem" }}
+          />
+        </JuriImgContainer>
+        <div>
+          <h3>Pedro Teixeira</h3>
+          <Resumo>
+            <p>
+              Nascido em Lisboa, Pedro é Mestre em Direcção Coral pela Escola
+              Superior de Música de Lisboa, e é conhecido no mundo coral pelas
+              suas actuações perspicazes e sensíveis, tendo-se especializado em
+              construir e manter o som nuclear, a pureza de emissão vocal e
+              musicalidade dos coros com que trabalha.
+            </p>
+            <p>
+              Dirige desde 2000 o Officium Ensemble e desde 2001 o Coro
+              Ricercare. De 2011 a 2014 manteve uma colaboração com a Fundação
+              Gulbenkian como maestro preparador, tendo mais tarde dirigido
+              vários concertos do Coro Gulbenkian como maestro convidado, entre
+              2018 e 2021. É regulamente convidado como júri em concursos
+              internacionais de coros, tais como o Festival Coral de Verão de
+              Lisboa, Gran Premio de Canto Coral em Espanha, Winter Choral
+              Festival de Hong-Kong, e Singapore International Choral Festival.
+              Como maestro do Officium Ensemble, tem dirigido por várias vezes
+              nos festivais de música antiga de Utrecht Oude Muziek e Laus
+              Polyphoniæ, em Antuérpia.
+            </p>
+            <p>
+              De 2012 a 2018 foi maestro titular do Coro de la Comunidad de
+              Madrid, e é desde 2022 maestro adjunto do Coro Casa da Música.
+            </p>
           </Resumo>
         </div>
       </JuriElement>
@@ -325,37 +325,32 @@ export const query = graphql`
   query JuriQuery {
     jmatta: file(relativePath: { eq: "maestros/j-matta-2.jpg" }) {
       childImageSharp {
-        fixed(width: 200) {
-          ...GatsbyImageSharpFixed
-        }
+        gatsbyImageData(width: 200, layout: FIXED)
       }
     }
     jsantos: file(relativePath: { eq: "maestros/j-santos.jpg" }) {
       childImageSharp {
-        fixed(width: 200) {
-          ...GatsbyImageSharpFixed
-        }
+        gatsbyImageData(width: 200, layout: FIXED)
       }
     }
     vnegreiros: file(relativePath: { eq: "maestros/vasco-negreiros2.jpg" }) {
       childImageSharp {
-        fixed(width: 200) {
-          ...GatsbyImageSharpFixed
-        }
+        gatsbyImageData(width: 200, layout: FIXED)
       }
     }
     ahiney: file(relativePath: { eq: "maestros/aoife-hiney.jpg" }) {
       childImageSharp {
-        fixed(width: 200) {
-          ...GatsbyImageSharpFixed
-        }
+        gatsbyImageData(width: 200, layout: FIXED)
       }
     }
     eamorim: file(relativePath: { eq: "maestros/eugenio-amorim.jpg" }) {
       childImageSharp {
-        fixed(width: 200) {
-          ...GatsbyImageSharpFixed
-        }
+        gatsbyImageData(width: 200, layout: FIXED)
+      }
+    }
+    pteixeira: file(relativePath: { eq: "maestros/pedro-teixeira.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(width: 200, layout: FIXED)
       }
     }
   }
