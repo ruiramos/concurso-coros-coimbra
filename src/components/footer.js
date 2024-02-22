@@ -21,7 +21,7 @@ const StyledFooter = styled.footer`
 
   ${Note} {
     clear: both;
-    ${tw`pt-4 text-sm font-medium`}
+    ${tw`pt-2 text-xs font-medium`}
   }
 `;
 

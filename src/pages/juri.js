@@ -37,13 +37,124 @@ const Juri = ({ data }) => (
 
     <Section>
       <p>
-        O júri da edição deste ano será composto pelos maestros António Vassalo
-        Lourenço, João Santos, Jorge Matta, Mariano García Sánchez e Paulo
-        Bernardino.
+        O júri será constituído por cinco elementos: Jorge Matta, que presidirá,
+        João Santos, António Vassalo Lourenço, Paulo Bernardino e Mariano García
+        Sánchez.
       </p>
     </Section>
 
     <Section>
+      <JuriElement>
+        <JuriImgContainer>
+          <GatsbyImage
+            image={data.jorgeMatta.childImageSharp.gatsbyImageData}
+            imgStyle={{ borderRadius: "0.25rem" }}
+          />
+        </JuriImgContainer>
+        <div>
+          <h3>Jorge Matta</h3>
+          <Resumo>
+            <p>
+              Maestro-adjunto do Coro Gulbenkian durante longos anos, é
+              doutorado em Musicologia Histórica pela Universidade Nova de
+              Lisboa, onde ensinou no Departamento de Ciências Musicais.
+            </p>
+            <p>
+              Editor e intérprete, destacou-se pela descoberta, recuperação e
+              divulgação do património musical português, realizando a primeira
+              audição moderna de mais de 300 obras vocais e instrumentais de
+              compositores portugueses, e estreias absolutas de obras de
+              Constança Capdeville, Jorge Peixinho, Fernando Lopes-Graça, Filipe
+              Pires, Miguel Azguime e Eurico Carrapatoso.
+            </p>
+            <p>
+              A sua longa discografia, a maior parte com o Coro Gulbenkian, é
+              dedicada também à música portuguesa, desde a polifonia
+              seiscentista até aos compositores dos nossos dias. A uma das
+              gravações foi atribuído o Prémio Discobole da Academia Francesa do
+              Disco. Como autor e intérprete gravou para a televisão as séries
+              de programas “Música de Corte no Palácio da Ajuda” (1986), “Tempos
+              da Música” (1988) e “Percursos da Música Portuguesa” (2008).
+              Participou em destacados festivais de música portugueses e
+              estrangeiros (Espanha, França, Inglaterra, Alemanha, Israel, China
+              e Estados Unidos), e dirigiu as mais importantes orquestras em
+              Portugal, para além de outros agrupamentos na Bélgica, Alemanha e
+              Estados Unidos.
+            </p>
+            <p>
+              Foi Director do Teatro Nacional de S. Carlos e Presidente da
+              Comissão de Acompanhamento das Orquestras Regionais.
+            </p>
+          </Resumo>
+        </div>
+      </JuriElement>
+
+      <JuriElement>
+        <JuriImgContainer>
+          <GatsbyImage
+            image={data.joaoSantos.childImageSharp.gatsbyImageData}
+            imgStyle={{ borderRadius: "0.25rem" }}
+          />
+        </JuriImgContainer>
+        <div>
+          <h3>João Santos</h3>
+          <Resumo>
+            <p>
+              João Santos é licenciado em Música Sacra pela Escola das Artes da
+              Universidade Católica Portuguesa - Porto, onde estudou com Luca
+              Antoniotti (Órgão), Eugénio Amorim (Composição e Direcção de
+              Coros), Cesário Costa (Direcção de Orquestra), Anselm Hartmann
+              (Piano), entre outros.  João Santos tem-se destacado nas áreas de
+              Órgão e Composição, tanto a nível nacional, com o 2º prémio no
+              Concurso Nacional de Órgão do Instituto Gregoriano de Lisboa
+              (2007), como internacionalmente, contactando com célebres
+              organistas como T. Jellema, W. Zerer, M. Bouvard, J. Janssen, F.
+              Espinasse, O. Latry, D. Roth, L. Scandali, entre outros.
+            </p>
+            <p>
+              Participou nos prestigiados concursos internacionais de órgão
+              em Alkmaar, (Holanda), Freiberg, (Alemanha) e Innsbruck (Áustria).
+              Efectua regularmente concertos por todo o país e estrangeiro, de
+              onde se destacam a Catedral de Westminster (Londres),
+              o Orgelfestival Rhür (Alemanha), a Catedral de Notre Dame de
+              Paris, o St. Christoph Summer Festival (Vilnius), entre outros.
+              Foi solista com a Orquestra Clássica da Madeira durante o Festival
+              Internacional de Órgão da Madeira, 2014. É convidado com
+              frequência para se apresentar como continuista em orquestras,
+              nomeadamente com a Orquestra Filarmonia das Beiras. Como
+              compositor, além de larga produção no domínio da música litúrgica,
+              obras suas têm sido reconhecidas internacionalmente, sendo
+              finalista no Simon Carrington Chamber Singers Choral Composition
+              Competition (EUA) e no Musicaficta International Choral
+              Composition Competition (Itália). No seguimento deste último, as
+              suas obras Jesu Dulcis Memoria e Tryptich foram selecionadas para
+              publicação pela editora Edition Ferrimontana, sediada na Alemanha.
+              A sua transcrição para seis órgãos do Allegretto da 7ª Sinfonia
+              de L. Van Beethoven arrecadou o primeiro prémio no concurso
+              internacional de composição <em>&quot;Órgãos de Mafra&quot;</em>,
+              2017. Na edição de 2019 do mesmo concurso, foi distinguido também
+              com o primeiro prémio, desta vez com uma obra original intitulada
+              “Magnificat”.
+            </p>
+            <p>
+              João Santos é pianista acompanhador do dueto de contratenores
+              ENCANTO, com quem apresenta uma regularidade de concertos por todo
+              o País, bem como em inúmeras digressões no estrangeiro,
+              nomeadamente França, Suíça, Brasil, Estados Unidos, Bélgica,
+              Inglaterra, Alemanha e Eslováquia.  João Santos Dirige o Coro
+              Carlos Seixas (Coimbra) desde a sua fundação em 2007. De 2010 a
+              2018, foi organista titular do Santuário de Fátima. É organista
+              titular da Catedral de Leiria desde 2007.
+            </p>
+            <p>
+              <a href="https://jsantos-organ.com" target="_blank">
+                jsantos-organ.com
+              </a>
+            </p>
+          </Resumo>
+        </div>
+      </JuriElement>
+
       <JuriElement>
         <JuriImgContainer>
           <GatsbyImage
@@ -130,109 +241,48 @@ const Juri = ({ data }) => (
       <JuriElement>
         <JuriImgContainer>
           <GatsbyImage
-            image={data.joaoSantos.childImageSharp.gatsbyImageData}
+            image={data.pauloBernardino.childImageSharp.gatsbyImageData}
             imgStyle={{ borderRadius: "0.25rem" }}
           />
         </JuriImgContainer>
         <div>
-          <h3>João Santos</h3>
+          <h3>Paulo Bernardino</h3>
           <Resumo>
             <p>
-              João Santos é licenciado em Música Sacra pela Escola das Artes da
-              Universidade Católica Portuguesa - Porto, onde estudou com Luca
-              Antoniotti (Órgão), Eugénio Amorim (Composição e Direcção de
-              Coros), Cesário Costa (Direcção de Orquestra), Anselm Hartmann
-              (Piano), entre outros.  João Santos tem-se destacado nas áreas de
-              Órgão e Composição, tanto a nível nacional, com o 2º prémio no
-              Concurso Nacional de Órgão do Instituto Gregoriano de Lisboa
-              (2007), como internacionalmente, contactando com célebres
-              organistas como T. Jellema, W. Zerer, M. Bouvard, J. Janssen, F.
-              Espinasse, O. Latry, D. Roth, L. Scandali, entre outros.
+              PAULO BERNARDINO é investigador, maestro, compositor, organista e
+              pianista. Doutorado em Direção Coral e de Orquestra pela
+              Universidade de Aveiro (2021), detém uma Pós-Graduação de Estudos
+              Avançados em Polifonia administrada pela ESMAE – Porto (2023) e é
+              também licenciado em Engenharia Eletrotécnica pela Universidade de
+              Coimbra (1998) e em Música Sacra pela Universidade Católica
+              Portuguesa – Porto (2003). Enquanto autor e compositor é
+              representado pela Imprensa da UC, pela editora MPmp e pelas
+              revistas Salicus e STELLA.
             </p>
             <p>
-              Participou nos prestigiados concursos internacionais de órgão
-              em Alkmaar, (Holanda), Freiberg, (Alemanha) e Innsbruck (Áustria).
-              Efectua regularmente concertos por todo o país e estrangeiro, de
-              onde se destacam a Catedral de Westminster (Londres),
-              o Orgelfestival Rhür (Alemanha), a Catedral de Notre Dame de
-              Paris, o St. Christoph Summer Festival (Vilnius), entre outros.
-              Foi solista com a Orquestra Clássica da Madeira durante o Festival
-              Internacional de Órgão da Madeira, 2014. É convidado com
-              frequência para se apresentar como continuista em orquestras,
-              nomeadamente com a Orquestra Filarmonia das Beiras. Como
-              compositor, além de larga produção no domínio da música litúrgica,
-              obras suas têm sido reconhecidas internacionalmente, sendo
-              finalista no Simon Carrington Chamber Singers Choral Composition
-              Competition (EUA) e no Musicaficta International Choral
-              Composition Competition (Itália). No seguimento deste último, as
-              suas obras Jesu Dulcis Memoria e Tryptich foram selecionadas para
-              publicação pela editora Edition Ferrimontana, sediada na Alemanha.
-              A sua transcrição para seis órgãos do Allegretto da 7ª Sinfonia
-              de L. Van Beethoven arrecadou o primeiro prémio no concurso
-              internacional de composição <em>&quot;Órgãos de Mafra&quot;</em>,
-              2017. Na edição de 2019 do mesmo concurso, foi distinguido também
-              com o primeiro prémio, desta vez com uma obra original intitulada
-              “Magnificat”.
+              Atualmente é maestro e diretor artístico do Grupo Coral de Urrô
+              (Arouca), do Coral Stella Maris (Anadia), do Coro APRe! (Coimbra)
+              e do Coro da SRCOM (Coimbra), sendo fundador, entre outros, do
+              Manuel Faria Ensemble (Coimbra). Desenvolveu uma intensa atividade
+              docente nas áreas da análise e composição, direção coral e de
+              orquestra, musicologia, formação musical, acústica, piano,
+              acordeão e órgão em diversas instituições de ensino, de entre as
+              quais se destacam a EDMS de Coimbra (1994-2021), a UCP-Porto
+              (2003-2008), a FLUC (2005-2010), o Instituto Piaget (2008- 2013) e
+              a ESEC (2014/15).
             </p>
             <p>
-              João Santos é pianista acompanhador do dueto de contratenores
-              ENCANTO, com quem apresenta uma regularidade de concertos por todo
-              o País, bem como em inúmeras digressões no estrangeiro,
-              nomeadamente França, Suíça, Brasil, Estados Unidos, Bélgica,
-              Inglaterra, Alemanha e Eslováquia.  João Santos Dirige o Coro
-              Carlos Seixas (Coimbra) desde a sua fundação em 2007. De 2010 a
-              2018, foi organista titular do Santuário de Fátima. É organista
-              titular da Catedral de Leiria desde 2007.
-            </p>
-            <p>
-              <a href="https://jsantos-organ.com" target="_blank">
-                jsantos-organ.com
-              </a>
-            </p>
-          </Resumo>
-        </div>
-      </JuriElement>
-
-      <JuriElement>
-        <JuriImgContainer>
-          <GatsbyImage
-            image={data.jorgeMatta.childImageSharp.gatsbyImageData}
-            imgStyle={{ borderRadius: "0.25rem" }}
-          />
-        </JuriImgContainer>
-        <div>
-          <h3>Jorge Matta</h3>
-          <Resumo>
-            <p>
-              Maestro-adjunto do Coro Gulbenkian durante longos anos, é
-              doutorado em Musicologia Histórica pela Universidade Nova de
-              Lisboa, onde ensinou no Departamento de Ciências Musicais.
-            </p>
-            <p>
-              Editor e intérprete, destacou-se pela descoberta, recuperação e
-              divulgação do património musical português, realizando a primeira
-              audição moderna de mais de 300 obras vocais e instrumentais de
-              compositores portugueses, e estreias absolutas de obras de
-              Constança Capdeville, Jorge Peixinho, Fernando Lopes-Graça, Filipe
-              Pires, Miguel Azguime e Eurico Carrapatoso.
-            </p>
-            <p>
-              A sua longa discografia, a maior parte com o Coro Gulbenkian, é
-              dedicada também à música portuguesa, desde a polifonia
-              seiscentista até aos compositores dos nossos dias. A uma das
-              gravações foi atribuído o Prémio Discobole da Academia Francesa do
-              Disco. Como autor e intérprete gravou para a televisão as séries
-              de programas “Música de Corte no Palácio da Ajuda” (1986), “Tempos
-              da Música” (1988) e “Percursos da Música Portuguesa” (2008).
-              Participou em destacados festivais de música portugueses e
-              estrangeiros (Espanha, França, Inglaterra, Alemanha, Israel, China
-              e Estados Unidos), e dirigiu as mais importantes orquestras em
-              Portugal, para além de outros agrupamentos na Bélgica, Alemanha e
-              Estados Unidos.
-            </p>
-            <p>
-              Foi Director do Teatro Nacional de S. Carlos e Presidente da
-              Comissão de Acompanhamento das Orquestras Regionais.
+              Colabora desde janeiro de 2018 com a paróquia de Espinho num
+              projeto que visa a renovação musical litúrgica e sacra, sendo
+              responsável, entre outros, pela criação do coro infantojuvenil
+              Schola Cantorum Stella Maris. Organista da Sé Catedral de Coimbra,
+              desde 1994, é nomeado em 2002 organista titular dessa mesma
+              Catedral. Acumula função idêntica na Capela da Universidade de
+              Coimbra desde 2007. É, desde janeiro de 2023, também organista
+              titular do Mosteiro de Santa Maria de Arouca. Com mais de uma
+              dezena de trabalhos discográficos, tem realizado concertos a nível
+              nacional e internacional. Paralelamente à sua atividade regular,
+              apresenta-se também enquanto acordeonista, sanfonineiro e outros.
             </p>
           </Resumo>
         </div>
@@ -288,56 +338,6 @@ const Juri = ({ data }) => (
               europeas. Dicha iniciativa le valió para ser reconocido con el
               premio “Axuntábense” otorgado por la Federación de coros
               asturianos en 2023.
-            </p>
-          </Resumo>
-        </div>
-      </JuriElement>
-
-      <JuriElement>
-        <JuriImgContainer>
-          <GatsbyImage
-            image={data.pauloBernardino.childImageSharp.gatsbyImageData}
-            imgStyle={{ borderRadius: "0.25rem" }}
-          />
-        </JuriImgContainer>
-        <div>
-          <h3>Paulo Bernardino</h3>
-          <Resumo>
-            <p>
-              PAULO BERNARDINO é investigador, maestro, compositor, organista e
-              pianista. Doutorado em Direção Coral e de Orquestra pela
-              Universidade de Aveiro (2021), detém uma Pós-Graduação de Estudos
-              Avançados em Polifonia administrada pela ESMAE – Porto (2023) e é
-              também licenciado em Engenharia Eletrotécnica pela Universidade de
-              Coimbra (1998) e em Música Sacra pela Universidade Católica
-              Portuguesa – Porto (2003). Enquanto autor e compositor é
-              representado pela Imprensa da UC, pela editora MPmp e pelas
-              revistas Salicus e STELLA.
-            </p>
-            <p>
-              Atualmente é maestro e diretor artístico do Grupo Coral de Urrô
-              (Arouca), do Coral Stella Maris (Anadia), do Coro APRe! (Coimbra)
-              e do Coro da SRCOM (Coimbra), sendo fundador, entre outros, do
-              Manuel Faria Ensemble (Coimbra). Desenvolveu uma intensa atividade
-              docente nas áreas da análise e composição, direção coral e de
-              orquestra, musicologia, formação musical, acústica, piano,
-              acordeão e órgão em diversas instituições de ensino, de entre as
-              quais se destacam a EDMS de Coimbra (1994-2021), a UCP-Porto
-              (2003-2008), a FLUC (2005-2010), o Instituto Piaget (2008- 2013) e
-              a ESEC (2014/15).
-            </p>
-            <p>
-              Colabora desde janeiro de 2018 com a paróquia de Espinho num
-              projeto que visa a renovação musical litúrgica e sacra, sendo
-              responsável, entre outros, pela criação do coro infantojuvenil
-              Schola Cantorum Stella Maris. Organista da Sé Catedral de Coimbra,
-              desde 1994, é nomeado em 2002 organista titular dessa mesma
-              Catedral. Acumula função idêntica na Capela da Universidade de
-              Coimbra desde 2007. É, desde janeiro de 2023, também organista
-              titular do Mosteiro de Santa Maria de Arouca. Com mais de uma
-              dezena de trabalhos discográficos, tem realizado concertos a nível
-              nacional e internacional. Paralelamente à sua atividade regular,
-              apresenta-se também enquanto acordeonista, sanfonineiro e outros.
             </p>
           </Resumo>
         </div>

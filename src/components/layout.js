@@ -99,7 +99,7 @@ const Layout = ({ lang = "pt", edition = LATEST_EDITION, children }) => {
 
           <Sep />
 
-          <Footer />
+          <Footer edition={edition} />
         </Content>
       </Container>
     </>
