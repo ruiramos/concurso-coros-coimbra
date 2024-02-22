@@ -66,7 +66,7 @@ const Regulamento = ({ data }) => {
         <p>
           O regulamento do III Concurso bem como a partitura da obra
           obrigatória, <em>Balada para Coimbra</em>, de José Firmino, estão
-          também disponiveis para download em formato PDF:
+          disponiveis para download em formato PDF:
         </p>
 
         <DocContainer>
