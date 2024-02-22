@@ -25,6 +25,10 @@ export const MENU_DATA = {
       copy: "Local",
     },
     {
+      link: "/2022/juri",
+      copy: "Juri",
+    },
+    {
       link: "/2022/regulamento",
       copy: "Regulamento",
     },
@@ -38,6 +42,10 @@ export const MENU_DATA = {
     {
       link: "/localizacao",
       copy: "Local",
+    },
+    {
+      link: "/juri",
+      copy: "Juri",
     },
     {
       link: "/regulamento",
