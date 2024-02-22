@@ -1,14 +1,11 @@
 import React from "react";
 
 import { Link } from "gatsby";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-import tw from "tailwind.macro";
 import Layout from "components/layout";
 import SEO from "components/seo";
+import tw from "twin.macro";
 
-import { Section } from "../components/styled.js";
-import { Sep } from "../components/styled.js";
+import { Section } from "components/styled.js";
 
 const MainHeading = tw.h2` text-center border-0 mb-0 pb-0`;
 const SubHeading = tw.h3` text-center `;

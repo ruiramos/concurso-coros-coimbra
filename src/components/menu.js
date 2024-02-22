@@ -106,7 +106,7 @@ const Menu = ({ lang = "pt", edition = LATEST_EDITION }) => {
             css={{ position: "relative", top: "6px" }}
           >
             <GatsbyImage
-              image={image}
+              image={data.ukFlag.childImageSharp.gatsbyImageData}
               style={{ verticalAlign: "bottom" }}
               alt={lang === "pt" ? "In English" : "Em Português"}
             />

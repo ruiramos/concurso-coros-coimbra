@@ -4,7 +4,7 @@ import Layout from "../components/layout.js";
 import SEO from "../components/seo.js";
 import { Link } from "gatsby";
 
-import { Section } from "../components/styled.js";
+import { Section } from "components/styled.js";
 
 const MainHeading = tw.h2` text-center`;
 const SubHeading = tw.h3` text-center `;

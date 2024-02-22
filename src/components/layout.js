@@ -97,15 +97,16 @@ const Layout = ({ lang = "pt", edition, children }) => {
           </ImgContainer>
         </a>
 
-      <a href="/" title="Voltar à página inicial">
-        <ImgContainer>
-          <Img
-            fluid={data.logo.childImageSharp.fluid}
-            imgStyle={{ objectFit: "contain" }}
-            style={{ margin: "auto", display: "block", maxHeight: "400px" }}
-          />
-        </ImgContainer>
-      </a>
+        <a href="/" title="Voltar à página inicial">
+          <ImgContainer>
+            <GatsbyImage
+              image={image}
+              imgStyle={{ objectFit: "contain" }}
+              alt="Concurso Coros Coimbra"
+              style={{ margin: "auto", display: "block", maxHeight: "400px" }}
+            />
+          </ImgContainer>
+        </a>
         <Content>
           <Menu lang={lang} edition={edition} />
 
@@ -113,9 +114,8 @@ const Layout = ({ lang = "pt", edition, children }) => {
 
           <main>{children}</main>
 
-
-        <Sep />
-
+          <Sep />
+          <Footer>
             <Note as="div">
               Site: <a href="mailto:ruiramos@gmail.com">Rui Ramos</a>
             </Note>
