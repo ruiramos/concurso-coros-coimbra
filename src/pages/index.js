@@ -33,7 +33,7 @@ const IndexPage = ({ data }) => (
         culturais, detentora de assinalável tradição neste campo musical.
       </p>
       <p>
-        Já se encontram disponiveis para download o{" "}
+        Encontram-se disponiveis para download o{" "}
         <a target="_blank" href="/2024/Regulamento_III_Concurso.pdf">
           Regulamento do III Concurso
         </a>

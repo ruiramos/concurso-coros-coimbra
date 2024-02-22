@@ -18,6 +18,7 @@ const MenuContainer = tw.ul`
 const EditionsContainer = tw.div`
   text-gray-400
   text-right
+  text-sm
 `;
 
 const MenuLink = (props) => (
