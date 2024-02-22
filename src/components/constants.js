@@ -26,7 +26,7 @@ export const MENU_DATA = {
     },
     {
       link: "/2022/juri",
-      copy: "Juri",
+      copy: "Júri",
     },
     {
       link: "/2022/regulamento",
@@ -45,7 +45,7 @@ export const MENU_DATA = {
     },
     {
       link: "/juri",
-      copy: "Juri",
+      copy: "Júri",
     },
     {
       link: "/regulamento",
