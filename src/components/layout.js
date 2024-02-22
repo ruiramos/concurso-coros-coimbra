@@ -97,16 +97,6 @@ const Layout = ({ lang = "pt", edition, children }) => {
           </ImgContainer>
         </a>
 
-        <a href="/" title="Voltar à página inicial">
-          <ImgContainer>
-            <GatsbyImage
-              image={image}
-              imgStyle={{ objectFit: "contain" }}
-              alt="Concurso Coros Coimbra"
-              style={{ margin: "auto", display: "block", maxHeight: "400px" }}
-            />
-          </ImgContainer>
-        </a>
         <Content>
           <Menu lang={lang} edition={edition} />
 
