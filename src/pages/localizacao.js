@@ -31,7 +31,7 @@ const Right = styled.div`
 `;
 
 const Local = ({ data }) => (
-  <Layout edition="2022">
+  <Layout>
     <SEO title="Localização" />
 
     <Section>

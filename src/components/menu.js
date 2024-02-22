@@ -4,7 +4,7 @@ import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 
-import { LATEST_EDITION } from "components/constants";
+import { LATEST_EDITION, MENU_DATA } from "components/constants";
 
 const StyledHeader = styled.header`
   clear: both;
@@ -38,44 +38,6 @@ const StyledMenuLink = styled(MenuLink)`
   }
 `;
 
-const menuData = {
-  2017: [
-    {
-      link: "/2017/",
-      copy: "Resultados",
-    },
-  ],
-  2022: [
-    {
-      link: "/2022/",
-      copy: "Apresentação",
-    },
-    {
-      link: "/2022/coros",
-      copy: "Os Coros",
-    },
-    {
-      link: "/2022/programa",
-      copy: "Programa",
-    },
-    {
-      link: "/2022/localizacao",
-      copy: "Local",
-    },
-    {
-      link: "/2022/regulamento",
-      copy: "Regulamento",
-    },
-  ],
-
-  2024: [
-    {
-      link: "/",
-      copy: "Apresentação",
-    },
-  ],
-};
-
 const Menu = ({ lang = "pt", edition = LATEST_EDITION }) => {
   const data = useStaticQuery(graphql`
     query MenuQuery {
@@ -96,7 +58,7 @@ const Menu = ({ lang = "pt", edition = LATEST_EDITION }) => {
   return (
     <StyledHeader>
       <MenuContainer>
-        {menuData[edition].map((item) => (
+        {MENU_DATA[edition].map((item) => (
           <StyledMenuLink to={item.link}>{item.copy}</StyledMenuLink>
         ))}
 

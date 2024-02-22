@@ -13,7 +13,9 @@ import tw from "twin.macro";
 import styled from "styled-components";
 import Menu from "./menu";
 import "./layout.css";
-import { Note, Sep } from "../components/styled.js";
+import { Note, Sep } from "components/styled";
+import { LATEST_EDITION } from "components/constants";
+import Footer from "./footer";
 
 const Container = tw.div`
   mx-auto mt-4 px-8 bg-white mt-0 min-h-screen
@@ -27,37 +29,12 @@ const ImgContainer = tw.div`
   mb-10
 `;
 
-const Footer = styled.footer`
-  padding-bottom: 40px;
-  h4 {
-    ${tw`my-2 text-sm font-semibold`}
-  }
-  p {
-    ${tw`text-sm`}
-  }
-
-  a {
-    display: inline-block;
-    margin-right: 0.75em;
-  }
-
-  ${Note} {
-    clear: both;
-    ${tw`pt-4 text-sm font-medium`}
-  }
-`;
-
 const PrimaryNotice = styled.div`
   ${tw`text-center text-white p-2 bg-primary`}
   background: #56c8e5;
 `;
 
-const FooterSection = styled.div`
-  float: left;
-  padding-right: 30px;
-`;
-
-const Layout = ({ lang = "pt", edition, children }) => {
+const Layout = ({ lang = "pt", edition = LATEST_EDITION, children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -65,7 +42,17 @@ const Layout = ({ lang = "pt", edition, children }) => {
           title
         }
       }
-      logo: file(relativePath: { eq: "iii-concurso-logo.jpg" }) {
+      logo: file(relativePath: { eq: "iii-concurso-cover.jpg" }) {
+        childImageSharp {
+          gatsbyImageData(width: 800, layout: CONSTRAINED)
+        }
+      }
+      logo17: file(relativePath: { eq: "i-concurso-logo.jpg" }) {
+        childImageSharp {
+          gatsbyImageData(width: 800, layout: CONSTRAINED)
+        }
+      }
+      logo22: file(relativePath: { eq: "ii-concurso-logo-temp.jpg" }) {
         childImageSharp {
           gatsbyImageData(width: 800, layout: CONSTRAINED)
         }
@@ -73,15 +60,21 @@ const Layout = ({ lang = "pt", edition, children }) => {
     }
   `);
 
-  const image = getImage(data.logo);
+  const image =
+    edition === "2017"
+      ? getImage(data.logo17)
+      : edition === "2022"
+      ? getImage(data.logo22)
+      : getImage(data.logo);
 
   return (
     <>
-      {false && (
+      {edition !== LATEST_EDITION && (
         <PrimaryNotice>
           <h5>
-            Resultados 2022: 3ᵒ Coro Feminino CM Paredes; 2ᵒ ProVocal Ensemble;
-            1ᵒ Vocal Art Ensemble. Parabéns!
+            <Link to="/">
+              Voltar ao site do III Concurso Coros Coimbra (2024)
+            </Link>
           </h5>
         </PrimaryNotice>
       )}
@@ -105,11 +98,8 @@ const Layout = ({ lang = "pt", edition, children }) => {
           <main>{children}</main>
 
           <Sep />
-          <Footer>
-            <Note as="div">
-              Site: <a href="mailto:ruiramos@gmail.com">Rui Ramos</a>
-            </Note>
-          </Footer>
+
+          <Footer />
         </Content>
       </Container>
     </>

@@ -2,7 +2,7 @@ import React, { useEffect, useState, useMemo } from "react";
 import ReactDOM from "react-dom";
 
 import { graphql } from "gatsby";
-import Layout from "components/layout22";
+import Layout from "components/layout";
 import SEO from "components/seo";
 import Coro from "components/coro";
 import styled from "styled-components";
@@ -89,7 +89,7 @@ const CorosPage = ({ data }) => {
   }, [typeof window !== "undefined" ? window.location.hash : undefined]);
 
   return (
-    <Layout>
+    <Layout edition="2022">
       <SEO title="Coros" />
       <CorosContainer>
         {coros.map((coro, i) => (

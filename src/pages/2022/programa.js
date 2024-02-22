@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
-import Layout from "components/layout22";
+import Layout from "components/layout";
 
 const HorasTh = styled.th`
   width: 20%;
@@ -80,7 +80,7 @@ const ProgramaTableNew = styled.table`
 
 const Programa = () => {
   return (
-    <Layout>
+    <Layout edition="2022">
       <ProgramaTableNew>
         <tr>
           <th>

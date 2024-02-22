@@ -1,13 +1,13 @@
 import React from "react";
 import tw from "twin.macro";
 
-import Layout from "components/layout22";
+import Layout from "components/layout";
 import { Section } from "components/styled";
 import SEO from "components/seo";
 
 const Edicao2022 = () => {
   return (
-    <Layout>
+    <Layout edition="2022">
       <SEO title="Videos e Resultados - II Concurso de Coros Coimbra" />
       <Section>
         <div css={[tw`border rounded p-8 my-4`]}>

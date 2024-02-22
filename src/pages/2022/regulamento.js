@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 
-import Layout from "components/layout22";
+import Layout from "components/layout";
 import SEO from "components/seo";
 import styled from "styled-components";
 import tw from "twin.macro";
@@ -59,7 +59,7 @@ const Underline = styled.span`
 `;
 
 const Regulamento = ({ data }) => (
-  <Layout>
+  <Layout edition="2022">
     <SEO title="Regulamento" />
 
     <Section>

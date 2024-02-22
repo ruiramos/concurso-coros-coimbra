@@ -5,7 +5,7 @@ import React from "react";
 import { graphql } from "gatsby";
 
 import Resumo from "components/resumo";
-import Layout from "components/layout22";
+import Layout from "components/layout";
 import SEO from "components/seo";
 import { Section } from "components/styled.js";
 
@@ -32,7 +32,7 @@ const JuriElement = styled.div`
 `;
 
 const Juri = ({ data }) => (
-  <Layout>
+  <Layout edition="2022">
     <SEO title="Júri" />
 
     <Section>

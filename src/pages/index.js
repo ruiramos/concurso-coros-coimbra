@@ -20,16 +20,29 @@ const IndexPage = ({ data }) => (
     </SubHeading>
 
     <Section>
-      <div>
+      <p>
+        O Coro Carlos Seixas da Casa do Pessoal do Município de Coimbra organiza
+        este ano a terceira edição do Concurso de Coros - Coimbra, no âmbito da
+        música coral.
+      </p>
+      <p>
+        O concurso de coros visa não só homenagear José António Carlos Seixas,
+        compositor de destaque do barroco português, nado em Coimbra, em 1704,
+        mas, sobretudo, dinamizar a música coral tendo como palco a cidade de
+        Coimbra, cidade universitária de cariz e de matriz eminentemente
+        culturais, detentora de assinalável tradição neste campo musical.
+      </p>
+      <p>
+        Já se encontram disponiveis para download o{" "}
         <a target="_blank" href="/2024/Regulamento_III_Concurso.pdf">
-          Regulamento
+          Regulamento do III Concurso
         </a>
-      </div>
-      <div>
-        <a href="/2024/PartituraIIIConcursoCoros.pdf">
-          Obra obrigatória - Balada para Coimbra
+        , bem como a{" "}
+        <a target="_blank" href="/2024/PartituraIIIConcursoCoros.pdf">
+          obra obrigatória - Balada para Coimbra, de José Firmino
         </a>
-      </div>
+        .
+      </p>
     </Section>
   </Layout>
 );

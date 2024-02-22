@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Link } from "gatsby";
-import Layout from "components/layout22";
+import Layout from "components/layout";
 import SEO from "components/seo";
 import tw from "twin.macro";
 
@@ -11,7 +11,7 @@ const MainHeading = tw.h2` text-center border-0 mb-0 pb-0`;
 const SubHeading = tw.h3` text-center `;
 
 const IndexPage = ({ data }) => (
-  <Layout>
+  <Layout edition="2022">
     <SEO />
 
     <MainHeading>4 de junho de 2022</MainHeading>
