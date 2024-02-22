@@ -17,8 +17,10 @@ const MenuContainer = tw.ul`
 
 const EditionsContainer = tw.div`
   text-gray-400
-  text-right
+  text-center
+  lg:text-right
   text-sm
+  pt-4
 `;
 
 const MenuLink = (props) => (
