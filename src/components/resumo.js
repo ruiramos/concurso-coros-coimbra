@@ -33,7 +33,7 @@ const Resumo = ({ children }) => {
     <div>
       <Container className={expanded ? "expanded" : ""}>{children}</Container>
       <button onClick={() => setExpanded(!expanded)}>
-        {expanded ? "esconder" : "mostrar mais"}
+        {expanded ? "Esconder" : "Ler mais"}
       </button>
     </div>
   );
