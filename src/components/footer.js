@@ -72,6 +72,13 @@ const Footer = ({ edition }) => {
           gatsbyImageData(height: 35)
         }
       }
+      talinamed: file(
+        relativePath: { eq: "2024/patrocinadores/talinamed.png" }
+      ) {
+        childImageSharp {
+          gatsbyImageData(height: 65)
+        }
+      }
     }
   `);
 
@@ -82,6 +89,7 @@ const Footer = ({ edition }) => {
   const atenasImage = getImage(data.atenas);
   const aguasImage = getImage(data.aguas);
   const siloalImage = getImage(data.siloal);
+  const talinamedImage = getImage(data.talinamed);
 
   return (
     <StyledFooter>
@@ -164,6 +172,51 @@ const Footer = ({ edition }) => {
                 style={{ marginBottom: "1em" }}
               />
             </a>
+          </FooterSection>
+        </>
+      )}
+      {edition === "2024" && (
+        <>
+          <FooterSection>
+            <h4>Apoios:</h4>
+            <div>
+              <a
+                href="https://www.cm-coimbra.pt/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <GatsbyImage
+                  image={cmcImage}
+                  imgStyle={{ objectFit: "contain" }}
+                  alt="Camara Municipal de Coimbra"
+                  style={{ marginBottom: "1em" }}
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/siloal-produtos-e-medicamentos-veterin%C3%A1rios/about/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <GatsbyImage
+                  image={siloalImage}
+                  imgStyle={{ objectFit: "contain" }}
+                  alt="Siloal"
+                  style={{ marginBottom: "1em" }}
+                />
+              </a>
+              <a
+                href="https://www.talinamed.pt/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <GatsbyImage
+                  image={talinamedImage}
+                  imgStyle={{ objectFit: "contain" }}
+                  alt="Talinamed"
+                  style={{ marginBottom: "1em" }}
+                />
+              </a>
+            </div>
           </FooterSection>
         </>
       )}
