@@ -40,8 +40,8 @@ export const MENU_DATA = {
       copy: "Apresentação",
     },
     {
-      link: "/atlier",
-      copy: "Atlier",
+      link: "/atelier",
+      copy: "Atelier",
     },
     {
       link: "/localizacao",
