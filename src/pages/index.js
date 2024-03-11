@@ -7,6 +7,8 @@ import tw from "twin.macro";
 
 import { Section, MainHeading, SubHeading } from "components/styled.js";
 
+const Title = tw.h4`font-bold`;
+
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO />
@@ -22,6 +24,25 @@ const IndexPage = ({ data }) => (
         este ano a terceira edição do Concurso de Coros - Coimbra, no âmbito da
         música coral.
       </p>
+      <p>Nesta edição as atividades decorrerão durante dois dias:</p>
+      <Title>
+        Dia 8 – Atelier de Trabalho Coral – Orientado pelo Maestro Jorge Matta
+      </Title>
+
+      <p>
+        Neste atelier serão trabalhadas obras de Diogo Dias Melgás (1630-1700),
+        destacado compositor da Escola de Évora, herdeiro da tradição
+        renascentista mas já com uma linguagem de algum modo barroca (Salve
+        Regina e/ou In jejunio et fletu, ainda a escolher), e um “Vilancico
+        Negro” de Santa Cruz de Coimbra, século XVII (Casuá casué).
+      </p>
+      <p>
+        O objetivo principal deste atelier não é a apresentação das obras no
+        concerto final do Festival (ainda que isso possa acontecer), mas o
+        trabalho detalhado de ensaio, nas suas vertentes técnicas e musicais.
+      </p>
+
+      <Title>Dia 9 – III Concurso de Coros</Title>
       <p>
         O concurso de coros visa não só homenagear José António Carlos Seixas,
         compositor de destaque do barroco português, nado em Coimbra, em 1704,

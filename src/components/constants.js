@@ -39,10 +39,10 @@ export const MENU_DATA = {
       link: "/",
       copy: "Apresentação",
     },
-    {
-      link: "/atelier",
-      copy: "Atelier",
-    },
+    //    {
+    //      link: "/atelier",
+    //      copy: "Atelier",
+    //    },
     {
       link: "/localizacao",
       copy: "Local",
