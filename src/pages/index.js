@@ -51,17 +51,6 @@ const IndexPage = ({ data }) => (
         detentora de assinalável tradição neste campo musical.
       </p>
       <p>
-        Encontram-se disponiveis para download o{" "}
-        <a target="_blank" href="/2024/Regulamento_III_Concurso.pdf">
-          Regulamento do III Concurso
-        </a>
-        , bem como a obra obrigatória -{" "}
-        <a target="_blank" href="/2024/PartituraIIIConcursoCoros.pdf">
-          Balada para Coimbra, de José Firmino
-        </a>
-        .
-      </p>
-      <p>
         No &quot;III Concurso de Coros – Coimbra 2024&#39;&#39; pretende-se
         ainda prestar a devida homenagem ao maestro José Firmino, através da
         escolha da peça obrigatória - “Balada para Coimbra”. José Firmino,
@@ -73,11 +62,22 @@ const IndexPage = ({ data }) => (
         O &quot;III Concurso de Coros - Coimbra&quot; integrará duas fases: a
         primeira será uma fase de pré-seleção, com todos os coros amadores
         inscritos; a segunda, a realizar no dia 09 de junho de 2024, terá a
-        participação de oito coros selecionados . O <Link to="/juri">Júri</Link>{" "}
+        participação de oito coros selecionados. O <Link to="/juri">Júri</Link>{" "}
         é constituído por prestigiados maestros de renome nacional e
         internacional. O evento terminará com um Concerto de Gala, à noite, com
         a participação dos três primeiros coros classificados e do anfitrião,
         Coro Carlos Seixas.
+      </p>
+      <p>
+        Encontram-se disponiveis para download o{" "}
+        <a target="_blank" href="/2024/Regulamento_III_Concurso.pdf">
+          Regulamento do III Concurso
+        </a>
+        , bem como a obra obrigatória -{" "}
+        <a target="_blank" href="/2024/PartituraIIIConcursoCoros.pdf">
+          Balada para Coimbra, de José Firmino
+        </a>
+        .
       </p>
     </Section>
   </Layout>
