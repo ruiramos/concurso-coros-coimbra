@@ -13,7 +13,7 @@ const IndexPage = ({ data }) => (
   <Layout>
     <SEO />
 
-    <MainHeading>9 de junho de 2024</MainHeading>
+    <MainHeading>8 e 9 de junho de 2024</MainHeading>
     <SubHeading>
       Sala D. Afonso Henriques, Antiga Igreja Convento São Francisco
     </SubHeading>
