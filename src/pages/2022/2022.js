@@ -41,6 +41,7 @@ const Edicao2022 = () => {
           <a
             href="https://www.youtube.com/watch?v=2fMrr5i5RcM&list=PLg3xgq5Rluu9rkhMjMKQrcs4-DuVnVPGh"
             target="_blank"
+            rel="noreferrer"
             css={[tw`text-center mt-2 block`]}
           >
             II Concurso de Coros Coimbra - Concurso (Playlist YouTube)
@@ -59,6 +60,7 @@ const Edicao2022 = () => {
           <a
             href="https://www.youtube.com/watch?v=KZIpTQqh3CA&list=PLg3xgq5Rluu-c-pJ4kDIFZheRsgNRVZqL"
             target="_blank"
+            rel="noreferrer"
             css={[tw`text-center mt-2 block`]}
           >
             II Concurso de Coros Coimbra - Gala (Playlist YouTube)

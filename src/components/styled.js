@@ -17,3 +17,6 @@ export const Sep = styled.hr`
 `;
 
 export const Note = tw.small`text-gray-400`;
+
+export const MainHeading = tw.h2` text-center border-0 mb-0 pb-0`;
+export const SubHeading = tw.h3` text-center `;

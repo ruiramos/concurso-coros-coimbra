@@ -7,7 +7,12 @@ import styled from "styled-components";
 import tw from "twin.macro";
 import { GatsbyImage } from "gatsby-plugin-image";
 
-import { Section as CommonSection, Sep } from "components/styled.js";
+import {
+  Section as CommonSection,
+  Sep,
+  MainHeading,
+  SubHeading,
+} from "components/styled.js";
 
 const DocContainer = tw.div`
   flex
@@ -59,17 +64,12 @@ const Underline = styled.span`
   text-decoration: underline;
 `;
 
-const MainHeading = tw.h2` text-center border-0 mb-0 pb-0`;
-
 const Regulamento = ({ data }) => {
-  console.log(data);
   return (
     <Layout>
-      <MainHeading>
-        III CONCURSO DE COROS – COIMBRA 2024
-        <br />
-        Regulamento
-      </MainHeading>
+      <SEO title="Regulamento" />
+      <MainHeading>III Concurso de Coros – Coimbra 2024</MainHeading>
+      <SubHeading>Regulamento</SubHeading>
       <Section>
         <RegTitle>Preâmbulo</RegTitle>
         <p>

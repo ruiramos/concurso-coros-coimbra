@@ -147,7 +147,11 @@ const Juri = ({ data }) => (
               titular da Catedral de Leiria desde 2007.
             </p>
             <p>
-              <a href="https://jsantos-organ.com" target="_blank">
+              <a
+                href="https://jsantos-organ.com"
+                target="_blank"
+                rel="noreferrer"
+              >
                 jsantos-organ.com
               </a>
             </p>

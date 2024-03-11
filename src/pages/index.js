@@ -5,10 +5,7 @@ import Layout from "components/layout";
 import SEO from "components/seo";
 import tw from "twin.macro";
 
-import { Section } from "components/styled.js";
-
-const MainHeading = tw.h2` text-center border-0 mb-0 pb-0`;
-const SubHeading = tw.h3` text-center `;
+import { Section, MainHeading, SubHeading } from "components/styled.js";
 
 const IndexPage = ({ data }) => (
   <Layout>
