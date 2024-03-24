@@ -44,6 +44,7 @@ const coros = [
     name: "Coro Feminino do Conservatório de Música de Paredes",
     image: "coro-feminino-cmparedes.jpg",
     id: "coro-feminino-cmparedes",
+    lugar: 3,
   },
   {
     name: "Coro Misto da Universidade de Coimbra",
@@ -54,11 +55,13 @@ const coros = [
     name: "ProVocal Ensemble",
     image: "provocal-ensemble.jpg",
     id: "pro-vocal",
+    lugar: 2,
   },
   {
     name: "Vocal Art Ensemble",
     image: "vocal-art-ensemble.jpg",
     id: "vocal-art-ensemble",
+    lugar: 1,
   },
 ];
 
