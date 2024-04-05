@@ -21,10 +21,10 @@ const IndexPage = ({ data }) => (
     <Section>
       <p>
         O Coro Carlos Seixas da Casa do Pessoal do Município de Coimbra organiza
-        este ano a terceira edição do Concurso de Coros - Coimbra, no âmbito da
-        música coral.
+        este ano a terceira edição do Concurso de Coros - Coimbra 2024, no
+        âmbito da música coral.
       </p>
-      <p>Nesta edição as atividades decorrerão durante dois dias:</p>
+      <p>Nesta edição teremos duas atividades independentes:</p>
       <Title>
         Dia 8 – Atelier de Trabalho Coral – Orientado pelo Maestro Jorge Matta
       </Title>
@@ -37,9 +37,12 @@ const IndexPage = ({ data }) => (
         Negro” de Santa Cruz de Coimbra, século XVII (Casuá casué).
       </p>
       <p>
-        O objetivo principal deste atelier não é a apresentação das obras no
-        concerto final do Festival (ainda que isso possa acontecer), mas o
-        trabalho detalhado de ensaio, nas suas vertentes técnicas e musicais.
+        Para esta atividade poderão inscrever-se todos os coralistas
+        independentemente de serem concorrentes ou não ao concurso.
+      </p>
+      <p>
+        A inscrição terá um custo de 2,5€ para coralistas que integrem coros
+        concorrentes e 5€ para os restantes.
       </p>
 
       <Title>Dia 9 – III Concurso de Coros</Title>
@@ -51,12 +54,12 @@ const IndexPage = ({ data }) => (
         detentora de assinalável tradição neste campo musical.
       </p>
       <p>
-        No &quot;III Concurso de Coros – Coimbra 2024&#39;&#39; pretende-se
-        ainda prestar a devida homenagem ao maestro José Firmino, através da
-        escolha da peça obrigatória - “Balada para Coimbra”. José Firmino,
-        maestro recentemente falecido, foi fundador de dois grupos corais de
-        Coimbra - o Choral Poliphonico e o Coro dos Pequenos Cantores, tendo
-        sido ainda autor de vasta obra coral e sinfónica.
+        No &quot;III Concurso de Coros – Coimbra 2024&quot; pretende-se ainda
+        prestar a devida homenagem ao maestro José Firmino, através da escolha
+        da peça obrigatória - “Balada para Coimbra”. José Firmino, maestro
+        recentemente falecido, foi fundador de dois grupos corais de Coimbra - o
+        Choral Poliphonico e o Coro dos Pequenos Cantores, tendo sido ainda
+        autor de vasta obra coral e sinfónica.
       </p>
       <p>
         O &quot;III Concurso de Coros - Coimbra&quot; integrará duas fases: a
@@ -70,7 +73,7 @@ const IndexPage = ({ data }) => (
       </p>
       <p>
         Encontram-se disponiveis para download o{" "}
-        <a target="_blank" href="/2024/Regulamento_III_Concurso.pdf">
+        <a target="_blank" href="/2024/Regulamento_III_Concurso_Rev01.pdf">
           Regulamento do III Concurso
         </a>
         , bem como a obra obrigatória -{" "}

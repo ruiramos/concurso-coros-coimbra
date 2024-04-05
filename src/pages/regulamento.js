@@ -144,8 +144,8 @@ const Regulamento = ({ data }) => {
             tipo de playback, nem vocal nem instrumental.
           </li>
           <li>
-            Os Coros interessados deverão apresentar a candidatura até 1 de
-            abril de 2024.
+            Os Coros interessados deverão apresentar a candidatura até às 24h do
+            dia 14 de abril de 2024.
           </li>
           <li>
             Depois de comunicada a sua admissão, até 22 de abril, os Coros terão
@@ -269,7 +269,7 @@ const Regulamento = ({ data }) => {
         </p>
 
         <DocContainer>
-          <Doc href="/2024/Regulamento_III_Concurso.pdf" target="_blank">
+          <Doc href="/2024/Regulamento_III_Concurso_Rev01.pdf" target="_blank">
             <DocImg>
               <GatsbyImage
                 image={data.regThumb.childImageSharp.gatsbyImageData}
@@ -277,7 +277,7 @@ const Regulamento = ({ data }) => {
             </DocImg>
             <Underline>Regulamento (pdf)</Underline>
             <SmallDate className="no-underline">
-              Actualizado: 22/02/2024
+              Actualizado: 01/04/2024
             </SmallDate>
           </Doc>
           <Doc href="/2024/PartituraIIIConcursoCoros.pdf" target="_blank">
