@@ -79,6 +79,11 @@ const Footer = ({ edition }) => {
           gatsbyImageData(height: 65)
         }
       }
+      frijobel: file(relativePath: { eq: "2024/patrocinadores/frijobel.jpg" }) {
+        childImageSharp {
+          gatsbyImageData(height: 45)
+        }
+      }
     }
   `);
 
@@ -90,6 +95,7 @@ const Footer = ({ edition }) => {
   const aguasImage = getImage(data.aguas);
   const siloalImage = getImage(data.siloal);
   const talinamedImage = getImage(data.talinamed);
+  const frijobelImage = getImage(data.frijobel);
 
   return (
     <StyledFooter>
@@ -213,6 +219,14 @@ const Footer = ({ edition }) => {
                   image={talinamedImage}
                   imgStyle={{ objectFit: "contain" }}
                   alt="Talinamed"
+                  style={{ marginBottom: "1em" }}
+                />
+              </a>
+              <a href="https://frijobel.pt/" target="_blank" rel="noreferrer">
+                <GatsbyImage
+                  image={frijobelImage}
+                  imgStyle={{ objectFit: "contain" }}
+                  alt="Frijobel"
                   style={{ marginBottom: "1em" }}
                 />
               </a>
