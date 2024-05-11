@@ -17,6 +17,8 @@ const StyledFooter = styled.footer`
   a {
     display: inline-block;
     margin-right: 0.75em;
+    vertical-align: middle;
+    padding: 4px;
   }
 
   ${Note} {
@@ -28,6 +30,7 @@ const StyledFooter = styled.footer`
 const FooterSection = styled.div`
   float: left;
   padding-right: 30px;
+  margin-bottom: 10px;
 `;
 const Footer = ({ edition }) => {
   const data = useStaticQuery(graphql`
@@ -57,9 +60,9 @@ const Footer = ({ edition }) => {
           gatsbyImageData(height: 40)
         }
       }
-      atenas: file(relativePath: { eq: "atenas.jpg" }) {
+      atenas: file(relativePath: { eq: "cafe-atenas.jpeg" }) {
         childImageSharp {
-          gatsbyImageData(height: 40)
+          gatsbyImageData(height: 55)
         }
       }
       aguas: file(relativePath: { eq: "aguas.png" }) {
@@ -73,15 +76,25 @@ const Footer = ({ edition }) => {
         }
       }
       talinamed: file(
-        relativePath: { eq: "2024/patrocinadores/talinamed.png" }
+        relativePath: { eq: "2024/patrocinadores/talinamed2.png" }
       ) {
         childImageSharp {
-          gatsbyImageData(height: 65)
+          gatsbyImageData(width: 120)
         }
       }
       frijobel: file(relativePath: { eq: "2024/patrocinadores/frijobel.jpg" }) {
         childImageSharp {
           gatsbyImageData(height: 45)
+        }
+      }
+      pbc: file(relativePath: { eq: "2024/patrocinadores/PBC_logo.jpg" }) {
+        childImageSharp {
+          gatsbyImageData(height: 35)
+        }
+      }
+      smc: file(relativePath: { eq: "2024/patrocinadores/SMC-Logotipo.jpg" }) {
+        childImageSharp {
+          gatsbyImageData(height: 60)
         }
       }
     }
@@ -96,6 +109,8 @@ const Footer = ({ edition }) => {
   const siloalImage = getImage(data.siloal);
   const talinamedImage = getImage(data.talinamed);
   const frijobelImage = getImage(data.frijobel);
+  const pbcImage = getImage(data.pbc);
+  const smcImage = getImage(data.smc);
 
   return (
     <StyledFooter>
@@ -112,7 +127,6 @@ const Footer = ({ edition }) => {
                 image={cmcImage}
                 imgStyle={{ objectFit: "contain" }}
                 alt="Camara Municipal de Coimbra"
-                style={{ marginBottom: "1em" }}
               />
             </a>
             <a
@@ -124,7 +138,6 @@ const Footer = ({ edition }) => {
                 image={edacImage}
                 imgStyle={{ objectFit: "contain" }}
                 alt="EDAC - Escola de Dança Arte e Corpo"
-                style={{ marginBottom: "1em" }}
               />
             </a>
             <a
@@ -136,7 +149,6 @@ const Footer = ({ edition }) => {
                 image={mfeImage}
                 imgStyle={{ objectFit: "contain" }}
                 alt="Manuel Faria Ensemble"
-                style={{ marginBottom: "1em" }}
               />
             </a>
           </FooterSection>
@@ -151,7 +163,6 @@ const Footer = ({ edition }) => {
                 image={atenasImage}
                 imgStyle={{ objectFit: "contain" }}
                 alt="Cafe Atenas"
-                style={{ marginBottom: "1em" }}
               />
             </a>
             <a
@@ -163,7 +174,6 @@ const Footer = ({ edition }) => {
                 image={aguasImage}
                 imgStyle={{ objectFit: "contain" }}
                 alt="Aguas de Coimbra"
-                style={{ marginBottom: "1em" }}
               />
             </a>
             <a
@@ -175,7 +185,6 @@ const Footer = ({ edition }) => {
                 image={siloalImage}
                 imgStyle={{ objectFit: "contain" }}
                 alt="Siloal"
-                style={{ marginBottom: "1em" }}
               />
             </a>
           </FooterSection>
@@ -195,7 +204,6 @@ const Footer = ({ edition }) => {
                   image={cmcImage}
                   imgStyle={{ objectFit: "contain" }}
                   alt="Camara Municipal de Coimbra"
-                  style={{ marginBottom: "1em" }}
                 />
               </a>
               <a
@@ -207,7 +215,17 @@ const Footer = ({ edition }) => {
                   image={siloalImage}
                   imgStyle={{ objectFit: "contain" }}
                   alt="Siloal"
-                  style={{ marginBottom: "1em" }}
+                />
+              </a>
+              <a
+                href="https://www.facebook.com/atenasfrancesinhas"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <GatsbyImage
+                  image={atenasImage}
+                  imgStyle={{ objectFit: "contain" }}
+                  alt="Cafe Atenas"
                 />
               </a>
               <a
@@ -219,7 +237,6 @@ const Footer = ({ edition }) => {
                   image={talinamedImage}
                   imgStyle={{ objectFit: "contain" }}
                   alt="Talinamed"
-                  style={{ marginBottom: "1em" }}
                 />
               </a>
               <a href="https://frijobel.pt/" target="_blank" rel="noreferrer">
@@ -227,7 +244,28 @@ const Footer = ({ edition }) => {
                   image={frijobelImage}
                   imgStyle={{ objectFit: "contain" }}
                   alt="Frijobel"
-                  style={{ marginBottom: "1em" }}
+                />
+              </a>
+              <a
+                href="https://www.seminariomaiordecoimbra.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <GatsbyImage
+                  image={smcImage}
+                  imgStyle={{ objectFit: "contain" }}
+                  alt="Seminario Maior de Coimbra"
+                />
+              </a>
+              <a
+                href="http://www.pbc-sroc.pt/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <GatsbyImage
+                  image={pbcImage}
+                  imgStyle={{ objectFit: "contain" }}
+                  alt="PBC"
                 />
               </a>
             </div>
