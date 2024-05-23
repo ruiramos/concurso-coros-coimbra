@@ -26,7 +26,9 @@ const IndexPage = ({ data }) => (
       </p>
       <p>Nesta edição teremos duas atividades independentes:</p>
       <Title>
-        Dia 8 – Atelier de Trabalho Coral – Orientado pelo Maestro Jorge Matta
+        <Link to="/atelier">
+          Dia 8 – Atelier de Trabalho Coral – Orientado pelo Maestro Jorge Matta
+        </Link>
       </Title>
 
       <p>
@@ -45,7 +47,9 @@ const IndexPage = ({ data }) => (
         concorrentes e 5€ para os restantes.
       </p>
 
-      <Title>Dia 9 – III Concurso de Coros</Title>
+      <Title>
+        <Link to="/concurso">Dia 9 – III Concurso de Coros</Link>
+      </Title>
       <p>
         O concurso de coros visa não só homenagear José António Carlos Seixas,
         compositor de destaque do barroco português, nado em Coimbra, em 1704,
