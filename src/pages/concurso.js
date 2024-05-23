@@ -17,12 +17,12 @@ const Concurso = () => (
       </ProgramaTitle>
       <ProgramaTableNew>
         <tr>
-          <th>Horário</th>
-          <th style={{ width: "66%" }}>Descrição</th>
+          <th style={{ width: "12%" }}>Horário</th>
+          <th>Descrição</th>
           <th>Local</th>
         </tr>
         <tr>
-          <td>10:00 12:40</td>
+          <td>10:00 - 12:40</td>
           <td>
             <p className="strong">Receção dos coros </p>
             <p className="strong">Ensaio de colocação</p>
@@ -33,7 +33,7 @@ const Concurso = () => (
           </td>
         </tr>
         <tr>
-          <td>12:45 13:00</td>
+          <td>12:45 - 13:00</td>
           <td>
             <p className="strong">Sorteio da ordem de atuação</p>
             <p className="">(aberto a todos os coros)</p>
@@ -43,14 +43,14 @@ const Concurso = () => (
           </td>
         </tr>
         <tr>
-          <td>13:00 14:00</td>
+          <td>13:00 - 14:00</td>
           <td>
             <p className="strong">Almoço</p>
             <p className="">(livre)</p>
           </td>
           <td>(Existem vários restaurantes na proximidade do CSF)</td>
         </tr>
-        <tr className="time-place">
+        <tr className="time-place section">
           <td></td>
           <td>Concurso de Coros</td>
           <td></td>
@@ -66,7 +66,7 @@ const Concurso = () => (
           <th>Local</th>
         </tr>
         <tr>
-          <td>14:30 14:45</td>
+          <td>15:00 - 15:15</td>
           <td>
             <p className="strong">Coro 1</p>
           </td>
@@ -75,19 +75,19 @@ const Concurso = () => (
           </td>
         </tr>
         <tr>
-          <td>14:48 15:03</td>
+          <td>15:20 - 15:35</td>
           <td>
             <p className="strong">Coro 2</p>
           </td>
         </tr>
         <tr>
-          <td>15:06 15:21</td>
+          <td>15:40 - 15:55</td>
           <td>
             <p className="strong">Coro 3</p>
           </td>
         </tr>
         <tr>
-          <td>15:24 15:39</td>
+          <td>16:00 - 16:15</td>
           <td>
             <p className="strong">Coro 4</p>
           </td>
@@ -97,51 +97,52 @@ const Concurso = () => (
           <td>Intervalo (15 min)</td>
         </tr>
         <tr>
-          <td>15:54 16:09</td>
+          <td>16:35 - 16:50</td>
           <td>
             <p className="strong">Coro 5</p>
           </td>
         </tr>
         <tr>
-          <td>16:12 16:27</td>
+          <td>16:55 - 17:10</td>
           <td>
             <p className="strong">Coro 6</p>
           </td>
         </tr>
         <tr>
-          <td>16:30 16:45</td>
+          <td>17:15 - 17:30</td>
           <td>
             <p className="strong">Coro 7</p>
           </td>
         </tr>
         <tr>
-          <td>16:48 17:18</td>
+          <td>17:35</td>
           <td>
             <p className="strong">Deliberação júri</p>
+            <p>(Intervalo para os coralistas)</p>
           </td>
         </tr>
         <tr>
-          <td>17:20</td>
+          <td>18:15</td>
           <td>
             <p className="strong">Entrega de Lembranças aos coros</p>
             <p className="strong">Comunicação dos resultados</p>
           </td>
         </tr>
         <tr>
-          <td>17:45 21:00</td>
+          <td>18:30 - 21:00</td>
           <td>
             <p className="strong">Jantar</p>
             <p className="">(livre)</p>
           </td>
           <td>(Existem vários restaurantes na proximidade do CSF)</td>
         </tr>
-        <tr className="time-place">
+        <tr className="time-place section">
           <td></td>
           <td>Concerto / Gala</td>
           <td></td>
         </tr>
         <tr>
-          <td>21:30 23:30</td>
+          <td>21:30 - 23:30</td>
           <td>
             <ul style={{ listStyle: "disc", paddingLeft: "2em" }}>
               <li>Coro Carlos Seixas</li>

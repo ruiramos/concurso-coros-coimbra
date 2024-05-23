@@ -68,12 +68,12 @@ const Atlier = ({ data }) => (
       </ProgramaTitle>
       <ProgramaTableNew>
         <tr>
-          <th>Horário</th>
-          <th style={{ width: "66%" }}>Descrição</th>
-          <th>Local</th>
+          <th style={{ width: "12%" }}>Horário</th>
+          <th>Descrição</th>
+          <th style={{ width: "25%" }}>Local</th>
         </tr>
         <tr>
-          <td>10:00 10:30</td>
+          <td>10:00 - 10:30</td>
           <td>
             <p className="strong">Abertura do Secretariado</p>
             <p className="strong">Receção dos coralistas</p>
@@ -81,7 +81,7 @@ const Atlier = ({ data }) => (
           <td>Bilheteira do Concurso</td>
         </tr>
         <tr>
-          <td>10:30 11:00</td>
+          <td>10:30 - 11:00</td>
           <td>
             <p className="strong">Apresentação do Atelier</p>
             <p>Maestro Jorge Matta</p>
@@ -91,7 +91,7 @@ const Atlier = ({ data }) => (
           </td>
         </tr>
         <tr>
-          <td>11:00 12:30</td>
+          <td>11:00 - 12:30</td>
           <td>
             <p className="strong">Atelier</p>
             <p>Maestros</p>
@@ -99,7 +99,7 @@ const Atlier = ({ data }) => (
           <td>Sala D. Afonso Henriques e salas afectas</td>
         </tr>
         <tr>
-          <td>12:30 14:00</td>
+          <td>12:30 - 14:00</td>
           <td>
             <p className="strong">Almoço</p>
             <p>(livre)</p>
@@ -107,7 +107,7 @@ const Atlier = ({ data }) => (
           <td>(Existem vários restaurantes na proximidade do CSF)</td>
         </tr>
         <tr>
-          <td>14:00 17:30</td>
+          <td>14:00 - 17:30</td>
           <td>
             <p className="strong">Atelier</p>
             <p>(Continuação)</p>
@@ -120,7 +120,7 @@ const Atlier = ({ data }) => (
           <td></td>
         </tr>
         <tr>
-          <td>17:30 18:00</td>
+          <td>17:30 - 18:00</td>
           <td>
             <p className="strong">Apresentação das peças</p>
             <p>Coros envolvidos sob direção do maestro</p>
@@ -128,7 +128,7 @@ const Atlier = ({ data }) => (
           <td>Sala D. Afonso Henriques</td>
         </tr>
         <tr>
-          <td>19:00 21:00</td>
+          <td>19:00 - 21:00</td>
           <td>
             <p className="strong">Jantar</p>
             <p>(livre)</p>

@@ -30,22 +30,23 @@ export const ProgramaTitle = styled.div`
 `;
 
 export const ProgramaTableNew = styled.table`
-  width: 100%;
-  text-align: center;
-  ${tw`border border-solid border-gray-200`}
-  border-top: 0;
+  ${tw`w-full border border-solid border-gray-200 text-center border-t-0 text-xs lg:text-sm`}
   td {
-    ${tw`p-6`}
+    ${tw`p-2 lg:p-4 lg:py-4`}
   }
   th {
-    ${tw` py-6`}
-    h2 {
+    ${tw` py-2 lg:py-4 `}
+    h2, p {
       margin: 0;
     }
   }
   tr.time-place td {
     ${tw`bg-gray-100 p-2`}
     ${tw`text-gray-500 font-semibold`}
+  }
+
+  tr.time-place.section td {
+    ${tw`text-black font-semibold`}
   }
 
   td p.strong {
