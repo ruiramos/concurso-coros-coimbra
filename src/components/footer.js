@@ -15,8 +15,8 @@ const StyledFooter = styled.footer`
   }
 
   a {
+    ${tw`mr-1 lg:mr-2`}
     display: inline-block;
-    margin-right: 0.75em;
     vertical-align: middle;
     padding: 4px;
   }
@@ -29,7 +29,6 @@ const StyledFooter = styled.footer`
 
 const FooterSection = styled.div`
   float: left;
-  padding-right: 30px;
   margin-bottom: 10px;
 `;
 const Footer = ({ edition }) => {
@@ -205,7 +204,7 @@ const Footer = ({ edition }) => {
       {edition === "2024" && (
         <>
           <FooterSection style={{ display: "flex" }}>
-            <div>
+            <div style={{ minWidth: "125px" }}>
               <h4>Apoio:</h4>
               <a
                 href="https://www.cm-coimbra.pt/"
