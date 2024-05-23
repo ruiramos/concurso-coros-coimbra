@@ -62,7 +62,7 @@ const Footer = ({ edition }) => {
       }
       atenas: file(relativePath: { eq: "cafe-atenas.jpeg" }) {
         childImageSharp {
-          gatsbyImageData(height: 55)
+          gatsbyImageData(height: 50)
         }
       }
       aguas: file(relativePath: { eq: "aguas.png" }) {
@@ -72,29 +72,39 @@ const Footer = ({ edition }) => {
       }
       siloal: file(relativePath: { eq: "siloal.jpg" }) {
         childImageSharp {
-          gatsbyImageData(height: 35)
+          gatsbyImageData(height: 30)
         }
       }
       talinamed: file(
         relativePath: { eq: "2024/patrocinadores/talinamed2.png" }
       ) {
         childImageSharp {
-          gatsbyImageData(width: 120)
+          gatsbyImageData(width: 100)
         }
       }
       frijobel: file(relativePath: { eq: "2024/patrocinadores/frijobel.jpg" }) {
         childImageSharp {
-          gatsbyImageData(height: 45)
+          gatsbyImageData(height: 40)
         }
       }
       pbc: file(relativePath: { eq: "2024/patrocinadores/PBC_logo.jpg" }) {
         childImageSharp {
-          gatsbyImageData(height: 35)
+          gatsbyImageData(height: 33)
         }
       }
       smc: file(relativePath: { eq: "2024/patrocinadores/SMC-Logotipo.jpg" }) {
         childImageSharp {
-          gatsbyImageData(height: 60)
+          gatsbyImageData(height: 50)
+        }
+      }
+      dancake: file(relativePath: { eq: "2024/patrocinadores/dancake.png" }) {
+        childImageSharp {
+          gatsbyImageData(height: 50)
+        }
+      }
+      beirao: file(relativePath: { eq: "2024/patrocinadores/beirao.png" }) {
+        childImageSharp {
+          gatsbyImageData(height: 50)
         }
       }
     }
@@ -111,6 +121,8 @@ const Footer = ({ edition }) => {
   const frijobelImage = getImage(data.frijobel);
   const pbcImage = getImage(data.pbc);
   const smcImage = getImage(data.smc);
+  const dancakeImage = getImage(data.dancake);
+  const beiraoImage = getImage(data.beirao);
 
   return (
     <StyledFooter>
@@ -192,9 +204,9 @@ const Footer = ({ edition }) => {
       )}
       {edition === "2024" && (
         <>
-          <FooterSection>
-            <h4>Apoios:</h4>
+          <FooterSection style={{ display: "flex" }}>
             <div>
+              <h4>Apoio:</h4>
               <a
                 href="https://www.cm-coimbra.pt/"
                 target="_blank"
@@ -206,6 +218,20 @@ const Footer = ({ edition }) => {
                   alt="Camara Municipal de Coimbra"
                 />
               </a>
+            </div>
+            <div>
+              <h4>Patrocínio:</h4>
+              <a
+                href="https://www.aguasdecoimbra.pt/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <GatsbyImage
+                  image={aguasImage}
+                  imgStyle={{ objectFit: "contain" }}
+                  alt="Aguas de Coimbra"
+                />
+              </a>
               <a
                 href="https://www.linkedin.com/company/siloal-produtos-e-medicamentos-veterin%C3%A1rios/about/"
                 target="_blank"
@@ -215,17 +241,6 @@ const Footer = ({ edition }) => {
                   image={siloalImage}
                   imgStyle={{ objectFit: "contain" }}
                   alt="Siloal"
-                />
-              </a>
-              <a
-                href="https://www.facebook.com/atenasfrancesinhas"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <GatsbyImage
-                  image={atenasImage}
-                  imgStyle={{ objectFit: "contain" }}
-                  alt="Cafe Atenas"
                 />
               </a>
               <a
@@ -247,14 +262,14 @@ const Footer = ({ edition }) => {
                 />
               </a>
               <a
-                href="https://www.seminariomaiordecoimbra.com/"
+                href="https://www.dancake.pt/"
                 target="_blank"
                 rel="noreferrer"
               >
                 <GatsbyImage
-                  image={smcImage}
+                  image={dancakeImage}
                   imgStyle={{ objectFit: "contain" }}
-                  alt="Seminario Maior de Coimbra"
+                  alt="DanCake"
                 />
               </a>
               <a
@@ -266,6 +281,50 @@ const Footer = ({ edition }) => {
                   image={pbcImage}
                   imgStyle={{ objectFit: "contain" }}
                   alt="PBC"
+                />
+              </a>
+              <a
+                href="https://www.licorbeirao.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <GatsbyImage
+                  image={beiraoImage}
+                  imgStyle={{ objectFit: "contain" }}
+                  alt="Licor Beirao"
+                />
+              </a>
+              <a
+                href="https://www.facebook.com/edancaac"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <GatsbyImage
+                  image={edacImage}
+                  imgStyle={{ objectFit: "contain" }}
+                  alt="EDAC - Escola de Dança Arte e Corpo"
+                />
+              </a>
+              <a
+                href="https://www.seminariomaiordecoimbra.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <GatsbyImage
+                  image={smcImage}
+                  imgStyle={{ objectFit: "contain" }}
+                  alt="Seminario Maior de Coimbra"
+                />
+              </a>
+              <a
+                href="https://www.facebook.com/atenasfrancesinhas"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <GatsbyImage
+                  image={atenasImage}
+                  imgStyle={{ objectFit: "contain" }}
+                  alt="Cafe Atenas"
                 />
               </a>
             </div>
