@@ -21,47 +21,39 @@ const CorosContainer = styled.div`
 
 const coros = [
   {
-    name: "Associação Coral Stella Maris",
-    image: "stella-maris.jpg",
-    id: "stella-maris",
+    name: "Choral Polyphónico João Rodrigues de Deus",
+    image: "choral-jrd.jpg",
+    id: "choral-jrd",
   },
   {
-    name: 'Coral "Ensaio" da Associação Pró-Música da Póvoa de Varzim',
-    image: "coral-ensaio.jpg",
-    id: "coral-ensaio",
+    name: "Coro Allegretus",
+    image: "coro-allegretus.jpg",
+    id: "coro-allegretus",
   },
   {
-    name: "Coral Mille Voci",
-    image: "coral-mille-voci.jpg",
-    id: "coral-mille-voci",
+    name: "Coro Feminino da ESE",
+    image: "coro-feminino-ese.jpg",
+    id: "coro-feminino-ese",
   },
   {
-    name: "Coro AlmaGraham",
-    image: "alma-graham.jpg",
-    id: "alma-graham",
+    name: "Coro Feminino do Conservatório do Vale do Sousa",
+    image: "coro-feminino-vale-sousa.jpg",
+    id: "coro-feminino-vale-sousa",
   },
   {
-    name: "Coro Feminino do Conservatório de Música de Paredes",
-    image: "coro-feminino-cmparedes.jpg",
-    id: "coro-feminino-cmparedes",
-    lugar: 3,
+    name: "Coro Misto da ESE",
+    image: "coro-misto-ese.jpg",
+    id: "coro-misto-ese",
   },
   {
     name: "Coro Misto da Universidade de Coimbra",
-    image: "cmuc.jpg",
-    id: "cmuc",
+    image: "coro-misto-uc.jpg",
+    id: "coro-misto-uc",
   },
   {
-    name: "ProVocal Ensemble",
-    image: "provocal-ensemble.jpg",
-    id: "pro-vocal",
-    lugar: 2,
-  },
-  {
-    name: "Vocal Art Ensemble",
-    image: "vocal-art-ensemble.jpg",
-    id: "vocal-art-ensemble",
-    lugar: 1,
+    name: "Etos Vocal Ensemble",
+    image: "etos-vocal.jpg",
+    id: "etos-vocal",
   },
 ];
 
@@ -92,7 +84,7 @@ const CorosPage = ({ data }) => {
   }, [typeof window !== "undefined" ? window.location.hash : undefined]);
 
   return (
-    <Layout edition="2022">
+    <Layout edition="2024">
       <SEO title="Coros" />
       <CorosContainer>
         {coros.map((coro, i) => (

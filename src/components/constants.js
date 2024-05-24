@@ -52,6 +52,10 @@ export const MENU_DATA = {
       copy: "Concurso",
     },
     {
+      link: "/coros",
+      copy: "Coros",
+    },
+    {
       link: "/juri",
       copy: "Júri",
     },
