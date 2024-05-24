@@ -53,7 +53,7 @@ export const MENU_DATA = {
     },
     {
       link: "/coros",
-      copy: "Coros",
+      copy: "Os Coros",
     },
     {
       link: "/juri",
