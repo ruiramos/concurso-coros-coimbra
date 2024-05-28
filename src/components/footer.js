@@ -46,7 +46,7 @@ const Footer = ({ edition }) => {
       }
       cmc: file(relativePath: { eq: "cmc.jpg" }) {
         childImageSharp {
-          gatsbyImageData(height: 40)
+          gatsbyImageData(height: 38)
         }
       }
       edac: file(relativePath: { eq: "edac.jpg" }) {
@@ -106,6 +106,13 @@ const Footer = ({ edition }) => {
           gatsbyImageData(height: 50)
         }
       }
+      casapessoal: file(
+        relativePath: { eq: "2024/patrocinadores/casa-pessoal.png" }
+      ) {
+        childImageSharp {
+          gatsbyImageData(height: 55)
+        }
+      }
     }
   `);
 
@@ -122,6 +129,7 @@ const Footer = ({ edition }) => {
   const smcImage = getImage(data.smc);
   const dancakeImage = getImage(data.dancake);
   const beiraoImage = getImage(data.beirao);
+  const casaPessoalImage = getImage(data.casapessoal);
 
   return (
     <StyledFooter>
@@ -204,7 +212,7 @@ const Footer = ({ edition }) => {
       {edition === "2024" && (
         <>
           <FooterSection style={{ display: "flex" }}>
-            <div style={{ minWidth: "125px" }}>
+            <div style={{ minWidth: "125px", flexShrink: 0 }}>
               <h4>Apoio:</h4>
               <a
                 href="https://www.cm-coimbra.pt/"
@@ -213,6 +221,17 @@ const Footer = ({ edition }) => {
               >
                 <GatsbyImage
                   image={cmcImage}
+                  imgStyle={{ objectFit: "contain" }}
+                  alt="Camara Municipal de Coimbra"
+                />
+              </a>
+              <a
+                href="https://www.cm-coimbra.pt/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <GatsbyImage
+                  image={casaPessoalImage}
                   imgStyle={{ objectFit: "contain" }}
                   alt="Camara Municipal de Coimbra"
                 />
