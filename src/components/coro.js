@@ -24,7 +24,8 @@ const CoroContainer = styled.a`
   }
 
   h4 {
-    ${tw`pt-0 text-center no-underline text-primary font-semibold`}
+    ${tw`pt-0 text-center no-underline font-semibold`}
+    color: #54c7dd;
   }
 `;
 
