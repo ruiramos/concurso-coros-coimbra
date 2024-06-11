@@ -35,26 +35,31 @@ const coros = [
     name: "Coro Feminino da ESE",
     image: "coro-feminino-ese.jpg",
     id: "coro-feminino-ese",
+    lugar: 2,
   },
   {
     name: "Coro Feminino do Conservatório do Vale do Sousa",
     image: "coro-feminino-vale-sousa.jpg",
     id: "coro-feminino-vale-sousa",
+    lugar: 1,
   },
   {
     name: "Coro Misto da ESE",
     image: "coro-misto-ese.jpg",
     id: "coro-misto-ese",
+    lugar: 3,
   },
   {
     name: "Coro Misto da Universidade de Coimbra",
     image: "coro-misto-uc.jpg",
     id: "coro-misto-uc",
+    mencao: true,
   },
   {
     name: "Etos Vocal Ensemble",
     image: "etos-vocal.jpg",
     id: "etos-vocal",
+    mencao: true,
   },
 ];
 
@@ -95,6 +100,7 @@ const CorosPage = ({ data }) => {
       {selectedChoir ? (
         <BioModal
           onClose={() => (window.location.hash = "")}
+          edicao="2024"
           coro={{ ...selectedChoir, ...keyedBios[selectedChoir.id] }}
         >
           {keyedBios[selectedChoir.id].html}

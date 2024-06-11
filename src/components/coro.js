@@ -29,7 +29,7 @@ const CoroContainer = styled.a`
   }
 `;
 
-const Coro = ({ name, image, id, lugar }) => {
+const Coro = ({ name, image, id, lugar, mencao }) => {
   return (
     <CoroContainer href={`#${id}`}>
       {image && <img src={`/images/coros/${image}`} />}
@@ -41,6 +41,7 @@ const Coro = ({ name, image, id, lugar }) => {
             <sup>o</sup> classificado
           </h4>
         )}
+        {mencao && <h4>Menção honrosa</h4>}
       </div>
     </CoroContainer>
   );

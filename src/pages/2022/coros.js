@@ -104,6 +104,7 @@ const CorosPage = ({ data }) => {
         <BioModal
           onClose={() => (window.location.hash = "")}
           coro={{ ...selectedChoir, ...keyedBios[selectedChoir.id] }}
+          edicao="2022"
         >
           {keyedBios[selectedChoir.id].html}
         </BioModal>

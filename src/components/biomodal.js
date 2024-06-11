@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import tw from "twin.macro";
 import styled from "styled-components";
 
-const BioModal = ({ onClose, coro, children }) => {
+const BioModal = ({ onClose, coro, children, edicao }) => {
   return ReactDOM.createPortal(
     <div>
       <Backdrop onClick={onClose} />
@@ -13,6 +13,13 @@ const BioModal = ({ onClose, coro, children }) => {
           style={{ boxShadow: "#56c8e5 -4px 4px 0 0" }}
         />
         <h1>{coro.name}</h1>
+        {coro.lugar && (
+          <h4>
+            {coro.lugar}
+            <sup>o</sup> classificado ({edicao})
+          </h4>
+        )}
+        {coro.mencao && <h4>Menção honrosa ({edicao})</h4>}
         <div dangerouslySetInnerHTML={{ __html: children }}></div>
         {coro.frontmatter.video_id && (
           <div css={[tw`p-4 flex justify-center`]}>
@@ -26,7 +33,13 @@ const BioModal = ({ onClose, coro, children }) => {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
               ></iframe>
-              <a href="" css={[tw`inline-block mt-2 text-center`]}>
+              <a
+                href={
+                  "https://www.youtube.com/watch?v=" + coro.frontmatter.video_id
+                }
+                target="_blank"
+                css={[tw`inline-block mt-2 text-center`]}
+              >
                 {coro.name} no Concurso (YouTube)
               </a>
             </div>
@@ -61,6 +74,11 @@ const ModalContainer = styled.div`
     float: right;
     width: 350px;
     margin: 0 0 20px 20px;
+  }
+
+  h4 {
+    ${tw`pt-0 pb-4 no-underline font-semibold`}
+    color: #44c8e1;
   }
 `;
 
