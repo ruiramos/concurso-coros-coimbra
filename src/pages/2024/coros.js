@@ -1,5 +1,4 @@
 import React, { useEffect, useState, useMemo } from "react";
-import ReactDOM from "react-dom";
 
 import { graphql } from "gatsby";
 import BioModal from "components/biomodal";
@@ -7,7 +6,6 @@ import Layout from "components/layout";
 import SEO from "components/seo";
 import Coro from "components/coro";
 import styled from "styled-components";
-import tw from "twin.macro";
 
 const CorosContainer = styled.div`
   display: grid;

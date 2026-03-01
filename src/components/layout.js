@@ -13,7 +13,7 @@ import tw from "twin.macro";
 import styled from "styled-components";
 import Menu from "./menu";
 import "./layout.css";
-import { Note, Sep } from "components/styled";
+import { Sep } from "components/styled";
 import { LATEST_EDITION } from "components/constants";
 import Footer from "./footer";
 
@@ -42,7 +42,12 @@ const Layout = ({ lang = "pt", edition = LATEST_EDITION, children }) => {
           title
         }
       }
-      logo: file(relativePath: { eq: "iii-concurso-cover.jpg" }) {
+      logo: file(relativePath: { eq: "iv-concurso-coros-coimbra-logo.jpg" }) {
+        childImageSharp {
+          gatsbyImageData(width: 800, layout: CONSTRAINED)
+        }
+      }
+      logo24: file(relativePath: { eq: "iii-concurso-cover.jpg" }) {
         childImageSharp {
           gatsbyImageData(width: 800, layout: CONSTRAINED)
         }
@@ -65,6 +70,8 @@ const Layout = ({ lang = "pt", edition = LATEST_EDITION, children }) => {
       ? getImage(data.logo17)
       : edition === "2022"
       ? getImage(data.logo22)
+      : edition === "2024"
+      ? getImage(data.logo24)
       : getImage(data.logo);
 
   return (
@@ -73,7 +80,7 @@ const Layout = ({ lang = "pt", edition = LATEST_EDITION, children }) => {
         <PrimaryNotice>
           <h5>
             <Link to="/">
-              Voltar ao site do III Concurso Coros Coimbra (2024)
+              Voltar ao site do IV Concurso Coros Coimbra (2026)
             </Link>
           </h5>
         </PrimaryNotice>

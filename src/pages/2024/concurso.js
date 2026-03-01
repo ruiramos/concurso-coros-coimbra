@@ -5,9 +5,9 @@ import SEO from "components/seo";
 import { ProgramaTableNew, ProgramaTitle } from "components/styled";
 import tw from "twin.macro";
 
-import { Section, MainHeading, SubHeading, Sep } from "components/styled";
+import { Section } from "components/styled";
 const Concurso = () => (
-  <Layout>
+  <Layout edition="2024">
     <SEO title="Atlier de trabalho coral" />
     <Section>
       <h2>Programa</h2>

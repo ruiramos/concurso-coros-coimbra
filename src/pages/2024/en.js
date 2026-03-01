@@ -1,7 +1,7 @@
 import React from "react";
 import tw from "twin.macro";
-import Layout from "../components/layout.js";
-import SEO from "../components/seo.js";
+import Layout from "components/layout.js";
+import SEO from "components/seo.js";
 import { Link } from "gatsby";
 
 import { Section } from "components/styled.js";
@@ -11,7 +11,7 @@ const SubHeading = tw.h3` text-center `;
 
 const English = () => {
   return (
-    <Layout lang="en">
+    <Layout lang="en" edition="2024">
       <SEO
         title="II Choir Competition - Coimbra, Portugal"
         description="II edition of this choir competition happening on 6 june 2020. Applications open!"

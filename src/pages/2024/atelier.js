@@ -3,12 +3,11 @@ import React from "react";
 import Layout from "components/layout";
 import SEO from "components/seo";
 import { ProgramaTableNew, ProgramaTitle } from "components/styled";
-import tw from "twin.macro";
 
-import { Section, MainHeading, SubHeading, Sep } from "components/styled";
+import { Section, Sep } from "components/styled";
 
-const Atlier = ({ data }) => (
-  <Layout>
+const Atlier = () => (
+  <Layout edition="2024">
     <SEO title="Atlier de trabalho coral" />
     <Section>
       <p>

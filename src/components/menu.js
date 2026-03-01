@@ -81,12 +81,13 @@ const Menu = ({ lang = "pt", edition = LATEST_EDITION }) => {
 
       <EditionsContainer>
         {edition !== LATEST_EDITION ? (
-          <StyledMenuLink to="/">Voltar ao site do III Concurso</StyledMenuLink>
+          <StyledMenuLink to="/">Voltar ao site do IV Concurso</StyledMenuLink>
         ) : (
           <>
             <span>Edições anteriores:</span>
             <StyledMenuLink to="/2017/">2017</StyledMenuLink>
             <StyledMenuLink to="/2022/">2022</StyledMenuLink>
+            <StyledMenuLink to="/2024/">2024</StyledMenuLink>
           </>
         )}
       </EditionsContainer>

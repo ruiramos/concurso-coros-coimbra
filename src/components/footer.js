@@ -17,7 +17,6 @@ const StyledFooter = styled.footer`
   a {
     ${tw`mr-1 lg:mr-2`}
     display: inline-block;
-    vertical-align: middle;
     padding: 4px;
   }
 

@@ -32,7 +32,7 @@ const JuriElement = styled.div`
 `;
 
 const Juri = ({ data }) => (
-  <Layout>
+  <Layout edition="2024">
     <SEO title="Júri" />
 
     <Section>

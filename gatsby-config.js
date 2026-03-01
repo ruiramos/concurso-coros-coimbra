@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `III Concurso de Coros Coimbra`,
-    description: `9 de junho de 2024 na Sala D. Afonso Henriques do Convento São Francisco em Coimbra.`,
+    title: `IV Concurso de Coros Coimbra`,
+    description: `26 de setembro de 2026`,
     author: `@ruimramos`,
   },
   plugins: [

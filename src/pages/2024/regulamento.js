@@ -66,7 +66,7 @@ const Underline = styled.span`
 
 const Regulamento = ({ data }) => {
   return (
-    <Layout>
+    <Layout edition="2024">
       <SEO title="Regulamento" />
       <MainHeading>III Concurso de Coros – Coimbra 2024</MainHeading>
       <SubHeading>Regulamento</SubHeading>

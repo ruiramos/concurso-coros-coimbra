@@ -1,4 +1,4 @@
-export const LATEST_EDITION = "2024";
+export const LATEST_EDITION = "2026";
 
 export const MENU_DATA = {
   2017: [
@@ -36,32 +36,38 @@ export const MENU_DATA = {
 
   2024: [
     {
-      link: "/",
+      link: "/2024",
       copy: "Apresentação",
     },
     {
-      link: "/localizacao",
+      link: "/2024/localizacao",
       copy: "Local",
     },
     {
-      link: "/atelier",
+      link: "/2024/atelier",
       copy: "Atelier",
     },
     {
-      link: "/concurso",
+      link: "/2024/concurso",
       copy: "Concurso",
     },
     {
-      link: "/coros",
+      link: "/2024/coros",
       copy: "Os Coros",
     },
     {
-      link: "/juri",
+      link: "/2024/juri",
       copy: "Júri",
     },
     {
-      link: "/regulamento",
+      link: "/2024/regulamento",
       copy: "Regulamento",
+    },
+  ],
+  2026: [
+    {
+      link: "/",
+      copy: "Apresentação",
     },
   ],
 };
