@@ -10,7 +10,7 @@ const IndexPage = () => (
     <SEO />
 
     <MainHeading>26 de setembro de 2026</MainHeading>
-    <SubHeading css={[tw`text-yellow-600`]}>Save the date!</SubHeading>
+    <SubHeading css={[tw`text-yellow-600`]}>Save the date</SubHeading>
 
     {/*
     <Section>Save the date!</Section>
