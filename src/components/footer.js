@@ -348,11 +348,9 @@ const Footer = ({ edition }) => {
           </FooterSection>
         </>
       )}
-      {edition !== "2026" && (
-        <Note as="div">
-          Site: <a href="mailto:ruiramos@gmail.com">Rui Ramos</a>
-        </Note>
-      )}
+      <Note as="div">
+        Site: <a href="mailto:ruiramos@gmail.com">Rui Ramos</a>
+      </Note>
     </StyledFooter>
   );
 };
