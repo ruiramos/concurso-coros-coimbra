@@ -69,5 +69,9 @@ export const MENU_DATA = {
       link: "/",
       copy: "Apresentação",
     },
+    {
+      link: "/juri",
+      copy: "Júri",
+    },
   ],
 };
