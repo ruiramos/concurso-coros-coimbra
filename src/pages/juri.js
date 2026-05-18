@@ -36,6 +36,58 @@ const Juri = ({ data }) => (
     <SEO title="Júri" />
 
     <Section>
+      <p>
+        O júri será constituído por cinco elementos: Jorge Matta, que presidirá,
+        João Santos, Sílvio Cortez, Clara Alcobia Coelho e Pedro Miguel.
+      </p>
+    </Section>
+
+    <Section>
+      <JuriElement>
+        <JuriImgContainer>
+          <GatsbyImage
+            image={data.jorgeMatta.childImageSharp.gatsbyImageData}
+            imgStyle={{ borderRadius: "0.25rem" }}
+          />
+        </JuriImgContainer>
+        <div>
+          <h3>Jorge Matta</h3>
+          <Resumo>
+            <p>
+              Maestro-adjunto do Coro Gulbenkian durante longos anos, é
+              doutorado em Musicologia Histórica pela Universidade Nova de
+              Lisboa, onde ensinou no Departamento de Ciências Musicais.
+            </p>
+            <p>
+              Editor e intérprete, destacou-se pela descoberta, recuperação e
+              divulgação do património musical português, realizando a primeira
+              audição moderna de mais de 300 obras vocais e instrumentais de
+              compositores portugueses, e estreias absolutas de obras de
+              Constança Capdeville, Jorge Peixinho, Fernando Lopes-Graça, Filipe
+              Pires, Miguel Azguime e Eurico Carrapatoso.
+            </p>
+            <p>
+              A sua longa discografia, a maior parte com o Coro Gulbenkian, é
+              dedicada também à música portuguesa, desde a polifonia
+              seiscentista até aos compositores dos nossos dias. A uma das
+              gravações foi atribuído o Prémio Discobole da Academia Francesa do
+              Disco. Como autor e intérprete gravou para a televisão as séries
+              de programas &quot;Música de Corte no Palácio da Ajuda&quot;
+              (1986), &quot;Tempos da Música&quot; (1988) e &quot;Percursos da
+              Música Portuguesa&quot; (2008). Participou em destacados festivais
+              de música portugueses e estrangeiros (Espanha, França, Inglaterra,
+              Alemanha, Israel, China e Estados Unidos), e dirigiu as mais
+              importantes orquestras em Portugal, para além de outros
+              agrupamentos na Bélgica, Alemanha e Estados Unidos.
+            </p>
+            <p>
+              Foi Director do Teatro Nacional de S. Carlos e Presidente da
+              Comissão de Acompanhamento das Orquestras Regionais.
+            </p>
+          </Resumo>
+        </div>
+      </JuriElement>
+
       <JuriElement>
         <JuriImgContainer>
           <GatsbyImage
@@ -178,6 +230,64 @@ const Juri = ({ data }) => (
           </Resumo>
         </div>
       </JuriElement>
+
+      <JuriElement>
+        <JuriImgContainer>
+          <GatsbyImage
+            image={data.pedroMiguel.childImageSharp.gatsbyImageData}
+            imgStyle={{ borderRadius: "0.25rem" }}
+          />
+        </JuriImgContainer>
+        <div>
+          <h3>Pedro Miguel</h3>
+          <Resumo>
+            <p>
+              Iniciou os seus estudos musicais na Escola de Música Nossa Senhora
+              do Cabo, onde concluiu o curso de piano, com Marina Dellalian, e
+              frequentou o Curso de Canto com Joana Levy. Em 2000, ingressou na
+              licenciatura em Ciências Musicais da Faculdade de Ciências Sociais
+              e Humanas da Universidade Nova de Lisboa. Licenciado em Direção
+              Coral e Formação Musical pela Escola Superior de Música de Lisboa,
+              frequentou o Mestrado em Direção Coral, sob a orientação de Paulo
+              Lourenço.
+            </p>
+            <p>
+              Neste âmbito, assumiu o cargo de Maestro Adjunto do Coro de Câmara
+              da Escola Superior de Música de Lisboa entre 2011 e 2013, coro com
+              o qual participou no I Festival Coral de Verão 2012, tendo
+              alcançado a Medalha de Ouro (II) na Categoria B2. Participou nas
+              classes de direção do 4.º Estágio Internacional de Orquestra, sob a
+              orientação de Jean Sébastien Béreau, e do 7.º Curso Internacional
+              de Música Vocal de Aveiro, com Paulo Lourenço e António Vassalo
+              Lourenço.
+            </p>
+            <p>
+              Entre 2008 e janeiro de 2012, dirigiu o Coro do Orfeão de Leiria e
+              o Coro de Câmara do Orfeão de Leiria. Dirigiu, entre 2006 e 2012,
+              o Coro Vozes Crescendo. Assumiu, entre setembro de 2011 e julho de
+              2013, a Direção Artística do Coral de Linda-a-Velha. Dirigiu o
+              Coro Regina Coeli de Lisboa entre fevereiro de 2013 e outubro de
+              2022, conquistando a Medalha de Ouro-III na categoria Vozes Mistas
+              (2015) e a Medalha de Prata-IX na categoria Música Sacra (2016) no
+              Festival Coral de Verão.
+            </p>
+            <p>
+              É, desde 2005, membro do Coro da Fundação Gulbenkian. Dirige,
+              desde 2012, o Grupo Coral de Queluz, desde 2018, o Grupo Coral
+              Millennium BCP e, desde 2024, o Vocal Da Capo.
+            </p>
+            <p>
+              <a
+                href="https://vocaldacapo.pt/maestro/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                vocaldacapo.pt
+              </a>
+            </p>
+          </Resumo>
+        </div>
+      </JuriElement>
     </Section>
   </Layout>
 );
@@ -186,6 +296,11 @@ export default Juri;
 
 export const query = graphql`
   query Juri2026Query {
+    jorgeMatta: file(relativePath: { eq: "2026/maestros/jorge-matta.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(width: 200, layout: FIXED)
+      }
+    }
     joaoSantos: file(relativePath: { eq: "2026/maestros/joao-santos.jpg" }) {
       childImageSharp {
         gatsbyImageData(width: 200, layout: FIXED)
@@ -200,6 +315,13 @@ export const query = graphql`
     }
     claraAlcobia: file(
       relativePath: { eq: "2026/maestros/clara-alcobia.jpg" }
+    ) {
+      childImageSharp {
+        gatsbyImageData(width: 200, layout: FIXED)
+      }
+    }
+    pedroMiguel: file(
+      relativePath: { eq: "2026/maestros/pedro-miguel.jpg" }
     ) {
       childImageSharp {
         gatsbyImageData(width: 200, layout: FIXED)
