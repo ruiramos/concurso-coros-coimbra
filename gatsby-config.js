@@ -1,8 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: `IV Concurso de Coros Coimbra`,
-    description: `26 de setembro de 2026`,
+    description: `26 e 27 de setembro de 2026 – Sala D. Afonso Henriques, Antiga Igreja Convento São Francisco`,
     author: `@ruimramos`,
+    siteUrl: `https://concursocoroscoimbra.com`,
+    image: `/og-image.jpg`,
   },
   plugins: [
     {
@@ -39,13 +41,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `IV Concurso de Coros Coimbra`,
+        short_name: `Coros Coimbra`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#ffffff`,
+        theme_color: `#56c8e5`,
         display: `minimal-ui`,
-        icon: `src/images/icon-iii.png`, // This path is relative to the root of the site.
+        icon: `src/images/icon-iv.png`,
       },
     },
     `gatsby-transformer-remark`,
