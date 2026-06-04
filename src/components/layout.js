@@ -18,7 +18,7 @@ import { LATEST_EDITION } from "components/constants";
 import Footer from "./footer";
 
 const Container = tw.div`
-  mx-auto mt-4 px-8 bg-white mt-0 min-h-screen
+  mx-auto mt-10 px-8 bg-white min-h-screen
 `;
 
 const Content = tw.div`
@@ -92,7 +92,7 @@ const Layout = ({ lang = "pt", edition = LATEST_EDITION, children }) => {
               image={image}
               imgStyle={{ objectFit: "contain" }}
               alt="Concurso Coros Coimbra"
-              style={{ margin: "auto", display: "block", maxHeight: "400px" }}
+              style={{ margin: "auto", display: "block", maxHeight: "425px" }}
             />
           </ImgContainer>
         </a>
