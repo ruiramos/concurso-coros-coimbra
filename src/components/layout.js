@@ -34,7 +34,12 @@ const PrimaryNotice = styled.div`
   background: #56c8e5;
 `;
 
-const Layout = ({ lang = "pt", edition = LATEST_EDITION, children }) => {
+const Layout = ({
+  lang = "pt",
+  edition = LATEST_EDITION,
+  topNoticeContent = null,
+  children,
+}) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -85,6 +90,11 @@ const Layout = ({ lang = "pt", edition = LATEST_EDITION, children }) => {
           </h5>
         </PrimaryNotice>
       )}
+      {topNoticeContent && (
+        <PrimaryNotice>
+          <h5>{topNoticeContent}</h5>
+        </PrimaryNotice>
+      )}
       <Container className="container">
         <a href="/" title="Voltar à página inicial">
           <ImgContainer>
@@ -115,6 +125,9 @@ const Layout = ({ lang = "pt", edition = LATEST_EDITION, children }) => {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  topNoticeContent: PropTypes.node,
+  lang: PropTypes.string,
+  edition: PropTypes.string,
 };
 
 export default Layout;

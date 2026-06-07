@@ -9,7 +9,14 @@ import { Section, MainHeading, SubHeading } from "components/styled.js";
 const Title = tw.h4`font-bold`;
 
 const IndexPage = () => (
-  <Layout>
+  <Layout
+    topNoticeContent={
+      <>
+        O prazo para as candidaturas para o IV Concurso de Coros de Coimbra foi
+        alargado até ao dia <strong>19 de junho</strong>.
+      </>
+    }
+  >
     <SEO />
 
     <MainHeading>26 e 27 de setembro de 2026</MainHeading>
@@ -56,7 +63,7 @@ const IndexPage = () => (
         <a
           target="_blank"
           rel="noreferrer"
-          href="/2026/Regulamento_IVCONCURSO_DE_COROS_2026.pdf"
+          href="/2026/Regulamento_IVCONCURSO_DE_COROS_2026_Rev01.pdf"
         >
           Regulamento do IV Concurso
         </a>
