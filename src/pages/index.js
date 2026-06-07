@@ -12,7 +12,7 @@ const IndexPage = () => (
   <Layout
     topNoticeContent={
       <>
-        O prazo para as candidaturas para o IV Concurso de Coros de Coimbra foi
+        O prazo para as candidaturas para o IV Concurso de Coros Coimbra foi
         alargado até ao dia <strong>19 de junho</strong>.
       </>
     }
