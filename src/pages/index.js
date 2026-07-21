@@ -20,7 +20,7 @@ const IndexPage = () => (
   >
     <SEO />
 
-    <MainHeading>26 e 27 de setembro de 2026</MainHeading>
+    <MainHeading>26 de setembro de 2026</MainHeading>
     <SubHeading>
       Sala D. Afonso Henriques, Antiga Igreja
       <br />

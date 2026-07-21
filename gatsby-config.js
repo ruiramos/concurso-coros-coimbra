@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `IV Concurso de Coros Coimbra`,
-    description: `26 e 27 de setembro de 2026 – Sala D. Afonso Henriques, Antiga Igreja Convento São Francisco`,
+    description: `26 de setembro de 2026 – Sala D. Afonso Henriques, Antiga Igreja Convento São Francisco`,
     author: `@ruimramos`,
     siteUrl: `https://concursocoroscoimbra.com`,
     image: `/og-image.jpg`,
