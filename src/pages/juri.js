@@ -200,32 +200,51 @@ const Juri = ({ data }) => (
           <h3>Clara Alcobia Coelho</h3>
           <Resumo>
             <p>
-              Clara Alcobia Coelho é desde 2001 docente na Escola Superior de
-              Música de Lisboa e na Academia Nacional Superior de Orquestra e
-              desde 1997 membro do Coro Gulbenkian. Dirigiu e fez a preparação
-              musical de programas com diversos agrupamentos como o Estúdio de
-              Ópera da Escola Superior de Música de Lisboa, o Coro Lisboa
-              Cantat, o Coro do Tejo, o coro do Festival &quot;Les Musicalles de
-              Grillon&quot; no sul de França, o Ensemble Lusiovoce, o Coro
-              Gulbenkian, o Ensemble Mpmp e o Coro Casa da Música.
+              Clara Alcobia Coelho realizou os seus estudos superiores na
+              Escola Superior de Música de Lisboa, nas áreas de Formação
+              Musical e Direção Coral, tendo concluído posteriormente o
+              Mestrado em Direção Coral. Estudou direção com Vasco Azevedo,
+              Paulo Lourenço e Michel Corboz.
             </p>
             <p>
-              Tem-se dedicado à direção e preparação de música vocal moderna e
-              contemporânea (Magnus Lindberg, Eugene Birman, Dominique Pauwels,
-              Emanuel Nunes, James Macmillan, entre outros) com especial ênfase
-              na música portuguesa. Dirigiu ópera contemporânea a cappella (Zad
-              Moultaka, Judith Weir e Stephen Oliver) em Lisboa e em Londres
-              (2017).
+              É docente na Escola Superior de Música de Lisboa e na Academia
+              Nacional Superior de Orquestra desde 2000 e integra o Coro
+              Gulbenkian desde 1997, desenvolvendo paralelamente uma intensa
+              atividade como directora coral e preparadora musical.
             </p>
             <p>
-              Gravou música moderna e contemporânea para Coro e Órgão com o
-              Ensemble Lusiovoce (2021), a gravação do 1º Prémio Musa – prémio
-              de Composição Mpmp, dedicado a música moderna e contemporânea
-              portuguesa para coro a cappella sobre textos de Sophia de Mello
-              Breyner (2019) e recentemente a integral para coro a cappella de
-              Joly Braga Santos, com o Ensemble Mpmp (2025). Estudou com Vasco
-              Azevedo e Paulo Lourenço. É doutoranda na ELACH da Universidade do
-              Minho.
+              Entre 2006 e 2016 trabalhou com o coro do festival Les Musicales
+              de Grillon (França). Colaborou regularmente com o Coro Gulbenkian
+              na preparação musical de numerosos programas de referência, com
+              particular destaque para a música portuguesa e para o repertório
+              moderno e contemporâneo. Desde 2010 dirige o Ensemble Lusiovoce,
+              com o qual se apresentou em festivais como o Cistermúsica, o
+              Festival de Órgão de Santarém, o Festival Estoril Lisboa, o
+              Festival de Órgão da Madeira e o Festival de Órgão de Mafra.
+            </p>
+            <p>
+              Com agrupamentos da Escola Superior de Música de Lisboa dirigiu a
+              ópera Paride ed Elena, de C. W. Gluck, no Teatro São Luiz, para
+              além de numerosos concertos dedicados ao repertório coral e vocal
+              de câmara.
+            </p>
+            <p>
+              Tem desenvolvido investigação dedicada à música portuguesa, com
+              particular incidência no repertório coral dos séculos XX e XXI, e
+              nos últimos anos tem-se dedicado especialmente à direção de
+              música vocal contemporânea.
+            </p>
+            <p>
+              Entre os seus projetos mais relevantes contam-se a direção da
+              versão encenada da ópera Hummus, de Zad Moultaka, em Lisboa e
+              Londres; a gravação de obras de música moderna e contemporânea
+              para coro e órgão com o Ensemble Lusiovoce; a direção da gravação
+              do álbum vencedor do 1.º Prémio MUSA – Prémio de Composição MPMP,
+              dedicado à música coral portuguesa contemporânea a cappella sobre
+              textos de Sophia de Mello Breyner Andresen; e, mais recentemente,
+              com o Ensemble MPMP, a interpretação de Lux Aeterna, de György
+              Ligeti, do programa Ventos do Ocidente e da integral da obra
+              coral a cappella de Joly Braga Santos, na sua maioria inédita.
             </p>
           </Resumo>
         </div>

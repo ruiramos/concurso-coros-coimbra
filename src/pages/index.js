@@ -7,6 +7,7 @@ import tw from "twin.macro";
 import { Section, MainHeading, SubHeading } from "components/styled.js";
 
 const Title = tw.h4`font-bold`;
+const Footnote = tw.p`mt-8 text-sm italic text-gray-600`;
 
 const IndexPage = () => (
   <Layout
@@ -32,8 +33,6 @@ const IndexPage = () => (
         organiza, este ano, a quarta edição do Concurso de Coros - Coimbra 2026,
         no âmbito da música coral.
       </p>
-      <p>Nesta edição teremos duas atividades independentes:</p>
-
       <Title>Dia 26 de setembro – IV Concurso de Coros</Title>
       <p>
         O Concurso de Coros visa não só homenagear José António Carlos Seixas,
@@ -78,15 +77,12 @@ const IndexPage = () => (
         .
       </p>
 
-      <Title>
-        Dia 27 de setembro – Workshop de música coral (local e programa a
-        confirmar)
-      </Title>
-      <p>
-        Para esta atividade poderão inscrever-se todos os coralistas
-        independentemente de serem concorrentes ou não ao concurso.
-      </p>
-      <p>Mais informações em breve.</p>
+      <Footnote>
+        Informamos que, por motivos alheios à nossa vontade, o workshop
+        inicialmente previsto para o dia 27 de setembro não se irá realizar.
+        Lamentamos qualquer inconveniente que esta alteração possa causar e
+        agradecemos, desde já, a vossa compreensão.
+      </Footnote>
     </Section>
   </Layout>
 );
