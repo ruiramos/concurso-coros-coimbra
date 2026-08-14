@@ -1,13 +1,11 @@
 import React, { useEffect, useState, useMemo } from "react";
-import ReactDOM from "react-dom";
 
 import { graphql } from "gatsby";
+import BioModal from "components/biomodal";
 import Layout from "components/layout";
 import SEO from "components/seo";
 import Coro from "components/coro";
-import BioModal from "components/biomodal";
 import styled from "styled-components";
-import tw from "twin.macro";
 
 const CorosContainer = styled.div`
   display: grid;
@@ -22,47 +20,39 @@ const CorosContainer = styled.div`
 
 const coros = [
   {
-    name: "Associação Coral Stella Maris",
-    image: "stella-maris.jpg",
-    id: "stella-maris",
-  },
-  {
-    name: 'Coral "Ensaio" da Associação Pró-Música da Póvoa de Varzim',
-    image: "coral-ensaio.jpg",
-    id: "coral-ensaio",
-  },
-  {
     name: "Coral Mille Voci",
-    image: "coral-mille-voci.jpg",
+    image: "2026/coral-mille-voci.jpg",
     id: "coral-mille-voci",
   },
   {
-    name: "Coro AlmaGraham",
-    image: "alma-graham.jpg",
-    id: "alma-graham",
+    name: "Coral Polifónico Cantate Iubilo",
+    image: "2026/coral-polifonico-cantate-iubilo.jpg",
+    id: "coral-polifonico-cantate-iubilo",
   },
   {
-    name: "Coro Feminino do Conservatório de Música de Paredes",
-    image: "coro-feminino-cmparedes.jpg",
-    id: "coro-feminino-cmparedes",
-    lugar: 3,
+    name: "Coro Clássico do Orfeão Universitário do Porto",
+    image: "2026/coro-classico-oup.jpg",
+    id: "coro-classico-oup",
   },
   {
-    name: "Coro Misto da Universidade de Coimbra",
-    image: "cmuc.jpg",
-    id: "cmuc",
+    name: "Coro Geração 57",
+    image: "2026/coro-geracao-57.jpg",
+    id: "coro-geracao-57",
   },
   {
-    name: "ProVocal Ensemble",
-    image: "provocal-ensemble.jpg",
-    id: "pro-vocal",
-    lugar: 2,
+    name: "Coro Municipal Marquês de Pombal",
+    image: "2026/coro-municipal-marques-pombal.jpg",
+    id: "coro-municipal-marques-pombal",
   },
   {
-    name: "Vocal Art Ensemble",
-    image: "vocal-art-ensemble.jpg",
-    id: "vocal-art-ensemble",
-    lugar: 1,
+    name: "Etos Vocal Ensemble",
+    image: "2026/etos-vocal.jpg",
+    id: "etos-vocal",
+  },
+  {
+    name: "Orfeão de Eiriz",
+    image: "2026/orfeao-eiriz.jpg",
+    id: "orfeao-eiriz",
   },
 ];
 
@@ -93,7 +83,7 @@ const CorosPage = ({ data }) => {
   }, [typeof window !== "undefined" ? window.location.hash : undefined]);
 
   return (
-    <Layout edition="2022">
+    <Layout>
       <SEO title="Coros" />
       <CorosContainer>
         {coros.map((coro, i) => (
@@ -103,8 +93,8 @@ const CorosPage = ({ data }) => {
       {selectedChoir ? (
         <BioModal
           onClose={() => (window.location.hash = "")}
+          edicao="2026"
           coro={{ ...selectedChoir, ...keyedBios[selectedChoir.id] }}
-          edicao="2022"
         >
           {keyedBios[selectedChoir.id].html}
         </BioModal>
@@ -114,9 +104,9 @@ const CorosPage = ({ data }) => {
 };
 
 export const query = graphql`
-  query CorosBioQuery2022 {
+  query CorosBioQuery2026 {
     allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/content/coros/2022/" } }
+      filter: { fileAbsolutePath: { regex: "/content/coros/2026/" } }
     ) {
       edges {
         node {

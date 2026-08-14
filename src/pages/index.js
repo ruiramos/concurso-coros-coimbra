@@ -10,14 +10,7 @@ const Title = tw.h4`font-bold`;
 const Footnote = tw.p`mt-8 text-sm italic text-gray-600`;
 
 const IndexPage = () => (
-  <Layout
-    topNoticeContent={
-      <>
-        O prazo para as candidaturas para o IV Concurso de Coros Coimbra foi
-        alargado até ao dia <strong>19 de junho</strong>.
-      </>
-    }
-  >
+  <Layout>
     <SEO />
 
     <MainHeading>26 de setembro de 2026</MainHeading>

@@ -109,8 +109,10 @@ const CorosPage = ({ data }) => {
 };
 
 export const query = graphql`
-  query CorosBioQuery {
-    allMarkdownRemark {
+  query CorosBioQuery2024 {
+    allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/content/coros/2024/" } }
+    ) {
       edges {
         node {
           html

@@ -13,10 +13,19 @@ const CoroContainer = styled.a`
     ${tw`bg-gray-100 cursor-pointer`}
   }
 
+  .coro-img {
+    overflow: hidden;
+  }
+
   img {
     object-fit: cover;
     width: 100%;
-    max-height: 100%;
+    height: 100%;
+    transition: transform 0.4s ease;
+  }
+
+  &:hover img {
+    transform: scale(1.08);
   }
 
   h3 {
@@ -32,7 +41,11 @@ const CoroContainer = styled.a`
 const Coro = ({ name, image, id, lugar, mencao }) => {
   return (
     <CoroContainer href={`#${id}`}>
-      {image && <img src={`/images/coros/${image}`} />}
+      {image && (
+        <div className="coro-img">
+          <img src={`/images/coros/${image}`} />
+        </div>
+      )}
       <div css={[tw`py-2`]}>
         <h3>{name}</h3>
         {lugar && (
