@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useMemo } from "react";
 
-import { graphql } from "gatsby";
+import { graphql, navigate } from "gatsby";
 import BioModal from "components/biomodal";
 import Layout from "components/layout";
 import SEO from "components/seo";
@@ -79,7 +79,6 @@ const CorosPage = ({ data }) => {
 
     const oCoro = coros.find((coro) => coro.id === coroId);
     setSelectedChoir(oCoro);
-    window.scrollTo(0, 0);
   }, [typeof window !== "undefined" ? window.location.hash : undefined]);
 
   return (
@@ -92,7 +91,7 @@ const CorosPage = ({ data }) => {
       </CorosContainer>
       {selectedChoir ? (
         <BioModal
-          onClose={() => (window.location.hash = "")}
+          onClose={() => navigate(window.location.pathname, { replace: true })}
           edicao="2026"
           coro={{ ...selectedChoir, ...keyedBios[selectedChoir.id] }}
         >

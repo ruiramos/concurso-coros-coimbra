@@ -4,4 +4,13 @@
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
 
-// You can delete this file if you're not using it
+// Keep scroll position on same-page hash changes (choir bio modals)
+exports.shouldUpdateScroll = ({ routerProps, prevRouterProps }) => {
+  if (
+    prevRouterProps &&
+    routerProps.location.pathname === prevRouterProps.location.pathname
+  ) {
+    return false;
+  }
+  return true;
+};

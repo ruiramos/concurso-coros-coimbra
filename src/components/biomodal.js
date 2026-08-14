@@ -53,13 +53,15 @@ const BioModal = ({ onClose, coro, children, edicao }) => {
 };
 
 const Backdrop = styled.div`
-  ${tw`absolute z-10 bg-black inset-0 opacity-80 h-full`}
+  ${tw`fixed z-10 bg-black inset-0 opacity-80`}
 `;
 
 const ModalContainer = styled.div`
-  ${tw`absolute z-20 top-8 border border-solid border-gray-200 bg-white p-10 rounded`}
+  ${tw`fixed z-20 top-8 border border-solid border-gray-200 bg-white p-10 rounded`}
   width: 70%;
   left: 15%;
+  max-height: calc(100vh - 4rem);
+  overflow-y: auto;
   @media only screen and (max-device-width: 480px) {
     width: 90%;
     left: 5%;
