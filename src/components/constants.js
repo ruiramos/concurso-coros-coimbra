@@ -70,6 +70,10 @@ export const MENU_DATA = {
       copy: "Apresentação",
     },
     {
+      link: "/localizacao",
+      copy: "Local",
+    },
+    {
       link: "/coros",
       copy: "Os Coros",
     },

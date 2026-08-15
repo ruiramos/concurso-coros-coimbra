@@ -34,6 +34,12 @@ const PrimaryNotice = styled.div`
   background: #56c8e5;
 `;
 
+const EditionNotice = styled(PrimaryNotice)`
+  position: sticky;
+  top: 0;
+  z-index: 5;
+`;
+
 const Layout = ({
   lang = "pt",
   edition = LATEST_EDITION,
@@ -82,13 +88,13 @@ const Layout = ({
   return (
     <>
       {edition !== LATEST_EDITION && (
-        <PrimaryNotice>
+        <EditionNotice>
           <h5>
             <Link to="/">
               Voltar ao site do IV Concurso Coros Coimbra (2026)
             </Link>
           </h5>
-        </PrimaryNotice>
+        </EditionNotice>
       )}
       {topNoticeContent && (
         <PrimaryNotice>
