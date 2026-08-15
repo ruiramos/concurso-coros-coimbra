@@ -44,7 +44,7 @@ const IndexPage = () => (
       <p>
         O IV Concurso de Coros integrará duas fases: a primeira será uma fase de
         pré-seleção, com todos os coros amadores inscritos; a segunda, a
-        realizar dia 26 de setembro de 2026, terá a participação de oito coros
+        realizar dia 26 de setembro de 2026, terá a participação de sete coros
         selecionados. O júri é constituído por prestigiados maestros de renome
         nacional e internacional. O evento terminará com um Concerto de Gala, à
         noite, com a participação dos três coros classificados e do anfitrião,
