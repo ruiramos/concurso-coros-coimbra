@@ -15,7 +15,7 @@ const IndexPage = () => (
 
     <MainHeading>26 de setembro de 2026</MainHeading>
     <SubHeading>
-      Sala D. Afonso Henriques, Antiga Igreja
+      Antiga Igreja do
       <br />
       Convento São Francisco
     </SubHeading>

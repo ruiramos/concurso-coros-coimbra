@@ -54,10 +54,10 @@ const Local = ({ data }) => (
           <GatsbyImage image={data.convent.childImageSharp.gatsbyImageData} />
           <Note>Foto: João Duarte</Note>
           <h3 css={[tw`mt-4`]}>
-            Sala D. Afonso Henriques (antiga Igreja do Convento)
+            Antiga Igreja do Convento São Francisco
           </h3>
           <p>
-            Convento de São Francisco
+            Convento São Francisco
             <br />
             Av. da Guarda Inglesa 1a
             <br />
