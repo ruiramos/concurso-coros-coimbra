@@ -5,7 +5,7 @@ import SEO from "components/seo";
 import { Section, ProgramaTableNew, ProgramaTitle } from "components/styled";
 import tw from "twin.macro";
 
-const LocalNote = tw.p`lg:hidden text-sm text-gray-500 text-center mb-2`;
+const LocalNote = tw.p`lg:hidden text-xs text-gray-500 text-center m-0 p-2 border border-solid border-gray-200 border-t-0`;
 
 const Programa = () => (
   <Layout>
