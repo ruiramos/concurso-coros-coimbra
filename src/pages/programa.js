@@ -5,6 +5,8 @@ import SEO from "components/seo";
 import { Section, ProgramaTableNew, ProgramaTitle } from "components/styled";
 import tw from "twin.macro";
 
+const LocalNote = tw.p`lg:hidden text-sm text-gray-500 text-center mb-2`;
+
 const Programa = () => (
   <Layout>
     <SEO title="Programa" />
@@ -14,6 +16,10 @@ const Programa = () => (
         <h2>IV Concurso de Coros</h2>
         <h3>26 de setembro de 2026</h3>
       </ProgramaTitle>
+      <LocalNote>
+        Salvo indicação em contrário, todas as atividades decorrem na Antiga
+        Igreja do Convento São Francisco.
+      </LocalNote>
       <ProgramaTableNew>
         <tr>
           <th style={{ width: "12%" }}>Horário</th>

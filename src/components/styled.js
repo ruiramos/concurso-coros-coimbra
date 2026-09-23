@@ -34,6 +34,14 @@ export const ProgramaTableNew = styled.table`
   td {
     ${tw`p-2 lg:p-4 lg:py-4`}
   }
+
+  /* the Local column mostly repeats the venue — drop it on small screens */
+  @media (max-width: 1023px) {
+    th:nth-child(3),
+    td:nth-child(3) {
+      display: none;
+    }
+  }
   th {
     ${tw` py-2 lg:py-4 `}
     h2, p {
