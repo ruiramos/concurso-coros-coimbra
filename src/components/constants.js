@@ -78,6 +78,10 @@ export const MENU_DATA = {
       copy: "Os Coros",
     },
     {
+      link: "/programa",
+      copy: "Programa",
+    },
+    {
       link: "/juri",
       copy: "Júri",
     },
